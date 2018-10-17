@@ -1,0 +1,153 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/h325091/Desktop/SEBWireless/android/app/src/main/AndroidManifest.xml:1:1-26:12
+INJECTED from /Users/h325091/Desktop/SEBWireless/android/app/src/main/AndroidManifest.xml:1:1-26:12
+INJECTED from /Users/h325091/Desktop/SEBWireless/android/app/src/main/AndroidManifest.xml:1:1-26:12
+INJECTED from /Users/h325091/Desktop/SEBWireless/android/app/src/main/AndroidManifest.xml:1:1-26:12
+MERGED from [com.facebook.react:react-native:0.57.3] /Users/h325091/.gradle/caches/transforms-1/files-1.1/react-native-0.57.3.aar/4d8e981a7ba8c6e444e57a6bc0239163/AndroidManifest.xml:2:1-15:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/h325091/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/b97b3dc27a483196114547fc4c7e2754/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/h325091/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/8afb35adc90a8ba99d44a1ebe0fc195f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/h325091/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/f3bfb375cf840a5e010d9a08af141a8e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/h325091/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/a5766bf2c7b9b40c26331c086ea4bb18/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/h325091/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/8d26fd9fc6d10b3e6d87330c2781f76d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/h325091/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/11fa0ba9b2f6a499c475b780f812bfe3/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] /Users/h325091/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/83417191e2a788f211d1849dbef6749c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:fresco:1.10.0] /Users/h325091/.gradle/caches/transforms-1/files-1.1/fresco-1.10.0.aar/73da6393db5f53ce26dc3417b9d8a7ab/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /Users/h325091/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.10.0.aar/03becbbc982f76fb4da329be765d381e/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:drawee:1.10.0] /Users/h325091/.gradle/caches/transforms-1/files-1.1/drawee-1.10.0.aar/84072bcbfefd76f4ba48ab011dc24d78/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /Users/h325091/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/a03008ec92d7652a51145245d21ad017/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /Users/h325091/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/fbf0cc98ef0384f4323201252132dcaf/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.5.1] /Users/h325091/.gradle/caches/transforms-1/files-1.1/soloader-0.5.1.aar/3b5998d7093dac8361dbac53495418d3/AndroidManifest.xml:2:1-13:12
+MERGED from [org.webkit:android-jsc:r174650] /Users/h325091/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/75c13c3c3b18c9b0efab0cc794b16dfd/AndroidManifest.xml:1:1-3:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/h325091/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/ae93ae179ff9c2b30ac801d3857c735e/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/h325091/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/c96b812f9b8412fc969dbe5f1f290c32/AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:fbcore:1.10.0] /Users/h325091/.gradle/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/e649e2912b052780216f2545a46ca3f7/AndroidManifest.xml:2:1-9:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/h325091/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/8617643493d628aee9af334c0026c1c6/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] /Users/h325091/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/1de894b7bd6700c63574e706d4aa589f/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/h325091/Desktop/SEBWireless/android/app/src/main/AndroidManifest.xml:1:1-26:12
+INJECTED from /Users/h325091/Desktop/SEBWireless/android/app/src/main/AndroidManifest.xml:1:1-26:12
+INJECTED from /Users/h325091/Desktop/SEBWireless/android/app/src/main/AndroidManifest.xml:1:1-26:12
+	package
+		ADDED from /Users/h325091/Desktop/SEBWireless/android/app/src/main/AndroidManifest.xml:2:5-30
+		INJECTED from /Users/h325091/Desktop/SEBWireless/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/h325091/Desktop/SEBWireless/android/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/h325091/Desktop/SEBWireless/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/h325091/Desktop/SEBWireless/android/app/src/main/AndroidManifest.xml:1:1-26:12
+		INJECTED from /Users/h325091/Desktop/SEBWireless/android/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/h325091/Desktop/SEBWireless/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/h325091/Desktop/SEBWireless/android/app/src/main/AndroidManifest.xml:1:1-26:12
+		INJECTED from /Users/h325091/Desktop/SEBWireless/android/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/h325091/Desktop/SEBWireless/android/app/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/h325091/Desktop/SEBWireless/android/app/src/main/AndroidManifest.xml:4:5-67
+	android:name
+		ADDED from /Users/h325091/Desktop/SEBWireless/android/app/src/main/AndroidManifest.xml:4:22-64
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from /Users/h325091/Desktop/SEBWireless/android/app/src/main/AndroidManifest.xml:5:5-77
+MERGED from [com.facebook.react:react-native:0.57.3] /Users/h325091/.gradle/caches/transforms-1/files-1.1/react-native-0.57.3.aar/4d8e981a7ba8c6e444e57a6bc0239163/AndroidManifest.xml:11:5-78
+MERGED from [com.facebook.react:react-native:0.57.3] /Users/h325091/.gradle/caches/transforms-1/files-1.1/react-native-0.57.3.aar/4d8e981a7ba8c6e444e57a6bc0239163/AndroidManifest.xml:11:5-78
+	android:name
+		ADDED from /Users/h325091/Desktop/SEBWireless/android/app/src/main/AndroidManifest.xml:5:22-75
+application
+ADDED from /Users/h325091/Desktop/SEBWireless/android/app/src/main/AndroidManifest.xml:7:5-24:19
+MERGED from [com.facebook.react:react-native:0.57.3] /Users/h325091/.gradle/caches/transforms-1/files-1.1/react-native-0.57.3.aar/4d8e981a7ba8c6e444e57a6bc0239163/AndroidManifest.xml:13:5-20
+MERGED from [com.facebook.react:react-native:0.57.3] /Users/h325091/.gradle/caches/transforms-1/files-1.1/react-native-0.57.3.aar/4d8e981a7ba8c6e444e57a6bc0239163/AndroidManifest.xml:13:5-20
+MERGED from [com.facebook.soloader:soloader:0.5.1] /Users/h325091/.gradle/caches/transforms-1/files-1.1/soloader-0.5.1.aar/3b5998d7093dac8361dbac53495418d3/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.5.1] /Users/h325091/.gradle/caches/transforms-1/files-1.1/soloader-0.5.1.aar/3b5998d7093dac8361dbac53495418d3/AndroidManifest.xml:11:5-20
+MERGED from [org.webkit:android-jsc:r174650] /Users/h325091/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/75c13c3c3b18c9b0efab0cc794b16dfd/AndroidManifest.xml:2:3-17
+MERGED from [org.webkit:android-jsc:r174650] /Users/h325091/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/75c13c3c3b18c9b0efab0cc794b16dfd/AndroidManifest.xml:2:3-17
+	android:label
+		ADDED from /Users/h325091/Desktop/SEBWireless/android/app/src/main/AndroidManifest.xml:9:7-39
+	android:icon
+		ADDED from /Users/h325091/Desktop/SEBWireless/android/app/src/main/AndroidManifest.xml:10:7-41
+	android:allowBackup
+		ADDED from /Users/h325091/Desktop/SEBWireless/android/app/src/main/AndroidManifest.xml:11:7-34
+	android:theme
+		ADDED from /Users/h325091/Desktop/SEBWireless/android/app/src/main/AndroidManifest.xml:12:7-38
+	android:name
+		ADDED from /Users/h325091/Desktop/SEBWireless/android/app/src/main/AndroidManifest.xml:8:7-38
+activity#com.sebwireless.MainActivity
+ADDED from /Users/h325091/Desktop/SEBWireless/android/app/src/main/AndroidManifest.xml:13:7-22:18
+	android:label
+		ADDED from /Users/h325091/Desktop/SEBWireless/android/app/src/main/AndroidManifest.xml:15:9-41
+	android:windowSoftInputMode
+		ADDED from /Users/h325091/Desktop/SEBWireless/android/app/src/main/AndroidManifest.xml:17:9-51
+	android:configChanges
+		ADDED from /Users/h325091/Desktop/SEBWireless/android/app/src/main/AndroidManifest.xml:16:9-79
+	android:name
+		ADDED from /Users/h325091/Desktop/SEBWireless/android/app/src/main/AndroidManifest.xml:14:9-37
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/h325091/Desktop/SEBWireless/android/app/src/main/AndroidManifest.xml:18:9-21:25
+action#android.intent.action.MAIN
+ADDED from /Users/h325091/Desktop/SEBWireless/android/app/src/main/AndroidManifest.xml:19:13-65
+	android:name
+		ADDED from /Users/h325091/Desktop/SEBWireless/android/app/src/main/AndroidManifest.xml:19:21-62
+category#android.intent.category.LAUNCHER
+ADDED from /Users/h325091/Desktop/SEBWireless/android/app/src/main/AndroidManifest.xml:20:13-73
+	android:name
+		ADDED from /Users/h325091/Desktop/SEBWireless/android/app/src/main/AndroidManifest.xml:20:23-70
+activity#com.facebook.react.devsupport.DevSettingsActivity
+ADDED from /Users/h325091/Desktop/SEBWireless/android/app/src/main/AndroidManifest.xml:23:7-84
+	android:name
+		ADDED from /Users/h325091/Desktop/SEBWireless/android/app/src/main/AndroidManifest.xml:23:17-81
+uses-sdk
+INJECTED from /Users/h325091/Desktop/SEBWireless/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/h325091/Desktop/SEBWireless/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/h325091/Desktop/SEBWireless/android/app/src/main/AndroidManifest.xml
+MERGED from [com.facebook.react:react-native:0.57.3] /Users/h325091/.gradle/caches/transforms-1/files-1.1/react-native-0.57.3.aar/4d8e981a7ba8c6e444e57a6bc0239163/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.57.3] /Users/h325091/.gradle/caches/transforms-1/files-1.1/react-native-0.57.3.aar/4d8e981a7ba8c6e444e57a6bc0239163/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/h325091/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/b97b3dc27a483196114547fc4c7e2754/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/h325091/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/b97b3dc27a483196114547fc4c7e2754/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/h325091/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/8afb35adc90a8ba99d44a1ebe0fc195f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/h325091/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/8afb35adc90a8ba99d44a1ebe0fc195f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/h325091/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/f3bfb375cf840a5e010d9a08af141a8e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/h325091/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/f3bfb375cf840a5e010d9a08af141a8e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/h325091/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/a5766bf2c7b9b40c26331c086ea4bb18/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/h325091/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/a5766bf2c7b9b40c26331c086ea4bb18/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/h325091/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/8d26fd9fc6d10b3e6d87330c2781f76d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/h325091/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/8d26fd9fc6d10b3e6d87330c2781f76d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/h325091/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/11fa0ba9b2f6a499c475b780f812bfe3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/h325091/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/11fa0ba9b2f6a499c475b780f812bfe3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /Users/h325091/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/83417191e2a788f211d1849dbef6749c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /Users/h325091/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/83417191e2a788f211d1849dbef6749c/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:fresco:1.10.0] /Users/h325091/.gradle/caches/transforms-1/files-1.1/fresco-1.10.0.aar/73da6393db5f53ce26dc3417b9d8a7ab/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:1.10.0] /Users/h325091/.gradle/caches/transforms-1/files-1.1/fresco-1.10.0.aar/73da6393db5f53ce26dc3417b9d8a7ab/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /Users/h325091/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.10.0.aar/03becbbc982f76fb4da329be765d381e/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /Users/h325091/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.10.0.aar/03becbbc982f76fb4da329be765d381e/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.10.0] /Users/h325091/.gradle/caches/transforms-1/files-1.1/drawee-1.10.0.aar/84072bcbfefd76f4ba48ab011dc24d78/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.10.0] /Users/h325091/.gradle/caches/transforms-1/files-1.1/drawee-1.10.0.aar/84072bcbfefd76f4ba48ab011dc24d78/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /Users/h325091/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/a03008ec92d7652a51145245d21ad017/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /Users/h325091/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/a03008ec92d7652a51145245d21ad017/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /Users/h325091/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/fbf0cc98ef0384f4323201252132dcaf/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /Users/h325091/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/fbf0cc98ef0384f4323201252132dcaf/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.5.1] /Users/h325091/.gradle/caches/transforms-1/files-1.1/soloader-0.5.1.aar/3b5998d7093dac8361dbac53495418d3/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:soloader:0.5.1] /Users/h325091/.gradle/caches/transforms-1/files-1.1/soloader-0.5.1.aar/3b5998d7093dac8361dbac53495418d3/AndroidManifest.xml:7:5-9:41
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/h325091/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/ae93ae179ff9c2b30ac801d3857c735e/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/h325091/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/ae93ae179ff9c2b30ac801d3857c735e/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/h325091/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/c96b812f9b8412fc969dbe5f1f290c32/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/h325091/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/c96b812f9b8412fc969dbe5f1f290c32/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:fbcore:1.10.0] /Users/h325091/.gradle/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/e649e2912b052780216f2545a46ca3f7/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.10.0] /Users/h325091/.gradle/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/e649e2912b052780216f2545a46ca3f7/AndroidManifest.xml:5:5-7:41
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/h325091/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/8617643493d628aee9af334c0026c1c6/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/h325091/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/8617643493d628aee9af334c0026c1c6/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /Users/h325091/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/1de894b7bd6700c63574e706d4aa589f/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /Users/h325091/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/1de894b7bd6700c63574e706d4aa589f/AndroidManifest.xml:20:5-44
+INJECTED from /Users/h325091/Desktop/SEBWireless/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/h325091/Desktop/SEBWireless/android/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/h325091/Desktop/SEBWireless/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/h325091/Desktop/SEBWireless/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/h325091/Desktop/SEBWireless/android/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/h325091/Desktop/SEBWireless/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/h325091/Desktop/SEBWireless/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/h325091/Desktop/SEBWireless/android/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+IMPLIED from /Users/h325091/Desktop/SEBWireless/android/app/src/main/AndroidManifest.xml:1:1-26:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
+uses-permission#android.permission.READ_PHONE_STATE
+IMPLIED from /Users/h325091/Desktop/SEBWireless/android/app/src/main/AndroidManifest.xml:1:1-26:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+IMPLIED from /Users/h325091/Desktop/SEBWireless/android/app/src/main/AndroidManifest.xml:1:1-26:12 reason: org.webkit.android_jsc requested WRITE_EXTERNAL_STORAGE
