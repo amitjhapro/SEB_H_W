@@ -9,7 +9,6 @@ export default StyleSheet.create({
     subheaderCss: {
         marginTop: 20,
         marginLeft: 10,
-
     },
     text1:
     {
@@ -23,15 +22,22 @@ export default StyleSheet.create({
         fontWeight: "300",
         letterSpacing: -0.39,
     },
-
+    cardTop:
+    {
+        marginTop:'5%'
+    },
+    cardBottom:
+    {
+        marginBottom:'5%'
+    },
     division:
     {
         backgroundColor: "#B5131C",
         marginRight: 10,
         padding: 10,
         marginLeft: 10,
-        marginTop: '15%',
-        opacity: 1,
+        // marginTop: '15%',
+        opacity: 0.75,
     },
     division2:
     {
@@ -39,7 +45,7 @@ export default StyleSheet.create({
         marginRight: 10,
         padding: 10,
         marginLeft: 10,
-        marginTop: '5%'
+        // marginTop: '5%'
     },
     listViewCss: {
         backgroundColor: 'white',
@@ -47,9 +53,9 @@ export default StyleSheet.create({
         marginLeft: 10,
         marginRight: 10,
         backgroundColor: "#FFFFFF",
-        shadowOffset: { width: 10, height: 10 },
+        shadowOffset: { width: 2, height: 1 },
         shadowColor: 'black',
-        shadowOpacity: 1,
+        shadowOpacity: 0.3,
         elevation: 2,
     },
     col3Css: {
@@ -143,5 +149,21 @@ export default StyleSheet.create({
         justifyContent: 'center',
         textAlign: 'center'
     },
-
+    popupCss:{
+        marginTop:'5%',
+        marginLeft:'5%',
+        marginRight:'5%',
+        
+        //position:"absolute",
+        //opacity: 0.5,
+        textAlign: 'center'
+       
+    },
+    popupTextCss:{
+       fontSize: 20  
+    },
+    popupheaderCss:{
+        backgroundColor: "#B5131C",
+        color:'blue'
+    }
 });

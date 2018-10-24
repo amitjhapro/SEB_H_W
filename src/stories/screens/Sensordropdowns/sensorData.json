@@ -1,0 +1,193 @@
+{
+    "SensorTypes": [
+      {
+        "name": "Magnetics",
+        "id": 3,
+        "series": [
+   
+          {
+            "name": "MagneticsSeries",
+            "code": "",
+            "id": 1,
+            "description": "Magnetics Series",
+            "parts": [
+              {
+                "name": "Magnetic Series",
+                "description": "Magnetics Series",
+                "partPosition": 0,
+                "options": [
+                  {
+                    "id": 1,
+                    "name": "SS",
+                    "description": "Commercial Solid State"
+                  },
+                  {
+                    "id": 2,
+                    "name": "VF",
+                    "description": "Vehicle Solid State"
+                  },
+                  {
+                    "id": 3,
+                    "name": "SL",
+                    "description": "Solid State Low Gauss"
+                  },
+                  {
+                    "id": 4,
+                    "name": "SM",
+                    "description": "Solid State Magnetoresistive"
+                  },
+                  {
+                    "id": 5,
+                    "name": "VM",
+                    "description": "Vehicle Magnetoresistive"
+                  },
+                  {
+                    "id": 6,
+                    "name": "SG",
+                    "description": "Solid State Gear Tooth"
+                  },
+                  {
+                    "id": 7,
+                    "name": "VG",
+                    "description": "Vehicle Solid State Gear Tooth"
+                  },
+                  {
+                    "id": 8,
+                    "name": "SR",
+                    "description": "Customised or Overmoulded first level products"
+                  }
+   
+                ]
+              },
+              {
+                "name": "Package Style",
+                "description": "Package Style",
+                "partPosition": 2,
+                "options": [
+                  {
+                    "id": "SOT23",
+                    "name": "1",
+                    "description": "SOT-23"
+   
+                  },
+                  {
+                    "id": "SOT89B",
+                    "name": "2",
+                    "description": "SOT-89B"
+   
+                  },
+                  {
+                    "id": "SIP2pin",
+                    "name": "3",
+                    "description": "SIP 2 pin"
+   
+                  },
+                  {
+                    "id": "TO92SIP3pin",
+                    "name": "4",
+                    "description": "TO-92 SIP 3 pin"
+   
+                  },
+                  {
+                    "id": "TO92SIP4pin",
+                    "name": "5",
+                    "description": "TO-92 SIP 4 pin"
+   
+                  }
+                ]
+              },
+              {
+                "name": "Magnetic Type",
+                "description": "Magnetic Sensor Type",
+                "partPosition": 3,
+                "options": [
+                  {
+                    "id": "Bipolar",
+                    "name": "0",
+                    "description": "Bipolar",
+                    "command": "03"
+                  },
+                  {
+                    "id": "Unipolar",
+                    "name": "1",
+                    "description": "Unipolar",
+                    "command": "03"
+                  },
+                  {
+                    "id": "Omnipolar",
+                    "name": "2",
+                    "description": "Omnipolar",
+                    "command": "03"
+                  },
+                  {
+                    "id": "Latch",
+                    "name": "3",
+                    "description": "Latch",
+                    "command": "03"
+                  },
+                  {
+                    "id": "Linear",
+                    "name": "4",
+                    "description": "Linear (Analog)",
+                    "command": "05"
+                  },
+                  {
+                    "id": "Current",
+                    "name": "5",
+                    "description": "2-Pin (Current)",
+                    "command": "05"
+                  },
+                  {
+                    "id": "SpeedAndDirection",
+                    "name": "6",
+                    "description": "Speed and Direction",
+                    "command": "04"
+                  }
+                ]
+              },
+              {
+                "name": "Relative Operate Gauss",
+                "description": "Relative operate Gauss",
+                "partPosition": 4,
+                "options": [
+                  {
+                    "id": 1,
+                    "name": "0",
+                    "description": "Low"
+                  },
+                  {
+                    "id": 2,
+                    "name": "1",
+                    "description": "Medium"
+                  },
+                  {
+                    "id": 3,
+                    "name": "2",
+                    "description": "High"
+                  }
+                ]
+              },
+              {
+                "name": "Electrical/Magnetic Options",
+                "description": "Electrical/Magnetic Options",
+                "partPosition": 5,
+                "options": [
+                  {
+                    "id": "ExternalPullup",
+                    "name": "A",
+                    "description": "Open Collector (External Pullup)"
+                  },
+                  {
+                    "id": "InternalPullUp",
+                    "name": "P",
+                    "description": "Built in Pull up resistor"
+                  }
+   
+                ]
+              }
+            ]
+          }
+        ]
+      } 
+    ]
+  }

@@ -302,9 +302,9 @@ const styles: any = StyleSheet.create({
         marginLeft:10,
         marginRight:10,
         backgroundColor: "#FFFFFF",
-        shadowOffset: { width: 10, height: 10 },
+        shadowOffset: { width: 2, height: 1 },
         shadowColor: 'black',
-        shadowOpacity: 1,
+        shadowOpacity: 0.3,
         elevation: 7,
     },
     col3Css:{

@@ -11,10 +11,10 @@ const styles: any = StyleSheet.create({
     partNumberText:{ fontSize: 20, color: '#000' },
     clearView:{ flex: 1 },
     clearText:{ textAlign: 'right', color: '#1792E5' },
-    partView:{ flex: 1, elevation: 7, marginBottom: "25%", backgroundColor: '#ddd',marginLeft:10, marginRight:10 },
+    partView:{ flex: 1, elevation: 7, marginBottom: 20, backgroundColor: '#ddd',marginLeft:10, marginRight:10, borderWidth: 1, borderColor: '#ddd' },
     partInnerView:{ height: 50, backgroundColor: '#C84E55', justifyContent: 'center', paddingLeft: 10 },
     partText:{ fontSize: 16, color: '#fff', fontWeight: '600' },
-    mostOuterFilterView:{ backgroundColor: '#EBEBEB', paddingHorizontal: 10 },
+    mostOuterFilterView:{ backgroundColor: '#EBEBEB', paddingHorizontal: 10, height: 60 },
     outerFilterView:{ flexDirection: 'row', alignItems: 'center', justifyContent: 'center' },
     innerFilterView:{ flex: 1, flexGrow:9,position:'relative' },
     hintIcon:{ flex: 1, alignItems: 'center', justifyContent: 'flex-end' },
@@ -35,10 +35,11 @@ const styles: any = StyleSheet.create({
     inputBox: {
         alignSelf: 'stretch',
         color: '#000',
-        fontSize: 14,
+        fontSize: 16,
         elevation: 2,
         backgroundColor: '#fff',
         marginVertical: 10,
+        height: 40
         
     },
     rowViewContainer: {
@@ -69,13 +70,12 @@ const styles: any = StyleSheet.create({
         textAlign: 'center'
     },nextBtnViewCss:{
         marginLeft: 10,
-        marginRight:'20%',
-        width: '100%', 
+        marginRight:10, 
         height: 50, 
         backgroundColor: '#00bfff', 
         justifyContent: 'center', 
         alignItems: 'center',
-        position: 'absolute',
+        // position: 'absolute',
         bottom: 10
         
     },
@@ -101,10 +101,12 @@ image2: {
 },
 info:
 {
+    // width: 30,
+    // height: 30,
    // marginTop: 22,
     left: 7,
    // marginRight:50
 
-},
+}
 });
 export default styles;

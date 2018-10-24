@@ -1,7 +1,7 @@
 import { StyleSheet } from "react-native";
 
 const styles: any = StyleSheet.create({
-    pickerView:{ borderBottomWidth: 1, flex: 1, marginHorizontal: 10 },
+    pickerView:{ flex: 1, marginHorizontal: 10 },
     pickerText:{ fontSize: 18, marginTop: 15 },
     pickerColor:{ color: '#C4C4C4' },
     prevSelectionData:{ fontSize: 16, color: '#919191', marginBottom: 10 },
@@ -20,7 +20,7 @@ const styles: any = StyleSheet.create({
     hintIcon:{ flex: 1, alignItems: 'center', justifyContent: 'flex-end' },
     previousContainer:{ marginVertical: 15 },
     prevLabel:{ fontSize: 16, color: '#000', marginBottom: 15 },
-    dropDownView:{ backgroundColor: '#fff', flex: 3,zIndex:-1 },
+    dropDownView:{ backgroundColor: '#fff', flex: 3,zIndex:-1, paddingTop: 5 },
     submitButton: {
         height:60,
 		backgroundColor: '#1792E5',

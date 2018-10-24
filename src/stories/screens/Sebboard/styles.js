@@ -229,26 +229,30 @@ marginTop:30
 
 sensor1:
 {
-marginTop:'5%'
+// marginBottom:'5%'
 },
 sensor:
 {
-marginLeft:'5%',
-fontSize:18,
-color:'black',
-fontWeight: "500"
+    fontSize: 22,
+    color: 'black',
+    letterSpacing: -0.41,
+    top: 30,
+    left: 20
 },
 division:
 {
     backgroundColor: "#B5131C",
-    borderBottomColor: 'grey',
-   
+    // borderBottomColor: 'grey',
+    // borderBottomWidth: 1,
+    // borderLeftWidth: 1,
+    // borderRightWidth: 1,
+    // borderTopWidth: 1,
     marginRight: 10,
     padding: 10,
     marginLeft: 10,
-    marginTop: '5%',
+    marginTop: 60,
     //width: 354.01,
-    opacity: 0.75,
+    // opacity: 0.75,
     //height: 30,
 
 },
@@ -283,9 +287,9 @@ listViewCss: {
     marginLeft: 10,
     marginRight: 10,
     backgroundColor: "#FFFFFF",
-    shadowOffset: { width: 10, height: 10 },
+    shadowOffset: { width: 2, height: 1 },
     shadowColor: 'black',
-    shadowOpacity: 1,
+    shadowOpacity: 0.3,
     elevation: 7,
 },
 col3Css: {

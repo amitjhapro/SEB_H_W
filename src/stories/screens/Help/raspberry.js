@@ -8,12 +8,10 @@ class Raspberryhelp extends React.Component {
     render() {
         return (
             <View style={styles.container}>
-
                 <View style={styles.headerbackground} flexDirection='row'>
                     <TouchableOpacity onPress={() =>
                         this.props.navigation.navigate("Help"/* , {name: { item }} */)}>
                         <Image source={require('../../../assets/leftarrow.png')} style={styles.back} />
-
                     </TouchableOpacity>
                     <View>
                         <Text style={styles.headertext}
@@ -21,7 +19,6 @@ class Raspberryhelp extends React.Component {
                                 this.props.navigation.navigate("Help"/* , {name: { item }} */)}>Help</Text>
                     </View>
                 </View>
-
                 <View>
                     <Text style={styles.content}>Raspberry Pi</Text>
                 </View>
@@ -33,7 +30,7 @@ class Raspberryhelp extends React.Component {
                         <View flexDirection='column'>
                             <View flexDirection='row'>
                                 <Text style={styles.stepnum}>1.</Text>
-                                <Text style={styles.steps}>Connect the SEB with Raspberry Pi using Ribbon cable provided </Text>
+                                <Text style={styles.steps}>Connect the SEB with Raspberry Pi using          Ribbon cable provided </Text>
                             </View>
                             <View flexDirection='row'>
                                 <Text style={styles.stepnum}>2.</Text>
@@ -41,7 +38,7 @@ class Raspberryhelp extends React.Component {
                             </View>
                             <View flexDirection='row'>
                                 <Text style={styles.stepnum}>3.</Text>
-                                <Text style={styles.steps}>Load the application through Remote server or SD card</Text>
+                                <Text style={styles.steps}>Load the application through Remote server or  SD card</Text>
                             </View>
                             <View flexDirection='row'>
                                 <Text style={styles.stepnum}>4.</Text>
@@ -69,11 +66,11 @@ class Raspberryhelp extends React.Component {
                             </View>
                             <View flexDirection='row'>
                                 <Text style={styles.stepnum}>10.</Text>
-                                <Text style={styles.steps10}>Click Submit to view Data.</Text>
+                                <Text style={styles.step10}>Click Submit to view Data,</Text>
                             </View>
                             <View flexDirection='row'>
                                 <Text style={styles.stepnum}>11.</Text>
-                                <Text style={styles.steps10}>Settings page allows you to customize the graph and app</Text>
+                                <Text style={styles.step11}>Settings page allows you to customize the graph and app</Text>
                             </View>
                         </View>
                     </CardItem>

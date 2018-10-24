@@ -18,20 +18,19 @@ class Help extends React.Component {
                                 this.props.navigation.navigate("HostBoard")}>Home</Text>
                     </View>
                 </View>
-
                 <View>
                     <Text style={styles.content}>Help</Text>
                 </View>
                 <TouchableOpacity onPress={() =>
                     this.props.navigation.navigate("Arduinohelp")} >
-                    <View style={styles.division} elevation={5}>
+                    <View style={styles.arduino_division} elevation={5}>
                         <Image source={require('../../../assets/micro.png')} style={styles.microcontroller} />
                         <Text style={styles.text}>Arduino YUN2 </Text>
                     </View>
                 </TouchableOpacity>
                 <TouchableOpacity onPress={() =>
                     this.props.navigation.navigate("Raspberryhelp")}>
-                    <View style={styles.division2} elevation={5}>
+                    <View style={styles.raspberry_division} elevation={5}>
                         <Image source={require('../../../assets/micro.png')} style={styles.microcontroller} />
                         <Text style={styles.text}>Raspberry Pi</Text>
                     </View>

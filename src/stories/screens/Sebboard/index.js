@@ -40,11 +40,10 @@ class Sebboard extends React.Component {
 				<Text style={styles.home} onPress={() =>
 							this.props.navigation.navigate("Sebdevice"/* , {name: { item }} */ )}>SEB Boards</Text>
 			</View>
-		   
 			
 				<View style={styles.sensor1}>
 					<Text style={styles.sensor}> Sensor Selection</Text>
-					</View>
+				</View>
 				<View flexDirection='column' style={styles.division}>
 
 					<Text style={styles.header}>Select Sensors</Text>

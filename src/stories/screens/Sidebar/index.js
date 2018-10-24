@@ -8,6 +8,15 @@ const routes = [
 		caption: "Host Board Selection"
 	},
 	{
+		route:"Documentation",
+		caption:"Documentation"
+	},
+	{
+		route:"Settings",
+		caption:"Settings"
+	},
+
+	{
 		route:"AboutHoneywell",
 		caption:"About"
 	},

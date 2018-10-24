@@ -88,78 +88,68 @@ clear() {
 
 render() {
   return (
-
-
-     
     <View style={styles.mainContainer}> 
          <View style={styles.background} flexDirection='row'>
-				<TouchableOpacity onPress={() =>
-							this.props.navigation.navigate("Sebboard"/* , {name: { item }} */ )}>
-					<Image source={require('../../../assets/leftarrow.png')} style={styles.image2} />
-				</TouchableOpacity>
-				<Text style={styles.home} onPress={() =>
-							this.props.navigation.navigate("Sebboard"/* , {name: { item }} */ )}>Sensor Selection</Text>
-			</View>
-{/*     <StatusBar
-                    barStyle="light-content"
-                    backgroundColor="#000"
-                /> */}
+            <TouchableOpacity onPress={() =>
+                        this.props.navigation.navigate("Sebboard"/* , {name: { item }} */ )}>
+                <Image source={require('../../../assets/leftarrow.png')} style={styles.image2} />
+            </TouchableOpacity>
+            <Text style={styles.home} onPress={() =>
+                        this.props.navigation.navigate("Sebboard"/* , {name: { item }} */ )}>Sensor Selection</Text>
+        </View>
+        {/* <StatusBar
+            barStyle="light-content"
+            backgroundColor="#000"
+        />  */}
 
-                <View style={styles.titleView}>
-                    <View style={styles.partNumberView}>
-                        <Text style={styles.partNumberText}>Generate Part Number</Text>
+        <View style={styles.titleView}>
+            <View style={styles.partNumberView}>
+                <Text style={styles.partNumberText}>Generate Part Number</Text>
+            </View>
+            <View style={styles.clearView}>
+                <Text onPress={() => this.clear()} style={styles.clearText}>Clear All</Text>
+            </View>
+        </View>
+
+        <View style={styles.partView}>
+            <View style={styles.partInnerView}>
+                <Text style={styles.partText}>Part Number</Text>
+            </View>
+            <View style={styles.mostOuterFilterView}>
+                <View flexDirection='row' style={styles.outerFilterView}>
+                    <View style={styles.innerFilterView}>
+                        <TextInput onChangeText={(text) => this.SearchFilterFunction(text)} placeholder="Type Part Number" style={styles.inputBox} underlineColorAndroid='rgba(0,0,0,0)' value={this.state.text} />
+                        {
+                            this.state.isModalVisible ? 
+                            <ListView
+                            dataSource={this.state.dataSource}
+                            renderSeparator= {this.ListViewItemSeparator}
+                            renderRow={
+                                (rowData) => 
+                                <Text style={styles.rowViewContainer} 
+                                onPress = {this.GetListViewItem.bind(this,rowData.name)}>{rowData.name}</Text>
+                            }
+                            style={styles.listViewbox}
+                            />
+                            :
+                            null
+                        } 
                     </View>
-                    <View style={styles.clearView}>
-                        <Text onPress={() => this.clear()} style={styles.clearText}>Clear All</Text>
+                    <View>
+                        <Image source={require('../../../assets/info.png')} style={styles.info} />
                     </View>
                 </View>
+            </View>
+            <Sensordropdowns sensor={this.state.sensor} updateSensor={this.updateSensor}/>
+        </View>
 
-                <View style={styles.partView}>
-                    <View style={styles.partInnerView}>
-                        <Text style={styles.partText}>Part Number</Text>
-                    </View>
+        <TouchableOpacity style={styles.nextBtnViewCss}
+            onPress={() =>
+                this.props.navigation.navigate("Sebdevice"/* , {name: { item }} */)}>
+            <Text style={styles.next} >Go</Text>
+        </TouchableOpacity>
 
-                    <View style={styles.mostOuterFilterView}>
-                        <View flexDirection='row' style={styles.outerFilterView}>
-                            <View style={styles.innerFilterView}>
-                                <TextInput onChangeText={(text) => this.SearchFilterFunction(text)} placeholder="Type Part Number" style={styles.inputBox} underlineColorAndroid='rgba(0,0,0,0)' value={this.state.text} />
-                                {
-                                    this.state.isModalVisible ? 
-                                    <ListView
-                                    dataSource={this.state.dataSource}
-                                    renderSeparator= {this.ListViewItemSeparator}
-                                    renderRow={
-                                        (rowData) => 
-                                        <Text style={styles.rowViewContainer} 
-                                        onPress = {this.GetListViewItem.bind(this,rowData.name)}>{rowData.name}</Text>
-                                    }
-                                    style={styles.listViewbox}
-                                    />
-                                    :
-                                    null
-                                } 
-                            </View>
-                            <View>
-            <Image source={require('../../../assets/info.png')} style={styles.info} />
-          </View>
-
-                        </View>
-
-
-
-                    </View>
-
-                    <Sensordropdowns sensor={this.state.sensor} updateSensor={this.updateSensor}/>
-
-                </View>
-                <TouchableOpacity style={styles.nextBtnViewCss}
-					onPress={() =>
-						this.props.navigation.navigate("Sebdevice"/* , {name: { item }} */)}>
-					<Text style={styles.next} >Go</Text>
-				</TouchableOpacity>
-
-
-</View>
+    </View>
   );
 }
 }

@@ -20,6 +20,7 @@ export default StyleSheet.create({
     back: {
         width: 13,
         height: 19,
+
         top: 6,
         marginLeft: 10
     },
@@ -34,96 +35,86 @@ export default StyleSheet.create({
         lineHeight: 21,
         height: 60,
     },
-    arduino_division:
+    division:
     {
-        borderTopWidth: 0.2,
+        borderTopWidth: 1,
         marginLeft: 10,
         height: 60,
-        borderTopColor: 'grey',
-        borderLeftColor: 'grey',
-        borderRightColor: 'grey',
+        borderTopColor: "#e2e0e0",
+        borderLeftColor: "#e2e0e0",
+        borderRightColor: "#e2e0e0",
         backgroundColor: 'white',
         marginRight: 10,
         flexDirection: 'row'
     },
-    raspberry_division:
+    division2:
     {
         flexDirection: 'row',
-        borderTopWidth: 0.2,
+        borderTopWidth: 1,
         marginLeft: 10,
-        borderBottomWidth: 0.2,
-        borderBottomColor: 'grey',
-        borderTopColor: 'grey',
-        borderLeftColor: 'grey',
-        borderRightColor: 'grey',
+        borderBottomWidth: 1,
+        borderBottomColor: "#e2e0e0",
+        borderTopColor: "#e2e0e0",
+        borderLeftColor: "#e2e0e0",
+        borderRightColor: "#e2e0e0",
         backgroundColor: 'white',
         marginRight: 10,
         height: 60,
 
     },
-    card:
-    {
-        marginTop: 30,
-        marginLeft: 10,
-        marginRight: 10
-    },
-    cardheader:
-    {
-        backgroundColor: "#B5131C",
-        height: 30
-    },
-    steps_card: {
-        marginLeft: 10,
-        marginRight: 10
-    },
-    faq:
-    {
-        fontSize: 14,
-        color: 'white'
-    },
-    microcontroller:
+    sensors:
     {
         marginLeft: 7,
-        top: 15
+        top: 7
     },
-    text:
+    Text_view:
+    {
+        flex: 0.75,
+        marginLeft: 10
+    },
+    text_style:
     {
         top: 18,
         marginLeft: 20,
         fontSize: 16,
         fontWeight: "300"
     },
-    stepnum:
+    Text_view1:
     {
-        fontSize: 14,
+        flex: 0.58,
+        top: 3
+
+    },
+    text_style1:
+    {
+        alignItems: 'center',
+        marginLeft: 20,
+        fontSize: 16,
         fontWeight: "300"
     },
-    sebimage:
+    rightarrow:
     {
-        top: 10,
-        bottom: 10,
-        marginLeft: 15
+        top: 20
     },
-    steps:
+    sensor_image:
     {
-        fontSize: 14,
-        fontWeight: "300",
-        marginLeft: 17,
-        marginRight: 20
+        flex: 0.15
     },
-    step10:
+    arrow_image:
     {
-        fontSize: 14,
-        fontWeight: "300",
-        left: 9,
-        marginRight: 20
+        flex: 0.10,
+
     },
-    step11:
+    pdf:
     {
-        fontSize: 14,
-        fontWeight: "300",
-        left: 9,
-        marginRight: 20
+        flex: 0.15,
+        top: 10
     },
+    installation:
+    {
+        flex: 0.27,
+
+    }
+
 
 });

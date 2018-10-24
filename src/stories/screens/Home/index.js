@@ -12,7 +12,7 @@ class Home extends React.Component {
           <Text style={styles.text}>*GIF Placeholder*</Text>
         </View>
         <View style = {styles.linksContainer}> 
-          <Text onPress={() => this.props.navigation.navigate("HostBoard")} style={styles.selectHostBoardLink} >Select host board></Text>
+          <Text onPress={() => this.props.navigation.navigate("HostBoard")} style={styles.selectHostBoardLink} >Select Host Board></Text>
           <Text onPress={() => this.props.navigation.navigate('AboutHoneywell')} style={styles.aboutHoneywellSeb} >About Honeywell SEB</Text>
         </View>
 
