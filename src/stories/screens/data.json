@@ -1,405 +1,454 @@
 {
-    "SensorTypes": [
-      {
-        "name": "Magnetics",
-        "id": 3,
-        "series": [
-   
-          {
-            "name": "MagneticsSeries",
-            "code": "",
-            "id": 1,
-            "description": "Magnetics Series",
-            "parts": [
-              {
-                "name": "MagneticsSeries",
-                "description": "Magnetics Series",
-                "partPosition": 0,
-                "options": [
-                  {
-                    "id": 1,
-                    "name": "SS",
-                    "description": "Commercial Solid State"
-                  },
-                  {
-                    "id": 2,
-                    "name": "VF",
-                    "description": "Vehicle Solid State"
-                  },
-                  {
-                    "id": 3,
-                    "name": "SL",
-                    "description": "Solid State Low Gauss"
-                  },
-                  {
-                    "id": 4,
-                    "name": "SM",
-                    "description": "Solid State Magnetoresistive"
-                  },
-                  {
-                    "id": 5,
-                    "name": "VM",
-                    "description": "Vehicle Magnetoresistive"
-                  },
-                  {
-                    "id": 6,
-                    "name": "SG",
-                    "description": "Solid State Gear Tooth"
-                  },
-                  {
-                    "id": 7,
-                    "name": "VG",
-                    "description": "Vehicle Solid State Gear Tooth"
-                  },
-                  {
-                    "id": 8,
-                    "name": "SR",
-                    "description": "Customised or Overmoulded first level products"
-                  }
-   
-                ]
-              },
-              {
-                "name": "PackageStyle",
-                "description": "Package Style",
-                "partPosition": 2,
-                "options": [
-                  {
-                    "id": "SOT23",
-                    "name": "1",
-                    "description": "SOT-23"
-   
-                  },
-                  {
-                    "id": "SOT89B",
-                    "name": "2",
-                    "description": "SOT-89B"
-   
-                  },
-                  {
-                    "id": "SIP2pin",
-                    "name": "3",
-                    "description": "SIP 2 pin"
-   
-                  },
-                  {
-                    "id": "TO92SIP3pin",
-                    "name": "4",
-                    "description": "TO-92 SIP 3 pin"
-   
-                  },
-                  {
-                    "id": "TO92SIP4pin",
-                    "name": "5",
-                    "description": "TO-92 SIP 4 pin"
-   
-                  }
-                ]
-              },
-              {
-                "name": "MagneticType",
-                "description": "Magnetic Sensor Type",
-                "partPosition": 3,
-                "options": [
-                  {
-                    "id": "Bipolar",
-                    "name": "0",
-                    "description": "Bipolar",
-                    "command": "03"
-                  },
-                  {
-                    "id": "Unipolar",
-                    "name": "1",
-                    "description": "Unipolar",
-                    "command": "03"
-                  },
-                  {
-                    "id": "Omnipolar",
-                    "name": "2",
-                    "description": "Omnipolar",
-                    "command": "03"
-                  },
-                  {
-                    "id": "Latch",
-                    "name": "3",
-                    "description": "Latch",
-                    "command": "03"
-                  },
-                  {
-                    "id": "Linear",
-                    "name": "4",
-                    "description": "Linear (Analog)",
-                    "command": "05"
-                  },
-                  {
-                    "id": "Current",
-                    "name": "5",
-                    "description": "2-Pin (Current)",
-                    "command": "05"
-                  },
-                  {
-                    "id": "SpeedAndDirection",
-                    "name": "6",
-                    "description": "Speed and Direction",
-                    "command": "04"
-                  }
-                ]
-              },
-              {
-                "name": "RelativeOperateGauss",
-                "description": "Relative operate Gauss",
-                "partPosition": 4,
-                "options": [
-                  {
-                    "id": 1,
-                    "name": "0",
-                    "description": "Low"
-                  },
-                  {
-                    "id": 2,
-                    "name": "1",
-                    "description": "Medium"
-                  },
-                  {
-                    "id": 3,
-                    "name": "2",
-                    "description": "High"
-                  }
-                ]
-              },
-              {
-                "name": "Electrical/Magneticoptions",
-                "description": "Electrical/Magnetic options",
-                "partPosition": 5,
-                "options": [
-                  {
-                    "id": "ExternalPullup",
-                    "name": "A",
-                    "description": "Open Collector (External Pullup)"
-                  },
-                  {
-                    "id": "InternalPullUp",
-                    "name": "P",
-                    "description": "Built in Pull up resistor"
-                  }
-   
-                ]
-              }
-            ]
-          }
-        ]
-      },
-   
-      {
-        "name": "Particle Sensor",
-        "id": 3,
-        "series": [
-   
-          {
-            "name": "HPM Series",
-            "code": "",
-            "id": 1,
-            "description": "HPM Series",
-            "parts": [
-              {
-                "name": "HPMSeries",
-                "description": "HPM Verticle",
-                "partPosition": 0,
-                "options": [
-                  {
-                    "id": 1,
-                    "name": "A",
-                    "description": "Appliance"
-                  },
-                  {
-                    "id": 2,
-                    "name": "H",
-                    "description": "HVT"
-                  },
-                  {
-                    "id": 3,
-                    "name": "D",
-                    "description": "Heavy Industry I"
-                  }
-   
-                ]
-              },
-              {
-                "name": "OutputType",
-                "description": "Output Type",
-                "partPosition": 2,
-                "options": [
-                  {
-                    "id": "UART",
-                    "name": "1",
-                    "description": "UART"
-   
-                  },
-                  {
-                    "id": "I2C",
-                    "name": "2",
-                    "description": "I2C"
-   
-                  }
-                ]
-              },
-              {
-                "name": "Accuracy",
-                "description": "Accuracy",
-                "partPosition": 3,
-                "options": [
-                  {
-                    "id": "±15%",
-                    "name": "0",
-                    "description": "±15%"
-                  },
-                  {
-                    "id": "±10%",
-                    "name": "1",
-                    "description": "±10%"
-                  }
-                ]
-              },
-              {
-                "name": "Power",
-                "description": "Power Option",
-                "partPosition": 4,
-                "options": [
-                  {
-                    "id": 1,
-                    "name": "3",
-                    "description": "3.3V"
-                  },
-                  {
-                    "id": 2,
-                    "name": "5",
-                    "description": "5V"
-                  },
-                  {
-                    "id": 3,
-                    "name": "A",
-                    "description": "12V"
-                  }
-                ]
-              },
-              {
-                "name": "Housing",
-                "description": "Housing Option",
-                "partPosition": 5,
-                "options": [
-                  {
-                    "id": "Standard",
-                    "name": "S",
-                    "description": "Standard"
-                  },
-                  {
-                    "id": "Compact",
-                    "name": "C",
-                    "description": "Compact"
-                  }
-   
-                ]
-              },
-              {
-                "name": "Additional Features",
-                "description": "Features",
-                "partPosition": 5,
-                "options": [
-                  {
-                    "id": "0",
-                    "name": "0",
-                    "description": "None"
-                  },
-                  {
-                    "id": "T",
-                    "name": "T",
-                    "description": "Temperature and Humidity"
-                  },
-                  {
-                    "id": "E",
-                    "name": "E",
-                    "description": "Economic"
-                  }
-   
-   
-                ]
-              },
-              {
-                "name": "CustomNumber",
-                "description": "Custom Number",
-                "partPosition": 5,
-                "options": [
-                  {
-                    "id": "XXX",
-                    "name": "XXX",
-                    "description": "General Type"
-                  },
-                  {
-                    "id": "001",
-                    "name": "001",
-                    "description": "Customized"
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      }
-    ],
-    "SamplingRate": [
-      {
-        "id": "1",
-        "name": "1",
-        "description": "1",
-        "command": "00"
-      },
-      {
-        "id": "2",
-        "name": "2",
-        "description": "10",
-        "command": "01"
-      },
-      {
-        "id": "3",
-        "name": "3",
-        "description": "20",
-        "command": "02"
-      },
-      {
-        "id": "4",
-        "name": "4",
-        "description": "40",
-        "command": "03"
-      },
-      {
-        "id": "5",
-        "name": "5",
-        "description": "80",
-        "command": "04"
-      },
-      {
-        "id": "6",
-        "name": "6",
-        "description": "200",
-        "command": "05"
-      },
-      {
-        "id": "7",
-        "name": "7",
-        "description": "400",
-        "command": "06"
-      },
-      {
-        "id": "8",
-        "name": "8",
-        "description": "600",
-        "command": "07"
-      },
-      {
-        "id": "9",
-        "name": "9",
-        "description": "1000",
-        "command": "08"
-      }
-    ]
-  }
+  "SensorTypes": [
+    {
+      // "name": "Magnetics",
+      "name": "SEB Magnetics",
+      "id": 0,
+      "series": [
+ 
+        {
+          "name": "MagneticsSeries",
+          "code": "",
+          "id": 0,
+          "description": "Magnetics Series",
+          "parts": [
+            {
+              "name": "MagneticsSeries",
+              "description": "Magnetics Series",
+              "partPosition": 0,
+              "options": [
+                {
+                  "id": 1,
+                  "name": "SS",
+                  "description": "Commercial Solid State"
+                },
+                {
+                  "id": 2,
+                  "name": "VF",
+                  "description": "Vehicle Solid State"
+                },
+                {
+                  "id": 3,
+                  "name": "SL",
+                  "description": "Solid State Low Gauss"
+                },
+                {
+                  "id": 4,
+                  "name": "SM",
+                  "description": "Solid State Magnetoresistive"
+                },
+                {
+                  "id": 5,
+                  "name": "VM",
+                  "description": "Vehicle Magnetoresistive"
+                },
+                {
+                  "id": 6,
+                  "name": "SG",
+                  "description": "Solid State Gear Tooth"
+                },
+                {
+                  "id": 7,
+                  "name": "VG",
+                  "description": "Vehicle Solid State Gear Tooth"
+                },
+                {
+                  "id": 8,
+                  "name": "SR",
+                  "description": "Customised or Overmoulded first level products"
+                }
+ 
+              ]
+            },
+            {
+              "name": "PackageStyle",
+              "description": "Package Style",
+              "partPosition": 2,
+              "options": [
+                {
+                  "id": "SOT23",
+                  "name": "1",
+                  "description": "SOT-23"
+ 
+                },
+                {
+                  "id": "SOT89B",
+                  "name": "2",
+                  "description": "SOT-89B"
+ 
+                },
+                {
+                  "id": "SIP2pin",
+                  "name": "3",
+                  "description": "SIP 2 pin"
+ 
+                },
+                {
+                  "id": "TO92SIP3pin",
+                  "name": "4",
+                  "description": "TO-92 SIP 3 pin"
+ 
+                },
+                {
+                  "id": "TO92SIP4pin",
+                  "name": "5",
+                  "description": "TO-92 SIP 4 pin"
+ 
+                }
+              ]
+            },
+            {
+              "name": "MagneticType",
+              "description": "Magnetic Sensor Type",
+              "partPosition": 3,
+              "options": [
+                {
+                  "id": "Bipolar",
+                  "name": "0",
+                  "description": "Bipolar",
+                  "command": "03"
+                },
+                {
+                  "id": "Unipolar",
+                  "name": "1",
+                  "description": "Unipolar",
+                  "command": "03"
+                },
+                {
+                  "id": "Omnipolar",
+                  "name": "2",
+                  "description": "Omnipolar",
+                  "command": "03"
+                },
+                {
+                  "id": "Latch",
+                  "name": "3",
+                  "description": "Latch",
+                  "command": "03"
+                },
+                {
+                  "id": "Linear",
+                  "name": "4",
+                  "description": "Linear (Analog)",
+                  "command": "05"
+                },
+                {
+                  "id": "Current",
+                  "name": "5",
+                  "description": "2-Pin (Current)",
+                  "command": "05"
+                },
+                {
+                  "id": "SpeedAndDirection",
+                  "name": "6",
+                  "description": "Speed and Direction",
+                  "command": "04"
+                }
+              ]
+            },
+            {
+              "name": "RelativeOperateGauss",
+              "description": "Relative operate Gauss",
+              "partPosition": 4,
+              "options": [
+                {
+                  "id": 1,
+                  "name": "0",
+                  "description": "Low"
+                },
+                {
+                  "id": 2,
+                  "name": "1",
+                  "description": "Medium"
+                },
+                {
+                  "id": 3,
+                  "name": "2",
+                  "description": "High"
+                }
+              ]
+            },
+            {
+              "name": "Electrical/Magneticoptions",
+              "description": "Electrical/Magnetic options",
+              "partPosition": 5,
+              "options": [
+                {
+                  "id": "ExternalPullup",
+                  "name": "A",
+                  "description": "Open Collector (External Pullup)",
+                  "subOptions":[
+                    {
+                      "id":   0,
+                      "name": "Power Supply",
+                      "description": "Power Supply",
+                      "options":[
+                        {
+                          "id": 0,
+                          "name": "Power Supply 1",
+                          "description": "Power Supply 1"
+                        },
+                        {
+                          "id": 1,
+                          "name": "Power Supply 2",
+                          "description": "Power Supply 2"
+                        },
+                        {
+                          "id": 2,
+                          "name": "Power Supply 3",
+                          "description": "Power Supply 3"
+                        }
+
+                      ]
+                    },
+                    {
+                      "id": 1,
+                      "name": "Pull Up",
+                      "description": "Pull Up",
+                      "options":[
+                        {
+                          "id": 0,
+                          "name": "Pull Up 1",
+                          "description": "Pull Up 1"
+                        },
+                        {
+                          "id": 1,
+                          "name": "Pull Up 2",
+                          "description": "Pull Up 2"
+                        },
+                        {
+                          "id": 2,
+                          "name": "Pull Up 3",
+                          "description": "Pull Up 3"
+                        }
+
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "InternalPullUp",
+                  "name": "P",
+                  "description": "Built in Pull up resistor"
+                }
+ 
+              ]
+            }
+          ]
+        }
+      ]
+    },
+ 
+    {
+      "name": "SEB Particle",
+      "id": 1,
+      "series": [
+ 
+        {
+          "name": "HPM Series",
+          "code": "",
+          "id": 0,
+          "description": "HPM Series",
+          "parts": [
+            {
+              "name": "HPMVerticle",
+              "description": "HPM Verticle",
+              "partPosition": 0,
+              "options": [
+                {
+                  "id": 1,
+                  "name": "A",
+                  "description": "Appliance"
+                },
+                {
+                  "id": 2,
+                  "name": "H",
+                  "description": "HVT"
+                },
+                {
+                  "id": 3,
+                  "name": "D",
+                  "description": "Heavy Industry I"
+                }
+ 
+              ]
+            },
+            {
+              "name": "OutputType",
+              "description": "Output Type",
+              "partPosition": 1,
+              "options": [
+                {
+                  "id": "UART",
+                  "name": "1",
+                  "description": "UART"
+ 
+                },
+                {
+                  "id": "I2C",
+                  "name": "2",
+                  "description": "I2C"
+ 
+                }
+              ]
+            },
+            {
+              "name": "Accuracy",
+              "description": "Accuracy",
+              "partPosition": 2,
+              "options": [
+                {
+                  "id": "±15%",
+                  "name": "0",
+                  "description": "±15%"
+                },
+                {
+                  "id": "±10%",
+                  "name": "1",
+                  "description": "±10%"
+                }
+              ]
+            },
+            {
+              "name": "Power",
+              "description": "Power Option",
+              "partPosition": 3,
+              "options": [
+                {
+                  "id": 1,
+                  "name": "3",
+                  "description": "3.3V"
+                },
+                {
+                  "id": 2,
+                  "name": "5",
+                  "description": "5V"
+                },
+                {
+                  "id": 3,
+                  "name": "A",
+                  "description": "12V"
+                }
+              ]
+            },
+            {
+              "name": "Housing",
+              "description": "Housing Option",
+              "partPosition": 4,
+              "options": [
+                {
+                  "id": "Standard",
+                  "name": "S",
+                  "description": "Standard"
+                },
+                {
+                  "id": "Compact",
+                  "name": "C",
+                  "description": "Compact"
+                }
+ 
+              ]
+            },
+            {
+              "name": "Additional Features",
+              "description": "Features",
+              "partPosition": 5,
+              "options": [
+                {
+                  "id": "0",
+                  "name": "0",
+                  "description": "None"
+                },
+                {
+                  "id": "T",
+                  "name": "T",
+                  "description": "Temperature and Humidity"
+                },
+                {
+                  "id": "E",
+                  "name": "E",
+                  "description": "Economic"
+                }
+ 
+ 
+              ]
+            },
+            {
+              "name": "CustomNumber",
+              "description": "Custom Number",
+              "partPosition": 6,
+              "options": [
+                {
+                  "id": "XXX",
+                  "name": "XXX",
+                  "description": "General Type"
+                },
+                {
+                  "id": "001",
+                  "name": "001",
+                  "description": "Customized"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "SamplingRate": [
+    {
+      "id": "1",
+      "name": "1",
+      "description": "1",
+      "command": "00"
+    },
+    {
+      "id": "2",
+      "name": "2",
+      "description": "10",
+      "command": "01"
+    },
+    {
+      "id": "3",
+      "name": "3",
+      "description": "20",
+      "command": "02"
+    },
+    {
+      "id": "4",
+      "name": "4",
+      "description": "40",
+      "command": "03"
+    },
+    {
+      "id": "5",
+      "name": "5",
+      "description": "80",
+      "command": "04"
+    },
+    {
+      "id": "6",
+      "name": "6",
+      "description": "200",
+      "command": "05"
+    },
+    {
+      "id": "7",
+      "name": "7",
+      "description": "400",
+      "command": "06"
+    },
+    {
+      "id": "8",
+      "name": "8",
+      "description": "600",
+      "command": "07"
+    },
+    {
+      "id": "9",
+      "name": "9",
+      "description": "1000",
+      "command": "08"
+    }
+  ]
+}

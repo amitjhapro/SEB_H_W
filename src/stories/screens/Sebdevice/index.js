@@ -1,47 +1,84 @@
 import * as React from "react";
 //import { Container, Header, Title, Content, Text, Button, Icon, Left, Right, Body } from "native-base";
-import { Text, View, TouchableOpacity, ScrollView, Button, Image } from 'react-native'
+import { Text, View, TouchableOpacity, ScrollView, Button, Image, StatusBar } from 'react-native'
 import Textarea from 'react-native-textarea';
 
 //import RadioGroup from 'react-native-radio-buttons-group';
 import styles from "./styles";
+import * as sensorData from "../data.json";
+import globalStyles from "../../../globalStyles";
 
 class Sebdevice extends React.Component {
 	constructor(props) {
 		super();
 		this.state = {
-			status: false,
-			status1: true,
-			status2: false,
+			// status: false,
+			// status1: true,
+			// status2: false,
+			selectedIndex:-1,
+			nextButtonEnabled:false,
+			listData: sensorData,
+			listDataImageMapping:{
+				"SEB Magnetics": require('../../../assets/magnetic.png'),
+				"SEB Particle": require('../../../assets/particle.png'),
+			}
 		}
-
-
 		//this.listClickEvent=this.listClickEvent.bind(this);
 	}
 	listClickEvent = (event) => {
 		console.log("dataaaa----" + event);
-		this.setState({ status: event });
-		this.setState({ status2: true });
+		this.setState({ selectedIndex: event });
+		this.setState({ nextButtonEnabled: true });
 		//console.dir(event);
 		// alert(event);
 	}
-	list2ClickEvent = (event) => {
-		console.log("dataaaa----" + event);
-		this.setState({ status1: event });
-		//console.dir(event);
-		// alert(event);
-	}
-	render() {
 
+	// method to render the list of sensor board types
+	renderSensorBoardList = () => {
+		return this.state.listData.SensorTypes.map((data)=>{			
+			return (
+			<TouchableOpacity id="a" onPress={() => this.listClickEvent(`${data.id}`)} key={data.name}>
+				<View flexDirection='row' style={styles.division1} >
+					<View flexDirection='column' style={styles.col3Css}>
+						<Image source={this.state.listDataImageMapping[data.name]} style={styles.ListImgCSS} />
+					</View>
+					<View flexDirection='column' style={styles.col5Css}>
+						<Text style={styles.label}>{data.name}</Text>
+					</View>
+					<View flexDirection='column' style={styles.col2Css}>
+						<Image source={this.state.selectedIndex == `${data.id}` ? require('../../../assets/CheckboxActive.png') : require('../../../assets/Checkbox.png')} style={styles.ListImgCSS} />
+					</View>
+				</View>
+			</TouchableOpacity>
+			)
+		});
+	};
+
+	//method to render enable or diable NEXT button based on user input
+	renderNextButton = () => {
+		if(this.state.nextButtonEnabled){ 
+			return(
+				<TouchableOpacity style={styles.nextBtnViewCss} onPress={() => this.props.navigation.navigate("Sebboard",{selectedSensorBoardID:this.state.selectedIndex})}>
+					<Text style={styles.next} >Next</Text>
+				</TouchableOpacity> 
+			);
+		}
+		return (
+			<TouchableOpacity style={styles.nextBtnViewCss1} >
+				<Text style={styles.next1}>Next</Text>
+			</TouchableOpacity>
+		);
+	}
+	
+	render() {
 		return (
 			<View
-				style={{
-					flex: 1,
-					//paddingTop: Constants.statusBarHeight,
-
-					backgroundColor: 'white',
-				}}>
-				<View style={styles.background} flexDirection='row'>
+				style={globalStyles.backgroundStyles}>
+				<StatusBar
+                    backgroundColor="#303030"
+                    barStyle="light-content"
+                />
+				<View style={styles.background}>
 					<TouchableOpacity onPress={() =>
 						this.props.navigation.navigate("HostBoard"/* , {name: { item }} */)}>
 						<Image source={require('../../../assets/leftarrow.png')} style={styles.image2} />
@@ -65,11 +102,11 @@ class Sebdevice extends React.Component {
 					<Text style={styles.header}>Select SEB Board</Text>
 
 				</View>
-
-
+				
 				<View style={styles.listViewCss}>
-					<TouchableOpacity id="a" onPress={() => this.listClickEvent('1')}>
-						<View flexDirection='row' style={styles.division1} >
+					{this.renderSensorBoardList()}
+					{/* <TouchableOpacity onPress={() => this.listClickEvent('1')}>
+						<View flexDirection='row' style={styles.division1}>
 							<View flexDirection='column' style={styles.col3Css}>
 								<Image source={require('../../../assets/magnetic.png')} style={styles.ListImgCSS} />
 							</View>
@@ -77,7 +114,7 @@ class Sebdevice extends React.Component {
 								<Text style={styles.label}>SEB Magnetics</Text>
 							</View>
 							<View flexDirection='column' style={styles.col2Css}>
-								<Image source={this.state.status == '1' ? require('../../../assets/CheckboxActive.png') : require('../../../assets/Checkbox.png')} style={styles.ListImgCSS} />
+								<Image source={this.state.selectedIndex == '1' ? require('../../../assets/CheckboxActive.png') : require('../../../assets/Checkbox.png')} style={styles.ListImgCSS} />
 							</View>
 						</View>
 					</TouchableOpacity>
@@ -90,7 +127,7 @@ class Sebdevice extends React.Component {
 								<Text style={styles.label}>SEB Force</Text>
 							</View>
 							<View flexDirection='column' style={styles.col2Css}>
-								<Image source={this.state.status == '2' ? require('../../../assets/CheckboxActive.png') : require('../../../assets/Checkbox.png')} style={styles.ListImgCSS} />
+								<Image source={this.state.selectedIndex == '2' ? require('../../../assets/CheckboxActive.png') : require('../../../assets/Checkbox.png')} style={styles.ListImgCSS} />
 							</View>
 						</View>
 					</TouchableOpacity>
@@ -103,19 +140,12 @@ class Sebdevice extends React.Component {
 								<Text style={styles.label}>SEB Particle</Text>
 							</View>
 							<View flexDirection='column' style={styles.col2Css}>
-								<Image source={this.state.status == '3' ? require('../../../assets/CheckboxActive.png') : require('../../../assets/Checkbox.png')} style={styles.ListImgCSS} />
+								<Image source={this.state.selectedIndex == '3' ? require('../../../assets/CheckboxActive.png') : require('../../../assets/Checkbox.png')} style={styles.ListImgCSS} />
 							</View>
 						</View>
-					</TouchableOpacity>
+					</TouchableOpacity> */}
 				</View>
-				{this.state.status2 ?<TouchableOpacity style={styles.nextBtnViewCss}
-					onPress={() =>
-						this.props.navigation.navigate("Sebboard"/* , {name: { item }} */)}>
-					<Text style={styles.next} >Next</Text>
-				</TouchableOpacity>:
-                    <TouchableOpacity style={styles.nextBtnViewCss1} >
-                        <Text style={styles.next1} >Next</Text>
-                    </TouchableOpacity>}
+				{ this.renderNextButton() }
 			</View>
 
 		);

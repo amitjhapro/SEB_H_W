@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/h325091/Desktop/SEBWireless/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-fi/values-fi.xml",
+            "outputFile": "/Users/admin/Documents/Projects/SEB_HoneyWell/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-fi/values-fi.xml",
             "map": [
                 {
-                    "source": "/Users/h325091/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/b97b3dc27a483196114547fc4c7e2754/res/values-fi/values-fi.xml",
+                    "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/397ecd9d2cf39f5486f06a981f8a7f8e/res/values-fi/values-fi.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/Users/h325091/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/83417191e2a788f211d1849dbef6749c/res/values-fi/values-fi.xml",
+                    "source": "/Users/admin/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/c1654897cef3c58bffb6bf0995aa1b53/res/values-fi/values-fi.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

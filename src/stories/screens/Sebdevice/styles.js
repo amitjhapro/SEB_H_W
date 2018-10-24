@@ -12,12 +12,20 @@ const styles: any = StyleSheet.create({
         fontSize: 18,
         marginBottom: 50,
     },
+    background: {
+        backgroundColor: "#303030",
+        padding: 15,
+        flexDirection: 'row',
+        justifyContent: 'flex-start',
+        alignItems: 'center',
+
+    },
     image2: {
-        width: 15,
-        height: 15,
-        //left: 2,
-        top: 5,
-        marginLeft: 20
+        width: 27,
+        height: 27,
+        // padding: 5,
+        // top: 5,
+        // marginLeft: 20
     },
     next:
     {
@@ -120,15 +128,6 @@ const styles: any = StyleSheet.create({
         marginTop: 9,
 
     },
-    image2: {
-        width: 15,
-        height: 15,
-        //left: 2,
-        top: 5,
-        marginLeft: 10
-    },
-
-
     division:
     {
         backgroundColor: "#B5131C",
@@ -218,11 +217,6 @@ const styles: any = StyleSheet.create({
         // padding:20
         // alignSelf:'center'
     },
-    background: {
-        backgroundColor: "#303030",
-        padding: 15,
-
-    },
     home:
     {
         fontSize: 17,
@@ -241,14 +235,9 @@ const styles: any = StyleSheet.create({
         fontSize: 17,
         right: 2,
         color: 'white',
-        marginLeft: 20
+        marginLeft: 10,
         //letterSpacing:-0.41
-    },
-    background: {
-        backgroundColor: "#303030",
-        padding: 15,
-
-    },
+    },    
     subheaderCss:{
         marginTop:20,
         marginLeft:10,
@@ -307,26 +296,30 @@ const styles: any = StyleSheet.create({
         shadowOpacity: 0.3,
         elevation: 7,
     },
-    col3Css:{
+    col3Css: {
         flex: 0.2,
-        /* borderBottomWidth: 1,
-        borderLeftWidth: 1,
-        borderRightWidth: 1,
-       borderTopWidth: 1 */
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginTop: 5,
+        marginLeft: -20,
     },
-    col5Css:{
-       // marginLeft:10,
-        alignSelf:'flex-start',
+    col5Css: {
+        // alignSelf: 'flex-start',
+        justifyContent: 'center',
+        alignItems: 'flex-start',
         flex: 0.7,
-        marginLeft:-15,
-
+        // marginLeft: -15,
     },
-    col2Css:{
-        flex: 0.1
+    col2Css: {
+        flex: 0.1,
+        justifyContent: 'center',
+        alignItems: 'flex-start',
+        marginTop: 5,
+        marginRight: 5,
     },
     ListImgCSS:{
-        height: 32,
-        width: 32,
+        height: 41,
+        width: 41,
     },
 
     division1:

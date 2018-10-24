@@ -60,18 +60,28 @@ export default StyleSheet.create({
     },
     col3Css: {
         flex: 0.2,
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginTop: 5,
+        marginLeft: -20,
     },
     col5Css: {
-        alignSelf: 'flex-start',
+        // alignSelf: 'flex-start',
+        justifyContent: 'center',
+        alignItems: 'flex-start',
         flex: 0.7,
-        marginLeft: -15,
+        // marginLeft: -15,
     },
     col2Css: {
-        flex: 0.1
+        flex: 0.1,
+        justifyContent: 'center',
+        alignItems: 'flex-start',
+        marginTop: 5,
+        marginRight: 5,
     },
     ListImgCSS: {
-        height: 32,
-        width: 32,
+        height: 41,
+        width: 41,
     },
 
     division1:
@@ -79,6 +89,8 @@ export default StyleSheet.create({
         borderBottomColor: '#e2e0e0',
         borderBottomWidth: 1,
         padding: 15,
+        // justifyContent: 'center',
+        // alignItems: 'center',
 
     },
     header:

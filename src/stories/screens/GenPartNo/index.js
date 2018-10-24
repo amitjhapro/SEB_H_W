@@ -1,25 +1,37 @@
 import * as React from "react";
 //import { Container, Header, Title, Content, Text, Button, Icon, Left, Right, Body } from "native-base";
-//import { Text, View, TouchableOpacity, ScrollView, Button, Image, Picker, Select, options } from 'react-native'
+import { connect } from 'react-redux';
 import styles from "./styles";
 import Textarea from 'react-native-textarea';
 import SmartPicker from 'react-native-smart-picker'
 import Sensordropdowns from '../Sensordropdowns';
+import * as sensorData from "../data.json";
 import {
   StyleSheet,Image,
   Text,
   TextInput,
   ListView,
   View,Icon,
-  TouchableOpacity, StatusBar, ScrollView, Picker
+  TouchableOpacity, StatusBar, ScrollView, Picker, Alert
 } from 'react-native';
+import globalStyles from "../../../globalStyles";
+
 class GenPartNo extends React.Component {
   constructor(props) {
     super(props)
     const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2 });
+    
+    // creating a mapping for dropdown lists for checking if any of the dropdown values is set
+    const {selectedSensorBoardID, selectedSensorSeriesID} = this.props.navigation.state.params
+    const mappedOptions = sensorData.SensorTypes[selectedSensorBoardID].series[selectedSensorSeriesID].parts.map((data, index) => {
+        return [data.name,null] // initially no values are selected so by default all are set to 'null' 
+    });
+    
     this.state = {
         dataSource: ds.cloneWithRows(partnumbers),
         sensor: '',
+        text:'',
+        optionMapping: mappedOptions,
         prevSelectionArr:[]
     }
 }
@@ -52,7 +64,7 @@ this.setState({
 
 }
 
-/** This function is used to rest all the data */
+/** This function is used to reset all the data */
 clear() {
     this.setState({
         sensor:'',
@@ -86,10 +98,92 @@ clear() {
     this.setState({ sensor: sensor }) //Updating the selected value in picker dropdown
 }
 
+clearPartNumberTextInput = () => {
+    const {selectedSensorBoardID, selectedSensorSeriesID} = this.props.navigation.state.params
+    const mappedOptions = sensorData.SensorTypes[selectedSensorBoardID].series[selectedSensorSeriesID].parts.map((data, index) => {
+        return [data.name,null]
+    });
+    this.setState({text:'',optionMapping:mappedOptions})
+};
+
+generatePartNumber = (value, index, data) => {
+    
+    this.setState({
+        optionMapping: this.updateMappedOptions(value,index,data)
+    },()=>{
+        // if(this.state.text == ''){
+        //     this.setState({text:value})
+        // }else{
+        //     this.setState({text:this.state.text+"-"+value})
+        // }
+        let temp = ""
+        this.state.optionMapping.forEach(element => {
+            if(element[1] != null){
+                temp+= element[1];
+            }
+            
+        });
+        this.setState({text:temp})
+    })
+    
+    // const { label,optionIndex } = data // data holds dropdown label and its index position when rendered
+    // Alert.alert(
+    //     `Index-${index} -- Value-${value} -- Label ${label} -- optionIndex ${optionIndex}`
+    // )
+}
+
+updateMappedOptions = (value, index, data) => {
+    let options = this.state.optionMapping
+    const { label,optionIndex } = data 
+    
+    // update the local mapping when dropdown is selected
+    options[optionIndex] = [label,value]
+    return options
+}
+
+shouldResetDropdownSelections = () => {
+    return this.state.text == ''? true : false
+}
+
+goToGraph = () => {
+    return this.state.optionMapping.some((element,index) => {
+        if(element[1] === null){
+            Alert.alert(
+                'Invalid Part #',
+                'Please ensure you have entered all the options'
+              )
+        }
+        return element[1] === null
+    });
+}
+
+renderSensorConfigurationSection = () => {
+    if(true){
+        return
+    }
+    return(
+        <View style={styles.partView}>
+            <View style={styles.partInnerView}>
+                <Text style={styles.partText}>Sensor Configuration</Text>
+            </View>
+
+            {/* PARTS DROPDOWN LISTING */}
+            <Sensordropdowns 
+                sensor={this.state.sensor} 
+                updateSensor={this.updateSensor} 
+                selectedSensorData={this.props.navigation.state.params} 
+                generatePartNumberCallback={this.generatePartNumber} 
+                resetSelection={this.shouldResetDropdownSelections()}
+            />
+        </View>
+    );
+}
+
 render() {
   return (
-    <View style={styles.mainContainer}> 
-         <View style={styles.background} flexDirection='row'>
+    <View style={globalStyles.backgroundStyles}> 
+         {/* NAVIGATION BAR */}
+         <View style={styles.background}>
             <TouchableOpacity onPress={() =>
                         this.props.navigation.navigate("Sebboard"/* , {name: { item }} */ )}>
                 <Image source={require('../../../assets/leftarrow.png')} style={styles.image2} />
@@ -102,15 +196,20 @@ render() {
             backgroundColor="#000"
         />  */}
 
+        {/* LABEL WITH CLEAR TEXT BUTTON */}
+        <ScrollView>
         <View style={styles.titleView}>
             <View style={styles.partNumberView}>
                 <Text style={styles.partNumberText}>Generate Part Number</Text>
             </View>
             <View style={styles.clearView}>
-                <Text onPress={() => this.clear()} style={styles.clearText}>Clear All</Text>
+                <TouchableOpacity onPress={this.clearPartNumberTextInput}>
+                    <Text style={styles.clearText}>Clear All</Text>
+                </TouchableOpacity>
             </View>
         </View>
-
+        
+        {/* PARTS NUMBER GENERATOR TEXTFIELD */}
         <View style={styles.partView}>
             <View style={styles.partInnerView}>
                 <Text style={styles.partText}>Part Number</Text>
@@ -118,7 +217,13 @@ render() {
             <View style={styles.mostOuterFilterView}>
                 <View flexDirection='row' style={styles.outerFilterView}>
                     <View style={styles.innerFilterView}>
-                        <TextInput onChangeText={(text) => this.SearchFilterFunction(text)} placeholder="Type Part Number" style={styles.inputBox} underlineColorAndroid='rgba(0,0,0,0)' value={this.state.text} />
+                        <TextInput 
+                        onChangeText={(text) => this.SearchFilterFunction(text)} 
+                        placeholder="Type Part Number" 
+                        style={styles.inputBox} 
+                        underlineColorAndroid='rgba(0,0,0,0)' 
+                        value={this.state.text} 
+                        />
                         {
                             this.state.isModalVisible ? 
                             <ListView
@@ -126,8 +231,12 @@ render() {
                             renderSeparator= {this.ListViewItemSeparator}
                             renderRow={
                                 (rowData) => 
-                                <Text style={styles.rowViewContainer} 
-                                onPress = {this.GetListViewItem.bind(this,rowData.name)}>{rowData.name}</Text>
+                                <Text 
+                                style={styles.rowViewContainer} 
+                                onPress = {this.GetListViewItem.bind(this,rowData.name)}
+                                >
+                                    {rowData.name}
+                                </Text>
                             }
                             style={styles.listViewbox}
                             />
@@ -140,12 +249,23 @@ render() {
                     </View>
                 </View>
             </View>
-            <Sensordropdowns sensor={this.state.sensor} updateSensor={this.updateSensor}/>
-        </View>
 
+            {/* PARTS DROPDOWN LISTING */}
+            <Sensordropdowns 
+                sensor={this.state.sensor} 
+                updateSensor={this.updateSensor} 
+                selectedSensorData={this.props.navigation.state.params} 
+                generatePartNumberCallback={this.generatePartNumber} 
+                resetSelection={this.shouldResetDropdownSelections()}
+            />
+            
+        </View>
+        {this.renderSensorConfigurationSection()}
+        </ScrollView>
+        {/* GO BUTTON */}
         <TouchableOpacity style={styles.nextBtnViewCss}
-            onPress={() =>
-                this.props.navigation.navigate("Sebdevice"/* , {name: { item }} */)}>
+            // onPress={() => this.props.navigation.navigate("Sebdevice"/* , {name: { item }} */)}>
+            onPress={ this.goToGraph }>
             <Text style={styles.next} >Go</Text>
         </TouchableOpacity>
 
@@ -166,4 +286,10 @@ const partnumbers = [
     {"partnumber":"110","name":"Sensor 10"}
   ]
 
-export default GenPartNo;
+
+const mapStateToProps = ({ genPartNoReducer }) => {
+    return {
+        optionMapping: genPartNoReducer.optionMapping
+      }
+}
+export default connect(mapStateToProps)(GenPartNo);

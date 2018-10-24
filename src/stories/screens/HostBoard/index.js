@@ -1,9 +1,11 @@
 import * as React from "react";
-import { Text, View, TouchableOpacity, Image, StatusBar, NetInfo } from 'react-native'
+import { Text, View, TouchableOpacity, Image, StatusBar } from 'react-native'
 import styles from "./styles";
 import { checkInternetConnection, offlineActionTypes, withNetworkConnectivity } from 'react-native-offline';
 import PopupDialog, { SlideAnimation, DialogTitle, DialogButton } from 'react-native-popup-dialog';
 //import reducer from "react-native-offline/src/reducer";
+import globalStyles from "../../../globalStyles";
+
 /* 
 const YourComponent = ({ isConnected }) => (
     <Text>{isConnected ?  'Look ma, I am connected to the internet!' : 'Offline :('}</Text>
@@ -54,11 +56,7 @@ class HostBoard extends React.Component {
             slideFrom: 'bottom',
         });
         return (
-            <View
-                style={{
-                    flex: 1,
-                    backgroundColor: 'white',
-                }}>
+            <View style={globalStyles.backgroundStyles}>
                 <View>
                     <StatusBar
                         backgroundColor="#303030"

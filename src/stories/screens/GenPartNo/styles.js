@@ -1,6 +1,20 @@
 import { StyleSheet } from "react-native";
 
 const styles: any = StyleSheet.create({
+    background: {
+        backgroundColor: "#303030",
+        padding: 15,
+        flexDirection: 'row',
+        justifyContent: 'flex-start',
+        alignItems: 'center',
+    },
+    image2: {
+        width: 27,
+        height: 27,
+        // padding: 5,
+        // top: 5,
+        // marginLeft: 20
+    },
     pickerView:{ borderBottomWidth: 1, flex: 1, marginHorizontal: 10 },
     pickerText:{ fontSize: 18, marginTop: 15 },
     pickerColor:{ color: '#C4C4C4' },
@@ -39,6 +53,7 @@ const styles: any = StyleSheet.create({
         elevation: 2,
         backgroundColor: '#fff',
         marginVertical: 10,
+        marginLeft: 10,
         height: 40
         
     },
@@ -68,45 +83,35 @@ const styles: any = StyleSheet.create({
         color: 'white',
         justifyContent: 'center',
         textAlign: 'center'
-    },nextBtnViewCss:{
-        marginLeft: 10,
-        marginRight:10, 
+    },
+    nextBtnViewCss:
+    {
+        margin: 10,
+        // marginLeft: 10,
+        // marginRight:10, 
         height: 50, 
         backgroundColor: '#00bfff', 
         justifyContent: 'center', 
         alignItems: 'center',
         // position: 'absolute',
-        bottom: 10
+        // bottom: 10
         
     },
-    background: {
-        backgroundColor: "#303030",
-        padding: 15,
-        width:"100%"
-    
-    },
     home:
-{
-    fontSize: 17,
-    left: 15,
-    color: 'white',
-    letterSpacing: -0.41
-},
-image2: {
-    width: 15,
-    height: 15,
-    //left: 2,
-    top: 5,
-   
-},
-info:
-{
-    // width: 30,
-    // height: 30,
-   // marginTop: 22,
-    left: 7,
-   // marginRight:50
+    {
+        fontSize: 17,
+        left: 15,
+        color: 'white',
+        letterSpacing: -0.41
+    },
+    info:
+    {
+        // width: 30,
+        // height: 30,
+    // marginTop: 22,
+        left: 7,
+    // marginRight:50
 
-}
+    }
 });
 export default styles;

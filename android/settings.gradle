@@ -1,3 +1,5 @@
 rootProject.name = 'SEBWireless'
+include ':react-native-wifi'
+project(':react-native-wifi').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-wifi/android')
 
 include ':app'

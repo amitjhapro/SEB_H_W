@@ -1,12 +1,20 @@
 import { StyleSheet } from "react-native";
 
 const styles: any = StyleSheet.create({
-	image2: {
-    width: 15,
-    height: 15,
-    //left: 2,
-    top: 5,
-   
+background: {
+    backgroundColor: "#303030",
+    padding: 15,
+    flexDirection: 'row',
+    justifyContent: 'flex-start',
+    alignItems: 'center',
+
+},
+image2: {
+    width: 27,
+    height: 27,
+    // padding: 5,
+    // top: 5,
+    // marginLeft: 20
 },
 icon1:
 {
@@ -157,11 +165,6 @@ headerText:
     // padding:20
     // alignSelf:'center'
 },
-background: {
-    backgroundColor: "#303030",
-    padding: 15,
-
-},
 home:
 {
     fontSize: 17,
@@ -268,11 +271,6 @@ headerText:
     flex: 1,
     backgroundColor: 'red',
 },
-background: {
-    backgroundColor: "#303030",
-    padding: 15,
-
-},
 home:
 {
     fontSize: 17,
@@ -294,14 +292,24 @@ listViewCss: {
 },
 col3Css: {
     flex: 0.2,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginTop: 5,
+    marginLeft: -20,
 },
 col5Css: {
-    alignSelf: 'flex-start',
+    // alignSelf: 'flex-start',
+    justifyContent: 'center',
+    alignItems: 'flex-start',
     flex: 0.7,
-    marginLeft: -15,
+    // marginLeft: -15,
 },
 col2Css: {
-    flex: 0.1
+    flex: 0.1,
+    justifyContent: 'center',
+    alignItems: 'flex-start',
+    marginTop: 5,
+    marginRight: 5,
 },
 ListImgCSS: {
     height: 41,

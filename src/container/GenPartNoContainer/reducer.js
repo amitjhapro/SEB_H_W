@@ -1,20 +1,22 @@
 const initialState = {
 	list: [],
 	isLoading: true,
+	optionMapping:[],
 };
 
 export default function(state: any = initialState, action: Function) {
-	if (action.type === "FETCH_LIST_SUCCESS") {
+	switch(action.type){
+		case "FETCH_LIST_SUCCESS":
 		return {
 			...state,
 			list: action.list,
 		};
-	}
-	if (action.type === "LIST_IS_LOADING") {
+		case "LIST_IS_LOADING":
 		return {
 			...state,
 			isLoading: action.isLoading,
 		};
+		default: 
+		return state
 	}
-	return state;
 }
