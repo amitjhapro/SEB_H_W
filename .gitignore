@@ -53,3 +53,7 @@ buck-out/
 */fastlane/screenshots
 
 package-lock.json
+
+# android and iOS folder
+android/
+ios/
