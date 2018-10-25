@@ -1,10 +1,8 @@
 import React from "react";
 import { StackNavigator, DrawerNavigator } from "react-navigation";
-import {AppState, Text,SafeAreaView} from 'react-native';
+import { AppState, Text, SafeAreaView } from 'react-native';
 import { Root } from "native-base";
-import Login from "./container/LoginContainer";
 import Home from "./container/HomeContainer";
-import BlankPage from "./container/BlankPageContainer";
 import AboutHoneywell from "./container/AboutHoneywellContainer";
 import Sebboard from "./container/SebboardContainer";
 import Sebdevice from "./container/SebdeviceContainer";
@@ -18,7 +16,6 @@ import Raspberryhelp from './stories/screens/Help/raspberry';
 import Settings from './container/SettingsContainer';
 import Documentation from './container/DocumentationContainer';
 import AirflowSensors from './stories/screens/Documentation/airflow_sensors'
-
 import AmplifiedAirflow from './stories/screens/Documentation/amplified_airflow'
 import ZephyrHAF from './stories/screens/Documentation/zephyr_HAF'
 import LoadProfile from './stories/screens/Settings/loadprofile'
@@ -28,36 +25,34 @@ import WifiManager from 'react-native-wifi';
 const Drawer = DrawerNavigator(
 	{
 		HostBoard: { screen: HostBoard },
-		Help:{screen:Help},
-		Documentation:{screen:Documentation},
-		Settings:{screen:Settings}
+		Help: { screen: Help },
+		Documentation: { screen: Documentation },
+		Settings: { screen: Settings }
 	},
 	{
 		initialRouteName: "HostBoard",
 		contentComponent: Sidebar,
-		drawerWidth:210
+		drawerWidth: 210
 	}
 );
 
 const App = StackNavigator(
 	{
-		Login: { screen: Login },
 		Home: { screen: Home },
-		BlankPage: { screen: BlankPage },
 		AboutHoneywell: { screen: AboutHoneywell },
 		Sebboard: { screen: Sebboard },
 		Sebdevice: { screen: Sebdevice },
-		Sensorselection:{screen:Sensorselection},
-		GenPartNo :{screen:GenPartNo},
-		Arduinohelp:{screen:Arduinohelp},
-		Raspberryhelp:{screen:Raspberryhelp},
+		Sensorselection: { screen: Sensorselection },
+		GenPartNo: { screen: GenPartNo },
+		Arduinohelp: { screen: Arduinohelp },
+		Raspberryhelp: { screen: Raspberryhelp },
 		Drawer: { screen: Drawer },
-		AirflowSensors: {screen:AirflowSensors},
-		AmplifiedAirflow: {screen:AmplifiedAirflow},
-		ZephyrHAF:{screen:ZephyrHAF},
-		LoadProfile:{screen:LoadProfile},
-		SaveProfile:{screen:SaveProfile},
-		SendData:{screen:SendData}
+		AirflowSensors: { screen: AirflowSensors },
+		AmplifiedAirflow: { screen: AmplifiedAirflow },
+		ZephyrHAF: { screen: ZephyrHAF },
+		LoadProfile: { screen: LoadProfile },
+		SaveProfile: { screen: SaveProfile },
+		SendData: { screen: SendData }
 	},
 	{
 		initialRouteName: "Home",
@@ -65,7 +60,7 @@ const App = StackNavigator(
 	}
 );
 
- 
+
 /* WifiManager.getCurrentWifiSSID()
 .then((ssid) => {
     alert("Your current connected wifi SSID is " + ssid)
@@ -73,26 +68,16 @@ const App = StackNavigator(
     alert('Cannot get current SSID!');
 }); */
 export default () => (
-	
 	<Root>
-
-	<SafeAreaView style={styles.safeArea}>
-
-		<App />
-
-	</SafeAreaView>
-
-</Root>
+		<SafeAreaView style={styles.safeArea}>
+			<App />
+		</SafeAreaView>
+	</Root>
 );
 
 const styles = {
-
-    safeArea: {
-
-     flex: 1,
-
-     backgroundColor: '#303030'
-
-    }
-
+	safeArea: {
+		flex: 1,
+		backgroundColor: '#303030'
+	}
 };
