@@ -13,6 +13,9 @@ export default StyleSheet.create({
         fontSize: 17,
         right: 2,
         color: 'white',
+        fontFamily: "Honeywell Sans TT",
+        fontWeight: "500",
+        lineHeight: 21,
         left: 20,
         top: 3,
         letterSpacing: -0.41
@@ -27,6 +30,8 @@ export default StyleSheet.create({
     content:
     {
         color: 'black',
+        height: 21,
+        fontFamily: "Honeywell Sans TT",
         fontSize: 18,
         fontWeight: "500",
         marginLeft: 20,
@@ -76,8 +81,13 @@ export default StyleSheet.create({
     {
         top: 18,
         marginLeft: 20,
+        height: 22,
+        color: "#000000",
+        fontFamily: "Honeywell Sans TT",
         fontSize: 16,
-        fontWeight: "300"
+        fontWeight: "300",
+        letterSpacing: -0.39,
+        lineHeight: 22
     },
     Text_view1:
     {
@@ -89,8 +99,13 @@ export default StyleSheet.create({
     {
         alignItems: 'center',
         marginLeft: 20,
-        fontSize: 16,
-        fontWeight: "300"
+        height: 44,
+        color: "#4A4A4A",
+        fontFamily: "Honeywell Sans",
+        fontSize: 14,
+        fontWeight: "300",
+        letterSpacing: -0.34,
+        lineHeight: 22
     },
     rightarrow:
     {

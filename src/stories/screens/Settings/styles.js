@@ -10,12 +10,15 @@ export default StyleSheet.create({
         padding: 15,
     },
     headertext: {
-        fontSize: 17,
+        fontSize: 16,
+        fontWeight: "500",
+        fontFamily: "Honeywell Sans TT",
         right: 2,
         color: 'white',
         left: 20,
         top: 3,
-        letterSpacing: -0.41
+        letterSpacing: -0.38,
+        lineHeight: 20
     },
     menu: {
         width: 22,
@@ -34,6 +37,7 @@ export default StyleSheet.create({
         color: 'black',
         fontSize: 18,
         fontWeight: "500",
+        fontFamily: "Honeywell Sans TT",
         marginLeft: 20,
         top: 20,
         letterSpacing: -0.43,
@@ -55,8 +59,11 @@ export default StyleSheet.create({
     {
         color: 'white',
         fontSize: 14,
+        height: 22,
         fontWeight: 'bold',
-        bottom: 5
+        bottom: 5,
+        letterSpacing: -0.34,
+        lineHeight: 22
     },
     home:
     {
@@ -134,7 +141,14 @@ export default StyleSheet.create({
     },
     textstyle:
     {
-        fontSize: 16
+        height: 22,
+
+        color: "#4A4A4A",
+        fontFamily: "Honeywell Sans",
+        fontSize: 16,
+        fontWeight: "300",
+        letterSpacing: -0.39,
+        lineHeight: 22
     },
     saveprofile:
     {
@@ -166,19 +180,18 @@ export default StyleSheet.create({
         fontSize: 20,
         color: 'white',
         justifyContent: 'center',
-        textAlign: 'center'
+        textAlign: 'center',
+        fontFamily: "Honeywell Sans TT"
     },
     next1:
     {
         fontSize: 20,
         color: '#B0B0B0',
         justifyContent: 'center',
-        textAlign: 'center'
+        textAlign: 'center',
+        fontFamily: "Honeywell Sans TT"
     },
-    space:
-    {
-        height: 180
-    },
+
     listViewCss: {
         backgroundColor: 'white',
         marginBottom: 5,
@@ -204,7 +217,8 @@ export default StyleSheet.create({
     {
         fontSize: 16,
         color: "#4A4A4A",
-        fontWeight: "300",
+        fontWeight: "500",
+        fontFamily: "Honeywell Sans TT",
         letterSpacing: -0.39,
     },
     label1:
@@ -212,6 +226,7 @@ export default StyleSheet.create({
         fontSize: 12,
         color: "#4A4A4A",
         fontWeight: "300",
+        fontFamily: "Honeywell Sans TT",
         letterSpacing: -0.39,
     },
     card:
@@ -228,7 +243,8 @@ export default StyleSheet.create({
     faq:
     {
         fontSize: 14,
-        color: 'white'
+        color: 'white',
+        fontFamily: "Honeywell Sans TT"
     },
     TextInput:
     {

@@ -11,11 +11,14 @@ export default StyleSheet.create({
     },
     headertext: {
         fontSize: 17,
+        fontWeight: "500",
+        fontFamily: "Honeywell Sans TT",
         right: 2,
         color: 'white',
         left: 20,
         top: 3,
-        letterSpacing: -0.41
+        letterSpacing: -0.41,
+        lineHeight: 21
     },
     back: {
         width: 13,
@@ -28,6 +31,7 @@ export default StyleSheet.create({
         color: 'black',
         fontSize: 18,
         fontWeight: "500",
+        fontFamily: "Honeywell Sans TT",
         marginLeft: 20,
         top: 20,
         letterSpacing: -0.43,
@@ -80,7 +84,8 @@ export default StyleSheet.create({
     faq:
     {
         fontSize: 14,
-        color: 'white'
+        color: 'white',
+        fontFamily: "Honeywell Sans TT"
     },
     microcontroller:
     {
@@ -91,8 +96,14 @@ export default StyleSheet.create({
     {
         top: 18,
         marginLeft: 20,
+        height: 22,
+        width: 216.7,
+        color: "#4A4A4A",
+        fontFamily: "Honeywell Sans TT",
         fontSize: 16,
-        fontWeight: "300"
+        fontWeight: "300",
+        letterSpacing: -0.39,
+        lineHeight: 22
     },
     stepnum:
     {
@@ -109,22 +120,31 @@ export default StyleSheet.create({
     {
         fontSize: 14,
         fontWeight: "300",
+        fontFamily: "Honeywell Sans TT",
         marginLeft: 17,
-        marginRight: 20
+        marginRight: 20,
+        letterSpacing: -0.34,	
+        lineHeight: 17
     },
     step10:
     {
         fontSize: 14,
         fontWeight: "300",
+        fontFamily: "Honeywell Sans TT",
         left: 9,
-        marginRight: 20
+        marginRight: 20,
+        letterSpacing: -0.34,	
+        lineHeight: 17
     },
     step11:
     {
         fontSize: 14,
         fontWeight: "300",
+        fontFamily: "Honeywell Sans TT",
         left: 9,
-        marginRight: 20
+        marginRight: 20,
+        letterSpacing: -0.34,	
+        lineHeight: 17
     },
 
 });
