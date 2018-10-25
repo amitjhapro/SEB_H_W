@@ -17,10 +17,14 @@ export default StyleSheet.create({
     },
     label:
     {
-        fontSize: 20,
-        color: "#4A4A4A",
-        fontWeight: "300",
-        letterSpacing: -0.39,
+        height: 22,
+            width: 216.7,
+            color: "#4A4A4A",
+                fontFamily: "Honeywell Sans TT",
+                    fontSize: 16,
+                        fontWeight: "300",
+                            letterSpacing: -0.39,
+                            	lineHeight: 22
     },
     cardTop:
     {
@@ -94,10 +98,28 @@ export default StyleSheet.create({
         // alignItems: 'center',
 
     },
+
+    Header:
+    {
+        height: 21,
+        width: 166,
+        color: "#FFFFFF",
+        fontFamily: "Honeywell Sans TT",
+            fontSize: 18,
+                fontWeight:"500",
+                    letterSpacing: -0.43,
+                    lineHeight: 21
+    },
     header:
     {
-        color: 'white',
-        fontSize: 20,
+        height: 22,
+            width: 154.05,
+                color: "#FFFFFF",	
+            fontFamily: "Honeywell Sans TT",
+            fontSize: 14,
+            fontWeight: "bold",
+                letterSpacing: -0.34,
+                	lineHeight: 22
     },
     headerText:
     {
@@ -110,10 +132,14 @@ export default StyleSheet.create({
 
     home:
     {
-        fontSize: 17,
+        height:20,
+        width:45,
+        fontFamily:"Honeywell Sans TT",
+        fontSize: 16,
         left: 15,
+        fontWeight:"500",
         color: 'white',
-        letterSpacing: -0.41
+        letterSpacing: -0.38
     },
     nextBtnViewCss:{
         marginLeft: 10,
@@ -150,17 +176,27 @@ export default StyleSheet.create({
     },
     next:
     {
-        fontSize: 20,
-        color: 'white',
-        justifyContent: 'center',
-        textAlign: 'center'
+        height: 20,
+            width: 182.3,
+                color: "#ffffff",
+                    fontFamily: "Honeywell Sans TT",
+                        fontSize: 16,
+                            fontWeight: "500",
+                                lineHeight: 20,
+                                    textAlign: 'center',
+                                    justifyContent:'center'
     },
     next1:
     {
-        fontSize: 20,
-        color: '#B0B0B0',
-        justifyContent: 'center',
-        textAlign: 'center'
+        height: 20,
+        width: 182.3,
+            color: "#B0B0B0",
+                fontFamily: "Honeywell Sans TT",
+                    fontSize: 16,
+                        fontWeight: "500",
+                            lineHeight: 20,
+                                textAlign: 'center',
+                                justifyContent:'center'
     },
     popupCss:{
         marginTop:'5%',

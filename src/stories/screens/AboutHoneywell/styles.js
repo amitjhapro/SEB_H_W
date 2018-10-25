@@ -20,11 +20,12 @@ export default StyleSheet.create({
   {
     height: 20,
     width: 67,
-    color: "#1792E5",
-    fontSize: 16,
-    fontWeight: "500",
-    letterSpacing: -0.38,
-    lineHeight: 20,
+      color: "#1792E5",
+        fontFamily: "Honeywell Sans TT",
+          fontSize: 16,
+            fontWeight: "500",
+              letterSpacing: -0.38,
+              	lineHeight: 20,
     marginLeft: 2,
     marginTop: 27
   },
@@ -32,30 +33,45 @@ export default StyleSheet.create({
     padding: 20
   },
   aboutHeader: {
-    color: '#FFFFFF',
-    fontWeight: 'bold',
-    fontSize: 22,
-    lineHeight: 26
+    height: 26,
+    width: 229,
+      color: "#FFFFFF",
+        fontFamily: "Honeywell Sans TT",
+          fontSize: 22,
+            fontWeight: "bold",
+            	lineHeight: 26
   },
   aboutContent: {
-    color: '#FFFFFF',
-    fontSize: 16,
-    fontWeight: "300",
-    lineHeight: 20,
+    height: 141,
+    width: 335,
+    color: "#FFFFFF",
+      fontFamily: "Honeywell Sans TT",
+      fontSize: 16,
+        fontWeight: "300",
+        	lineHeight: 20,
     marginTop: 20
   },
   accessManual:{
-    color: '#1792E5',
-    fontSize: 17,
-    fontWeight: '500',
+    height: 18,
+    width: 147,
+      color: "#1792E5",
+        fontFamily: "Honeywell Sans TT",
+        fontSize: 15,
+          fontWeight: "500",
+            letterSpacing: -0.36,
+            	lineHeight: 18,
     marginTop: 5
   },
   feedback:{
-    color: 'white',
-    fontSize: 14,
-    fontWeight: '500',
+    height: 23,
+    width: 166,
+    color: "#FFFFFF",
+      fontFamily: "Honeywell Sans TT",
+      fontSize: 14,
+        fontWeight: "500",
+        	lineHeight: 17,
     marginTop: 15,
-    height:23
+    
   },
   feedbackTxtArea: {
     height: 150,

@@ -26,6 +26,7 @@ export default StyleSheet.create({
   selectHostBoardLink:{
     height: 20,
     width: 140,
+    fontFamily:"Honeywell Sans TT",
     color: '#1792E5',
     fontSize: 16,
     fontWeight: '500',	
@@ -36,6 +37,7 @@ export default StyleSheet.create({
     width: 143,
     color: '#A0A0A0',
     fontSize: 14,	
+    fontFamily:"Honeywell Sans TT",
     fontWeight: '500',
     lineHeight: 17,
     paddingTop:10

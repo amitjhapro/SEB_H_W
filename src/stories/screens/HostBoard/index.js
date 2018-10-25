@@ -110,7 +110,7 @@ class HostBoard extends React.Component {
                     <Image source={require('../../../assets/sensor.png')} style={{ height: 220, width: 412, position: 'absolute', resizeMode: 'cover' }} />
                 </View>
                 <View style={styles.subheaderCss}>
-                    <Text style={styles.header}> Hostboard Selection </Text>
+                    <Text style={styles.Header}> Hostboard Selection </Text>
                 </View>
 
                 <View style={[styles.cardTop, styles.cardBottom]}>
