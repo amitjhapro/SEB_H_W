@@ -18,21 +18,21 @@ export default StyleSheet.create({
     label:
     {
         height: 22,
-            width: 216.7,
-            color: "#4A4A4A",
-                fontFamily: "Honeywell Sans TT",
-                    fontSize: 16,
-                        fontWeight: "300",
-                            letterSpacing: -0.39,
-                            	lineHeight: 22
+        width: 216.7,
+        color: "#4A4A4A",
+        fontFamily: "Honeywell Sans TT",
+        fontSize: 16,
+        fontWeight: "300",
+        letterSpacing: -0.39,
+        lineHeight: 22
     },
     cardTop:
     {
-        marginTop:'5%'
+        marginTop: '5%'
     },
     cardBottom:
     {
-        marginBottom:'5%'
+        marginBottom: '5%'
     },
     division:
     {
@@ -105,21 +105,21 @@ export default StyleSheet.create({
         width: 166,
         color: "#FFFFFF",
         fontFamily: "Honeywell Sans TT",
-            fontSize: 18,
-                fontWeight:"500",
-                    letterSpacing: -0.43,
-                    lineHeight: 21
+        fontSize: 18,
+        fontWeight: "500",
+        letterSpacing: -0.43,
+        lineHeight: 21
     },
     header:
     {
         height: 22,
-            width: 154.05,
-                color: "#FFFFFF",	
-            fontFamily: "Honeywell Sans TT",
-            fontSize: 14,
-            fontWeight: "bold",
-                letterSpacing: -0.34,
-                	lineHeight: 22
+        width: 154.05,
+        color: "#FFFFFF",
+        fontFamily: "Honeywell Sans TT",
+        fontSize: 14,
+        fontWeight: "bold",
+        letterSpacing: -0.34,
+        lineHeight: 22
     },
     headerText:
     {
@@ -132,38 +132,38 @@ export default StyleSheet.create({
 
     home:
     {
-        height:20,
-        width:45,
-        fontFamily:"Honeywell Sans TT",
+        height: 20,
+        width: 45,
+        fontFamily: "Honeywell Sans TT",
         fontSize: 16,
         left: 15,
-        fontWeight:"500",
+        fontWeight: "500",
         color: 'white',
         letterSpacing: -0.38
     },
-    nextBtnViewCss:{
+    nextBtnViewCss: {
         marginLeft: 10,
-        marginRight:'20%',
-        width: '100%', 
-        height: 50, 
-        backgroundColor: '#00bfff', 
-        justifyContent: 'center', 
+        marginRight: '20%',
+        width: '100%',
+        height: 50,
+        backgroundColor: '#00bfff',
+        justifyContent: 'center',
         alignItems: 'center',
         position: 'absolute',
         bottom: 10
-        
+
     },
-    nextBtnViewCss1:{
+    nextBtnViewCss1: {
         marginLeft: 10,
-        marginRight:'20%',
-        width: '100%', 
-        height: 50, 
-        backgroundColor: '#E0E0E0', 
-        justifyContent: 'center', 
+        marginRight: '20%',
+        width: '100%',
+        height: 50,
+        backgroundColor: '#E0E0E0',
+        justifyContent: 'center',
         alignItems: 'center',
         position: 'absolute',
         bottom: 10
-        
+
     },
 
     submit1:
@@ -177,42 +177,42 @@ export default StyleSheet.create({
     next:
     {
         height: 20,
-            width: 182.3,
-                color: "#ffffff",
-                    fontFamily: "Honeywell Sans TT",
-                        fontSize: 16,
-                            fontWeight: "500",
-                                lineHeight: 20,
-                                    textAlign: 'center',
-                                    justifyContent:'center'
+        width: 182.3,
+        color: "#ffffff",
+        fontFamily: "Honeywell Sans TT",
+        fontSize: 16,
+        fontWeight: "500",
+        lineHeight: 20,
+        textAlign: 'center',
+        justifyContent: 'center'
     },
     next1:
     {
         height: 20,
         width: 182.3,
-            color: "#B0B0B0",
-                fontFamily: "Honeywell Sans TT",
-                    fontSize: 16,
-                        fontWeight: "500",
-                            lineHeight: 20,
-                                textAlign: 'center',
-                                justifyContent:'center'
+        color: "#B0B0B0",
+        fontFamily: "Honeywell Sans TT",
+        fontSize: 16,
+        fontWeight: "500",
+        lineHeight: 20,
+        textAlign: 'center',
+        justifyContent: 'center'
     },
-    popupCss:{
-        marginTop:'5%',
-        marginLeft:'5%',
-        marginRight:'5%',
-        
+    popupCss: {
+        marginTop: '5%',
+        marginLeft: '5%',
+        marginRight: '5%',
+
         //position:"absolute",
         //opacity: 0.5,
         textAlign: 'center'
-       
+
     },
-    popupTextCss:{
-       fontSize: 20  
+    popupTextCss: {
+        fontSize: 20
     },
-    popupheaderCss:{
+    popupheaderCss: {
         backgroundColor: "#B5131C",
-        color:'blue'
+        color: 'blue'
     }
 });

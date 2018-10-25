@@ -3,20 +3,24 @@ import { StyleSheet } from "react-native";
 export default StyleSheet.create({
     sidemenu:
     {
-        backgroundColor:"#303030",
-        borderBottomWidth:0,
+        backgroundColor: "#303030",
+        borderBottomWidth: 0,
         //width:200
     },
     caption:
     {
-        fontSize:18,
-        
-        color:"#ffffff",
-        letterSpacing:-0.43
+        height: 21,
+        width: 171,
+        color: "#FFFFFF",
+        fontFamily: "Honeywell Sans TT",
+        fontSize: 18,
+        fontWeight: "500",
+        letterSpacing: -0.43,
+        lineHeight: 21
     },
     logo:
     {
-        marginLeft:20,
-        top:20,
+        marginLeft: 20,
+        top: 20,
     }
-    });
+});

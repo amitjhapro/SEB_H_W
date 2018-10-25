@@ -20,12 +20,12 @@ export default StyleSheet.create({
   {
     height: 20,
     width: 67,
-      color: "#1792E5",
-        fontFamily: "Honeywell Sans TT",
-          fontSize: 16,
-            fontWeight: "500",
-              letterSpacing: -0.38,
-              	lineHeight: 20,
+    color: "#1792E5",
+    fontFamily: "Honeywell Sans TT",
+    fontSize: 16,
+    fontWeight: "500",
+    letterSpacing: -0.38,
+    lineHeight: 20,
     marginLeft: 2,
     marginTop: 27
   },
@@ -35,43 +35,43 @@ export default StyleSheet.create({
   aboutHeader: {
     height: 26,
     width: 229,
-      color: "#FFFFFF",
-        fontFamily: "Honeywell Sans TT",
-          fontSize: 22,
-            fontWeight: "bold",
-            	lineHeight: 26
+    color: "#FFFFFF",
+    fontFamily: "Honeywell Sans TT",
+    fontSize: 22,
+    fontWeight: "bold",
+    lineHeight: 26
   },
   aboutContent: {
     height: 141,
     width: 335,
     color: "#FFFFFF",
-      fontFamily: "Honeywell Sans TT",
-      fontSize: 16,
-        fontWeight: "300",
-        	lineHeight: 20,
+    fontFamily: "Honeywell Sans TT",
+    fontSize: 16,
+    fontWeight: "300",
+    lineHeight: 20,
     marginTop: 20
   },
-  accessManual:{
+  accessManual: {
     height: 18,
     width: 147,
-      color: "#1792E5",
-        fontFamily: "Honeywell Sans TT",
-        fontSize: 15,
-          fontWeight: "500",
-            letterSpacing: -0.36,
-            	lineHeight: 18,
+    color: "#1792E5",
+    fontFamily: "Honeywell Sans TT",
+    fontSize: 15,
+    fontWeight: "500",
+    letterSpacing: -0.36,
+    lineHeight: 18,
     marginTop: 5
   },
-  feedback:{
+  feedback: {
     height: 23,
     width: 166,
     color: "#FFFFFF",
-      fontFamily: "Honeywell Sans TT",
-      fontSize: 14,
-        fontWeight: "500",
-        	lineHeight: 17,
+    fontFamily: "Honeywell Sans TT",
+    fontSize: 14,
+    fontWeight: "500",
+    lineHeight: 17,
     marginTop: 15,
-    
+
   },
   feedbackTxtArea: {
     height: 150,
@@ -86,7 +86,7 @@ export default StyleSheet.create({
     height: 50,
     backgroundColor: '#F5FCFF',
   },
-  submitClick:{
+  submitClick: {
     backgroundColor: "#1792E5",
     padding: 16,
     marginTop: 30,
@@ -103,7 +103,7 @@ export default StyleSheet.create({
   {
     color: "#A0A0A0",
     textDecorationLine: "underline",
-    padding:20,
+    padding: 20,
     textAlign: 'center',
     fontSize: 14,
     fontWeight: '500'
