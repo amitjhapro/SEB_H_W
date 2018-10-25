@@ -70,7 +70,8 @@ export default StyleSheet.create({
     cardheader:
     {
         backgroundColor: "#B5131C",
-        height: 30
+        height: 30,
+        opacity: 0.75,
     },
     steps_card: {
         marginLeft: 10,

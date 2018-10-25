@@ -118,7 +118,8 @@ division2:
     marginRight: 10,
     padding: 10,
     marginLeft: 10,
-    marginTop: 30
+    marginTop: 30,
+    opacity: 0.75,
 },
 
 
@@ -254,6 +255,7 @@ division:
     padding: 10,
     marginLeft: 10,
     marginTop: 60,
+    opacity: 0.75,
     //width: 354.01,
     // opacity: 0.75,
     //height: 30,
@@ -311,10 +313,10 @@ col2Css: {
     marginTop: 5,
     marginRight: 5,
 },
-ListImgCSS: {
-    height: 41,
-    width: 41,
-},
+/* ListImgCSS: {
+    height: 32,
+    width: 32,
+}, */
 label:
 {
     fontSize: 20,

@@ -30,7 +30,7 @@ class AmplifiedAirflow extends React.Component {
                                 <Image source={require('../../../assets/hafseries.png')} style={styles.sensors} />
                             </View>
                             <View style={styles.Text_view}>
-                                <Text style={styles.text_style}>HonneywellZephyr HAF Series </Text>
+                                <Text style={styles.text_style}>Honeywell Zephyr HAF Series </Text>
                             </View>
                             <View style={styles.arrow_image}>
                                 <Image source={require('../../../assets/rightarrow.png')} style={styles.rightarrow} />

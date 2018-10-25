@@ -30,7 +30,7 @@ class Arduinohelp extends React.Component {
                             <View flexDirection='column'>
                                 <View flexDirection='row'>
                                     <Text style={styles.stepnum}>1.</Text>
-                                    <Text style={styles.steps}>Mount the SEB on top of the Arduino using native connectors, as shown in the below figure</Text>
+                                    <Text style={styles.steps}>Mount the SEB on top of the Arduino using native connectors, as shown in below figure</Text>
                                 </View>
                                 <View style={styles.sebimage}>
                                     <Image source={require('../../../assets/seb.png')} />

@@ -273,7 +273,7 @@ const styles: any = StyleSheet.create({
         marginLeft: 10,
         marginTop: 64,
         //width: 354.01,
-        opacity: 1,
+        opacity: 0.75,
         //height: 30,
 
     },
@@ -317,10 +317,10 @@ const styles: any = StyleSheet.create({
         marginTop: 5,
         marginRight: 5,
     },
-    ListImgCSS:{
-        height: 41,
-        width: 41,
-    },
+    /* ListImgCSS:{
+        height: 32,
+        width: 32,
+    }, */
 
     division1:
     {        

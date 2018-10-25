@@ -120,7 +120,7 @@ class Sebboard extends React.Component {
 								<Image source={this.state.status == '1' ? require('../../../assets/CheckboxActive.png') : require('../../../assets/Checkbox.png')} style={styles.ListImgCSS} />
 							</View>
 						</View>
-					</TouchableOpacity> */}
+					</TouchableOpacity>  */}
 {/* 					<TouchableOpacity onPress={() => this.listClickEvent('2')}>
 						<View flexDirection='row' style={styles.division1}>
 							<View flexDirection='column' style={styles.col3Css}>

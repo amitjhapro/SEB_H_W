@@ -69,7 +69,7 @@ class Documentation extends React.Component {
                                 <Image source={require('../../../assets/humidity.png')} style={styles.sensors} />
                             </View>
                             <View style={styles.Text_view}>
-                                <Text style={styles.text_style}>Humidity,Thermal and Flexible Heater </Text>
+                                <Text style={styles.text_style}>Humidity,Thermal &#38; Flexible Heater </Text>
                             </View>
                             <View style={styles.arrow_image}>
                                 <Image source={require('../../../assets/rightarrow.png')} style={styles.rightarrow} />
@@ -108,7 +108,7 @@ class Documentation extends React.Component {
                                 <Image source={require('../../../assets/motionsensors.png')} style={styles.sensors} />
                             </View>
                             <View style={styles.Text_view}>
-                                <Text style={styles.text_style}>Motion and Position Sensors </Text>
+                                <Text style={styles.text_style}>Motion &#38; Position Sensors </Text>
                             </View>
                             <View style={styles.arrow_image}>
                                 <Image source={require('../../../assets/rightarrow.png')} style={styles.rightarrow} />
@@ -121,7 +121,7 @@ class Documentation extends React.Component {
                                 <Image source={require('../../../assets/particlesensors.png')} style={styles.sensors} />
                             </View>
                             <View style={styles.Text_view}>
-                                <Text style={styles.text_style}>Particle Sensors </Text>
+                                <Text style={styles.text_style}>Particle Sensor </Text>
                             </View>
                             <View style={styles.arrow_image}>
                                 <Image source={require('../../../assets/rightarrow.png')} style={styles.rightarrow} />
@@ -134,7 +134,7 @@ class Documentation extends React.Component {
                                 <Image source={require('../../../assets/pressuresensors.png')} style={styles.sensors} />
                             </View>
                             <View style={styles.Text_view}>
-                                <Text style={styles.text_style}>Pressure Sensors and Transducers </Text>
+                                <Text style={styles.text_style}>Pressure Sensors &#38; Transducers </Text>
                             </View>
                             <View style={styles.arrow_image}>
                                 <Image source={require('../../../assets/rightarrow.png')} style={styles.rightarrow} />

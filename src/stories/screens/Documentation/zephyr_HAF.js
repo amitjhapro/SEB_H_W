@@ -9,13 +9,13 @@ class ZephyrHAF extends React.Component {
             <View style={styles.container}>
                 <View style={styles.headerbackground} flexDirection='row'>
                     <TouchableOpacity onPress={() =>
-                        this.props.navigation.navigate("AirflowSensors")}>
+                        this.props.navigation.navigate("AmplifiedAirflow")}>
                         <Image source={require('../../../assets/leftarrow.png')} style={styles.back} />
                     </TouchableOpacity>
                     <View>
                         <Text style={styles.headertext}
                             onPress={() =>
-                                this.props.navigation.navigate("AirflowSensors")}>Amplified Airflow Sensors</Text>
+                                this.props.navigation.navigate("AmplifiedAirflow")}>Amplified Airflow Sensors</Text>
                     </View>
                 </View>
                 <View>
@@ -28,7 +28,7 @@ class ZephyrHAF extends React.Component {
                                 <Image source={require('../../../assets/pdf.png')} style={styles.sensors} />
                             </View>
                             <View style={styles.Text_view1}>
-                                <Text style={styles.text_style1}>AWM4000 Series Airflow Sensors,Unamplified and </Text>
+                                <Text style={styles.text_style1}>AWM400000 Series Airflow Sensors,Unamplified and </Text>
                             </View>
                             <View style={styles.installation}>
                                 <Image source={require('../../../assets/installation.png')} style={styles.rightarrow} />
@@ -41,7 +41,7 @@ class ZephyrHAF extends React.Component {
                                 <Image source={require('../../../assets/pdf.png')} style={styles.sensors} />
                             </View>
                             <View style={styles.Text_view1}>
-                                <Text style={styles.text_style1}>AWM4000 Series Airflow Sensors,Unamplified and Amplified </Text>
+                                <Text style={styles.text_style1}>AWM400000 Series Airflow Sensors,Unamplified &#38; Amplified </Text>
                             </View>
                             <View style={styles.installation}>
                                 <Image source={require('../../../assets/installation.png')} style={styles.rightarrow} />
@@ -54,7 +54,7 @@ class ZephyrHAF extends React.Component {
                                 <Image source={require('../../../assets/pdf.png')} style={styles.sensors} />
                             </View>
                             <View style={styles.Text_view1}>
-                                <Text style={styles.text_style1}>AWM4000 Series Microbridge Mass Gas-flow Sensors </Text>
+                                <Text style={styles.text_style1}>AWM40000 Series Microbridge Mass Gas-flow Sensors </Text>
                             </View>
                             <View style={styles.installation}>
                                 <Image source={require('../../../assets/installation.png')} style={styles.rightarrow} />

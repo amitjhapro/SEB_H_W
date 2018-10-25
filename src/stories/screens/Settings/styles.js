@@ -91,6 +91,7 @@ export default StyleSheet.create({
         marginLeft: 10,
         marginTop: 20,
         height: 29,
+        opacity: 0.75,
 
     },
     division:

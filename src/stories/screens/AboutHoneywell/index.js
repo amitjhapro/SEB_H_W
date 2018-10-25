@@ -17,7 +17,7 @@ class BlankPage extends React.Component {
         <ScrollView style={styles.scroll}>
           <View>
             <Text style={styles.aboutHeader}> About Honeywell SEB</Text>
-            <Text style={styles.aboutContent}>Honeywell Sensor Evaluation Board(SEB) mobile app enables you to connect with a sensor evaluation boards mounted on Raspberry Pi 3 or Arduino Uno,Honeywell Mobile Application,which can be downloaded for free from the Play store or iOS store,controls the Arduino board or Raspberry board to take readings from the sensor and visualise the same on the mobile device</Text>
+            <Text style={styles.aboutContent}>Honeywell Sensor Evaluation Board(SEB) mobile app enables you to connect with a sensor evaluation boards mounted on Raspberry Pi 3 or Arduino Uno,Honeywell Mobile Application,which can be downloaded for free from the Play store or iOS store,controls the Arduino board or Raspberry board to take readings from the sensor and visualize the same on the mobile device</Text>
           </View>
           {/* <View>
             <Image source={require('../../../assets/sensor.png')} style={{ height: 220, width: 320, marginLeft: 20, marginRight: 20, marginTop: 160, position: 'absolute', resizeMode: 'cover' }} />
@@ -26,7 +26,7 @@ class BlankPage extends React.Component {
             <Text style={styles.accessManual}>Access User Manual></Text>
           </View>
           <View>
-            <Text style={styles.feedback}>Feedback and Suggestions</Text>
+            <Text style={styles.feedback}>Feedback &#38; Suggestions</Text>
           </View>
 
           <View>

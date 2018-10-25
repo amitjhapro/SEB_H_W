@@ -79,16 +79,17 @@ export default StyleSheet.create({
         marginTop: 5,
         marginRight: 5,
     },
-    ListImgCSS: {
-        height: 41,
-        width: 41,
+    /* ListImgCSS: {
+        height: 32,
+        width: 32,
     },
-
+ */
     division1:
     {
         borderBottomColor: '#e2e0e0',
         borderBottomWidth: 1,
         padding: 15,
+        //opacity:0.75,
         // justifyContent: 'center',
         // alignItems: 'center',
 

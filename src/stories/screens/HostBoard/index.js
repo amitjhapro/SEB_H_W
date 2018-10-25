@@ -18,18 +18,52 @@ class HostBoard extends React.Component {
             status1: true,
             status2: false,
             isConnected: '',
+            HostBoardList:[
+                {
+                    id:1,
+                    name:'Arduino Yun'
+                },
+                {
+                    id:2,
+                    name:'Raspberry Pi'
+                }
+            ]
         }
+        
     }
 
     listClickEvent = (event) => {
         console.log("dataaaa----" + event);
-        this.setState({ status: event });
+        //this.setState({ status: event });
         this.setState({ status2: true });
+        console.log("dataaaa----" + event);
+		this.setState({ selectedIndex: event });
+    //this.setState({ nextButtonEnabled: true });
+    this.setState({ status2: true });
     }
     list2ClickEvent = (event) => {
         console.log("dataaaa----" + event);
         this.setState({ status1: event });
     }
+    hostBoardList = () => {
+		return this.state.HostBoardList.map((data)=>{			
+			return (
+			<TouchableOpacity id="a" onPress={() => this.listClickEvent(`${data.id}`)} key={data.name}>
+				<View flexDirection='row' style={styles.division1} >
+					<View flexDirection='column' style={styles.col3Css}>
+						{/* <Image source={this.state.listDataImageMapping[data.name]} style={styles.ListImgCSS} /> */}
+					</View>
+					<View flexDirection='column' style={styles.col5Css}>
+						<Text style={styles.label}>{data.name}</Text>
+					</View>
+					<View flexDirection='column' style={styles.col2Css}>
+						<Image source={this.state.selectedIndex == `${data.id}` ? require('../../../assets/CheckboxActive.png') : require('../../../assets/Checkbox.png')} style={styles.ListImgCSS} />
+					</View>
+				</View>
+			</TouchableOpacity>
+			)
+		});
+	};
     nextClick() {
         /*        NetInfo.getConnectionInfo().then((connectionInfo) => {
                    alert('Initial, type: ' + connectionInfo.type + ', effectiveType: ' + connectionInfo.isConnected);
@@ -45,6 +79,7 @@ class HostBoard extends React.Component {
             }
             else {
                 this.popupDialog.show();
+                this.props.navigation.navigate("Sebdevice")
             }
         });
 
@@ -55,6 +90,7 @@ class HostBoard extends React.Component {
         const slideAnimation = new SlideAnimation({
             slideFrom: 'bottom',
         });
+        
         return (
             <View style={globalStyles.backgroundStyles}>
                 <View>
@@ -82,7 +118,8 @@ class HostBoard extends React.Component {
                         <Text style={styles.header}>Select Host Board</Text>
                     </View>
                     <View style={styles.listViewCss}>
-                        <TouchableOpacity id="a" onPress={() => this.listClickEvent('1')}>
+                    {this.hostBoardList()}
+                        {/* <TouchableOpacity id="a" onPress={() => this.listClickEvent('1')}>
                             <View flexDirection='row' style={styles.division1} >
                                 <View flexDirection='column' style={styles.col3Css}>
                                     <Image source={require('../../../assets/micro.png')} style={styles.ListImgCSS} />
@@ -107,7 +144,7 @@ class HostBoard extends React.Component {
                                     <Image source={this.state.status == '2' ? require('../../../assets/CheckboxActive.png') : require('../../../assets/Checkbox.png')} style={styles.ListImgCSS} />
                                 </View>
                             </View>
-                        </TouchableOpacity>
+                        </TouchableOpacity> */}
                     </View>
                 </View>
 
