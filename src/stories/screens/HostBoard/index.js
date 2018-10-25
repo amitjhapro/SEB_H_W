@@ -51,7 +51,7 @@ class HostBoard extends React.Component {
 			<TouchableOpacity id="a" onPress={() => this.listClickEvent(`${data.id}`)} key={data.name}>
 				<View flexDirection='row' style={styles.division1} >
 					<View flexDirection='column' style={styles.col3Css}>
-						{/* <Image source={this.state.listDataImageMapping[data.name]} style={styles.ListImgCSS} /> */}
+						<Image source={require('../../../assets/micro.png')} style={styles.ListImgCSS} />
 					</View>
 					<View flexDirection='column' style={styles.col5Css}>
 						<Text style={styles.label}>{data.name}</Text>
