@@ -24,7 +24,7 @@ export default StyleSheet.create({
         width: 13,
         height: 19,
 
-        top: 6,
+        top: 4,
         marginLeft: 10
     },
     content:

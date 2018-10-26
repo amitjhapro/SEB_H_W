@@ -28,7 +28,7 @@ class ZephyrHAF extends React.Component {
                                 <Image source={require('../../../assets/pdf.png')} style={styles.sensors} />
                             </View>
                             <View style={styles.Text_view1}>
-                                <Text style={styles.text_style1}>AWM400000 Series Airflow Sensors,Unamplified and </Text>
+                                <Text style={styles.text_style1}>AWM40000 Series Airflow Sensors,Unamplified and </Text>
                             </View>
                             <View style={styles.installation}>
                                 <Image source={require('../../../assets/installation.png')} style={styles.rightarrow} />
@@ -41,7 +41,7 @@ class ZephyrHAF extends React.Component {
                                 <Image source={require('../../../assets/pdf.png')} style={styles.sensors} />
                             </View>
                             <View style={styles.Text_view1}>
-                                <Text style={styles.text_style1}>AWM400000 Series Airflow Sensors,Unamplified &#38; Amplified </Text>
+                                <Text style={styles.text_style1}>AWM40000 Series Airflow Sensors,Unamplified &#38; Amplified </Text>
                             </View>
                             <View style={styles.installation}>
                                 <Image source={require('../../../assets/installation.png')} style={styles.rightarrow} />

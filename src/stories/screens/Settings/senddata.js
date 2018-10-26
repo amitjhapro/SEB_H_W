@@ -62,6 +62,8 @@ class LoadProfile extends React.Component {
                         </View>
                     </TouchableOpacity>
                 </View>
+                <View style={styles.space}>
+                </View>
                
                 <View style={styles.btnCss}>
                     {this.state.status2 ? <TouchableOpacity style={styles.submit} onPress={() =>

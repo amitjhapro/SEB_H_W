@@ -29,7 +29,7 @@ export default StyleSheet.create({
     back: {
         width: 13,
         height: 19,
-        top: 6,
+        top: 4,
         marginLeft: 10
     },
     content:
@@ -225,7 +225,7 @@ export default StyleSheet.create({
     {
         fontSize: 12,
         color: "#4A4A4A",
-        fontWeight: "300",
+        fontWeight: "500",
         fontFamily: "Honeywell Sans TT",
         letterSpacing: -0.39,
     },
@@ -233,7 +233,8 @@ export default StyleSheet.create({
     {
         marginTop: 19.8,
         marginLeft: 10,
-        marginRight: 10
+        marginRight: 10,
+        height:"40%"
     },
     cardheader:
     {
@@ -259,5 +260,9 @@ export default StyleSheet.create({
         marginLeft: 10,
         marginBottom: 10,
         fontSize: 14
+    },
+    space:
+    {
+        height:"44%"
     }
 });

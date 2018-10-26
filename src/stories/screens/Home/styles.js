@@ -40,6 +40,7 @@ export default StyleSheet.create({
     fontFamily: "Honeywell Sans TT",
     fontWeight: '500',
     lineHeight: 17,
-    paddingTop: 10
+    paddingTop: 10,
+    textDecorationLine: "underline",
   }
 });

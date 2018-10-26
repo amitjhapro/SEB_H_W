@@ -103,7 +103,9 @@ class HostBoard extends React.Component {
                     <TouchableOpacity onPress={() => this.props.navigation.openDrawer()}>
                         <Image source={require('../../../assets/hamburgerMenu.png')} style={styles.image2} />
                     </TouchableOpacity>
+                    <TouchableOpacity onPress={() => this.props.navigation.openDrawer()}>
                     <Text style={styles.home}>Home</Text>
+                    </TouchableOpacity>
                 </View>
 
                 <View>

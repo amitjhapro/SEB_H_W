@@ -18,7 +18,7 @@ class Arduinohelp extends React.Component {
                                 this.props.navigation.navigate("Help"/* , {name: { item }} */)}>Help</Text>
                     </View>
                 </View>
-                <ScrollView>
+               
                     <View>
                         <Text style={styles.content}>Arduino YUN2</Text>
                     </View>
@@ -78,7 +78,7 @@ class Arduinohelp extends React.Component {
                             </View>
                         </CardItem>
                     </Card>
-                </ScrollView>
+                
             </View>
         );
     }

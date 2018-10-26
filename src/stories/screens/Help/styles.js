@@ -23,7 +23,7 @@ export default StyleSheet.create({
     back: {
         width: 13,
         height: 19,
-        top: 6,
+        top: 4,
         marginLeft: 10
     },
     content:
@@ -69,7 +69,8 @@ export default StyleSheet.create({
     {
         marginTop: 30,
         marginLeft: 10,
-        marginRight: 10
+        marginRight: 10,
+        height:"58%"
     },
     cardheader:
     {
@@ -79,7 +80,8 @@ export default StyleSheet.create({
     },
     steps_card: {
         marginLeft: 10,
-        marginRight: 10
+        marginRight: 10 ,
+        height:"80%"
     },
     faq:
     {
@@ -123,7 +125,7 @@ export default StyleSheet.create({
         fontFamily: "Honeywell Sans TT",
         marginLeft: 17,
         marginRight: 20,
-        letterSpacing: -0.34,	
+        letterSpacing: -0.34,
         lineHeight: 17
     },
     step10:
@@ -133,7 +135,7 @@ export default StyleSheet.create({
         fontFamily: "Honeywell Sans TT",
         left: 9,
         marginRight: 20,
-        letterSpacing: -0.34,	
+        letterSpacing: -0.34,
         lineHeight: 17
     },
     step11:
@@ -143,7 +145,7 @@ export default StyleSheet.create({
         fontFamily: "Honeywell Sans TT",
         left: 9,
         marginRight: 20,
-        letterSpacing: -0.34,	
+        letterSpacing: -0.34,
         lineHeight: 17
     },
 

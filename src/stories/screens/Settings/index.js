@@ -15,8 +15,7 @@ class project extends Component {
         return (
             <View style={styles.container}>
                 <View style={styles.headerbackground} flexDirection='row'>
-                    <TouchableOpacity onPress={() =>
-                        this.props.navigation.navigate("DrawerOpen")}>
+                <TouchableOpacity onPress={() => this.props.navigation.openDrawer()}>
                         <Image source={require('../../../assets/menu.png')} style={styles.menu} />
                     </TouchableOpacity>
                     <View>
@@ -135,35 +134,42 @@ class project extends Component {
                     <View flexDirection='column' style={styles.divisionheader}>
                         <Text style={styles.header}>Profile Settings</Text>
                     </View>
+                    <TouchableOpacity onPress={() => this.props.navigation.navigate('SaveProfile')}>
                     <View flexDirection='row' style={styles.division} elevation={5} >
-                        <TouchableOpacity onPress={() => this.props.navigation.navigate('SaveProfile')}>
+                       
                             <View >
                                 <Text style={styles.saveprofile}>Save Profile</Text>
                             </View>
-                        </TouchableOpacity>
+                       
                         <View>
                         </View>
+                        
                     </View>
+                    </TouchableOpacity>
+                    <TouchableOpacity onPress={() => this.props.navigation.navigate('LoadProfile')}>
                     <View flexDirection='row' style={styles.division} elevation={5}>
-                        <TouchableOpacity onPress={() => this.props.navigation.navigate('LoadProfile')}>
+                       
                             <View >
                                 <Text style={styles.saveprofile}>Load Profile</Text>
                             </View>
-                        </TouchableOpacity>
+                        
                     </View>
+                    </TouchableOpacity>
                     <View flexDirection='column' style={styles.divisionheader}>
                         <Text style={styles.header}>Data Log Settings</Text>
                     </View>
+                    <TouchableOpacity onPress={() => this.props.navigation.navigate('SendData')}>
                     <View flexDirection='row' style={styles.division} elevation={5}>
-                        <TouchableOpacity onPress={() => this.props.navigation.navigate('SendData')}>
+                       
                             <View >
                                 <Text style={styles.saveprofile}>Send Data</Text>
                             </View>
 
-                        </TouchableOpacity>
+                       
                         <View>
                         </View>
                     </View>
+                    </TouchableOpacity>
                     <View>
                         <Text>{"\n"}</Text>
                     </View>
