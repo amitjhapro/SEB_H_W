@@ -71,9 +71,6 @@ const styles: any = StyleSheet.create({
         // flex:1,
         // height:'100%'
         // marginTop: 5,
-        shadowOffset: { width: 2, height: 1 },
-        shadowColor: 'black',
-        shadowOpacity: 0.3,
         backgroundColor:'#ddd',
         // zIndex:1,
         // left:0,
@@ -98,6 +95,13 @@ const styles: any = StyleSheet.create({
     scrollViewStyle:{
         flex:1,
         // marginTop: 90,
+        borderWidth:1,
+        borderColor: '#cfcfcf',
+        backgroundColor:'#ddd',
+        shadowOffset: { width: 2, height: 1 },
+        shadowColor: 'black',
+        shadowOpacity: 0.3,
+        elevation: 7,
         marginHorizontal: 10,
     },
     next:
@@ -111,7 +115,9 @@ const styles: any = StyleSheet.create({
     {
         margin: 10,
         // marginLeft: 10,
-        // marginRight:10, 
+        // marginRight:10,
+        borderWidth:1,
+        borderColor: '#cfcfcf', 
         height: 50, 
         backgroundColor: '#00bfff', 
         justifyContent: 'center', 

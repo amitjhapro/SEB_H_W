@@ -277,7 +277,7 @@ render() {
             barStyle="light-content"
             backgroundColor="#000"
         />  */}
-
+        
         {/* LABEL WITH CLEAR TEXT BUTTON */}
         <View style={{flex:1, flexDirection:'column'}}>
         <View style={styles.titleView}>
@@ -290,7 +290,7 @@ render() {
                 </TouchableOpacity>
             </View>
         </View>
-        
+        <View style={{flex:1}}>
         {/* PARTS NUMBER GENERATOR TEXTFIELD */}
         <View style={styles.partView}>
             <View style={styles.partInnerView}>
@@ -319,6 +319,7 @@ render() {
             {this.renderSensorDropdownOptions()}
             {this.renderSensorConfigurationSection()}
         </ScrollView>
+        </View>
         </View>
         {/* GO BUTTON */}
         <TouchableOpacity style={styles.nextBtnViewCss}
