@@ -21,8 +21,11 @@ function bindAction(dispatch) {
 	};
 }
 
-const mapStateToProps = state => ({
-	data: state.homeReducer.list,
-	isLoading: state.homeReducer.isLoading,
-});
+const mapStateToProps = ({ genPartNoReducer }) => {
+    return {
+		data: genPartNoReducer.list,
+		isLoading: genPartNoReducer.isLoading,
+		optionMapping: genPartNoReducer.optionMapping
+	}
+}
 export default connect(mapStateToProps, bindAction)(GenPartNoContainer);

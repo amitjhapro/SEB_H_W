@@ -198,21 +198,23 @@ onSearchResultPress = (item) => {
 renderPartNumberSearchResults = () => {
     if(this.state.filteredPartNumbers.length > 0){
         return (
-            <FlatList
-                // style={styles.searchResultStyle}
-                data={this.state.filteredPartNumbers}
-                keyExtractor={(item) => item["partNumber"]}
-                renderItem={
-                    ({item}) => 
-                    <TouchableOpacity
-                        onPress={()=>this.onSearchResultPress(item)}
-                    >
-                        <View style={styles.searchResultCellStyle}>
-                            <Text style={styles.searchResultCellTextStyle}>{item["partNumber"]}</Text>
-                        </View>
-                    </TouchableOpacity>
-                }
-            />
+            <View style={styles.searchResultStyle}>
+                <FlatList
+                    
+                    data={this.state.filteredPartNumbers}
+                    keyExtractor={(item) => item["partNumber"]}
+                    renderItem={
+                        ({item}) => 
+                        <TouchableOpacity
+                            onPress={()=>this.onSearchResultPress(item)}
+                        >
+                            <View style={styles.searchResultCellStyle}>
+                                <Text style={styles.searchResultCellTextStyle}>{item["partNumber"]}</Text>
+                            </View>
+                        </TouchableOpacity>
+                    }
+                />
+            </View>
         );
     }
     return null
@@ -277,7 +279,7 @@ render() {
         />  */}
 
         {/* LABEL WITH CLEAR TEXT BUTTON */}
-        <ScrollView>
+        <View style={{flex:1, flexDirection:'column'}}>
         <View style={styles.titleView}>
             <View style={styles.partNumberView}>
                 <Text style={styles.partNumberText}>Generate Part Number</Text>
@@ -310,21 +312,21 @@ render() {
                     </View>
                 </View>
             </View>
+        </View>
+        <ScrollView style={styles.scrollViewStyle}>
             {this.renderPartNumberSearchResults()}
-
             {/* PARTS DROPDOWN LISTING */}
             {this.renderSensorDropdownOptions()}
-            
-        </View>
-        {this.renderSensorConfigurationSection()}
+            {this.renderSensorConfigurationSection()}
         </ScrollView>
+        </View>
         {/* GO BUTTON */}
         <TouchableOpacity style={styles.nextBtnViewCss}
             // onPress={() => this.props.navigation.navigate("Sebdevice"/* , {name: { item }} */)}>
             onPress={ this.goToGraph }>
             <Text style={styles.next} >Go</Text>
         </TouchableOpacity>
-
+        
     </View>
   );
 }

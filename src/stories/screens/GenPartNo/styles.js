@@ -25,7 +25,7 @@ const styles: any = StyleSheet.create({
     partNumberText:{ fontSize: 20, color: '#000' },
     clearView:{ flex: 1 },
     clearText:{ textAlign: 'right', color: '#1792E5' },
-    partView:{ flex: 1, elevation: 7, marginBottom: 20, backgroundColor: '#ddd',marginLeft:10, marginRight:10, borderWidth: 1, borderColor: '#ddd' },
+    partView:{elevation: 7, marginBottom: 0, backgroundColor: '#ddd',marginLeft:10, marginRight:10, borderWidth: 1, borderColor: '#ddd' },
     partInnerView:{ height: 50, backgroundColor: '#C84E55', justifyContent: 'center', paddingLeft: 10 },
     partText:{ fontSize: 16, color: '#fff', fontWeight: '600' },
     mostOuterFilterView:{ backgroundColor: '#EBEBEB', paddingHorizontal: 10, height: 60 },
@@ -68,13 +68,18 @@ const styles: any = StyleSheet.create({
 		fontWeight:"bold"
     },
     searchResultStyle: {
-        marginTop: 5,
-        backgroundColor:'#555',
-        zIndex:1,
-        left:0,
-        right:0,
-        height: '100%',
-        elevation:6,
+        // flex:1,
+        // height:'100%'
+        // marginTop: 5,
+        shadowOffset: { width: 2, height: 1 },
+        shadowColor: 'black',
+        shadowOpacity: 0.3,
+        backgroundColor:'#ddd',
+        // zIndex:1,
+        // left:0,
+        // right:0,
+        // height: '100%',
+        // elevation:6,
         // position:'absolute',
         // top:60,
 		// alignSelf: 'stretch',
@@ -89,6 +94,11 @@ const styles: any = StyleSheet.create({
         fontFamily:'Honeywell Sans TT', 
         fontSize:20,
         color:'black',
+    },
+    scrollViewStyle:{
+        flex:1,
+        // marginTop: 90,
+        marginHorizontal: 10,
     },
     next:
     {
@@ -126,5 +136,6 @@ const styles: any = StyleSheet.create({
     // marginRight:50
 
     }
+    
 });
 export default styles;
