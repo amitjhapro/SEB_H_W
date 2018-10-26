@@ -1,259 +1,1563 @@
 {
   "SensorTypes": [
+
     {
-      // "name": "Magnetics",
-      "name": "SEB Magnetics",
+      "name": "Force",
+      "description": "Force",
       "id": 0,
       "series": [
- 
+        {
+          "name": "FSA",
+          "code": "FSA",
+          "id": 0,
+          "description": "FSA",
+          "parts": [
+            {
+              "name": "Coupling",
+              "description": "Coupling",
+              "partPosition": 0,
+              "options": [
+                {
+                  "id": 1,
+                  "name": "G",
+                  "description": "Gel"
+                }
+              ]
+            },
+            {
+              "name": "ContactElement",
+              "description": "Contact Element",
+              "partPosition": 1,
+              "options": [
+                {
+                  "id": 1,
+                  "name": "P",
+                  "description": "Plunger"
+                }
+              ]
+            },
+            {
+              "name": "DiagnosticsOption",
+              "description": "Diagnostics Option",
+              "partPosition": 2,
+              "options": [
+                {
+                  "id": 1,
+                  "name": "N",
+                  "description": "No diagnostics"
+                },
+                {
+                  "id": 2,
+                  "name": "D",
+                  "description": "Diagnostics, sensor short and open"
+                }
+              ]
+            },
+            {
+              "name": "FutureUse",
+              "description": "Future Use",
+              "partPosition": 3,
+              "options": [
+                {
+                  "id": 1,
+                  "name": "XX",
+                  "description": "XX"
+                }
+              ]
+            },
+            {
+              "name": "ForceRange",
+              "description": "Force Range",
+              "partPosition": 5,
+              "options": [
+                {
+                  "id": 1,
+                  "name": "005",
+                  "type": "value",
+                  "value": 5,
+                  "unit": "N",
+                  "description": "5 Newton (N)"
+                },
+                {
+                  "id": 2,
+                  "name": "7.5",
+                  "type": "value",
+                  "value": 7.5,
+                  "unit": "N",
+                  "description": "7.5 Newton (N)"
+                },
+                {
+                  "id": 3,
+                  "name": "010",
+                  "type": "value",
+                  "value": 10,
+                  "unit": "N",
+                  "description": "10 Newton (N)"
+                },
+                {
+                  "id": 4,
+                  "name": "015",
+                  "type": "value",
+                  "value": 15,
+                  "unit": "N",
+                  "description": "15 Newton (N)"
+                },
+                {
+                  "id": 5,
+                  "name": "020",
+                  "type": "value",
+                  "value": 20,
+                  "unit": "N",
+                  "description": "20 Newton (N)"
+                },
+                {
+                  "id": 6,
+                  "name": "025",
+                  "type": "value",
+                  "value": 25,
+                  "unit": "N",
+                  "description": "25 Newton (N)"
+                },
+                {
+                  "id": 7,
+                  "name": "001",
+                  "type": "value",
+                  "value": 1,
+                  "unit": "lb",
+                  "description": "1 pound (lb)"
+                },
+                {
+                  "id": 8,
+                  "name": "1.5",
+                  "type": "value",
+                  "value": 1.5,
+                  "unit": "lb",
+                  "description": "1.5 pound (lb)"
+                },
+                {
+                  "id": 9,
+                  "name": "002",
+                  "type": "value",
+                  "value": 2,
+                  "unit": "lb",
+                  "description": "2 pound (lb)"
+                },
+                {
+                  "id": 10,
+                  "name": "003",
+                  "type": "value",
+                  "value": 3,
+                  "unit": "lb",
+                  "description": "3 pound (lb)"
+                },
+                {
+                  "id": 11,
+                  "name": "005",
+                  "type": "value",
+                  "value": 5,
+                  "unit": "lb",
+                  "description": "5 pound (lb)"
+                },
+                {
+                  "id": 12,
+                  "name": "500",
+                  "type": "value",
+                  "value": 500,
+                  "unit": "g",
+                  "description": "5 gram (g)"
+                },
+                {
+                  "id": 13,
+                  "name": "750",
+                  "type": "value",
+                  "value": 750,
+                  "unit": "g",
+                  "description": "750 gram (g)"
+                },
+                {
+                  "id": 14,
+                  "name": "001",
+                  "type": "value",
+                  "value": 1,
+                  "unit": "kg",
+                  "description": "1 kilogram (kg)"
+                },
+                {
+                  "id": 15,
+                  "name": "002",
+                  "type": "value",
+                  "value": 2,
+                  "unit": "kg",
+                  "description": "2 kilogram (kg)"
+                }
+              ]
+            },
+            {
+              "name": "ForceUnit",
+              "description": "Force Unit",
+              "partPosition": 8,
+              "options": [
+                {
+                  "id": 1,
+                  "name": "W",
+                  "type": "value",
+                  "value": "W",
+                  "unit": "N",
+                  "description": "Newton (N)"
+                },
+                {
+                  "id": 2,
+                  "name": "L",
+                  "type": "value",
+                  "value": "L",
+                  "unit": "lb",
+                  "description": "pound (lb)"
+                },
+                {
+                  "id": 3,
+                  "name": "F",
+                  "type": "value",
+                  "value": "F",
+                  "unit": "g",
+                  "description": "gram (g)"
+                },
+                {
+                  "id": 4,
+                  "name": "R",
+                  "type": "value",
+                  "value": "R",
+                  "unit": "kg",
+                  "description": "kilogram (N)"
+                }
+              ]
+            },
+            {
+              "name": "ForceType",
+              "description": "Force Type",
+              "partPosition": 9,
+              "options": [
+                {
+                  "id": 1,
+                  "name": "C",
+                  "description": "Compression"
+                }
+              ]
+            },
+            {
+              "name": "Output",
+              "description": "Output",
+              "partPosition": 10,
+              "options": [
+                {
+                  "id": 1,
+                  "name": "A",
+                  "description": "Analog"
+                },
+                {
+                  "id": 2,
+                  "name": "S",
+                  "description": "SPI"
+                },
+                {
+                  "id": 3,
+                  "name": "2",
+                  "description": "I2C, Address 0x28"
+                },
+                {
+                  "id": 4,
+                  "name": "3",
+                  "description": "I2C, Address 0x38"
+                },
+                {
+                  "id": 5,
+                  "name": "4",
+                  "description": "I2C, Address 0x48"
+                },
+                {
+                  "id": 6,
+                  "name": "5",
+                  "description": "I2C, Address 0x58"
+                },
+                {
+                  "id": 7,
+                  "name": "6",
+                  "description": "I2C, Address 0x68"
+                }
+              ]
+            },
+            {
+              "name": "TransferFunction",
+              "description": "Transfer Function",
+              "partPosition": 11,
+              "options": [
+                {
+                  "id": 1,
+                  "name": "A",
+                  "type": "range",
+                  "min": 10,
+                  "max": 90,
+                  "min_unit": "%",
+                  "max_unit": "%",
+                  "description": "10% to 90%"
+                },
+                {
+                  "id": 2,
+                  "name": "B",
+                  "type": "range",
+                  "min": 5,
+                  "max": 95,
+                  "min_unit": "%",
+                  "max_unit": "%",
+                  "description": "5% to 95%"
+                },
+                {
+                  "id": 3,
+                  "name": "C",
+                  "type": "range",
+                  "min": 20,
+                  "max": 80,
+                  "min_unit": "%",
+                  "max_unit": "%",
+                  "description": "20% to 80%"
+                }
+              ]
+            },
+            {
+              "name": "SupplyVoltage",
+              "description": "Supply Voltage",
+              "partPosition": 12,
+              "options": [
+                {
+                  "id": 1,
+                  "name": "3",
+                  "type": "range,tolerance",
+                  "median": 3.3,
+                  "min": 2.97,
+                  "max": 3.63,
+                  "min_unit": "v",
+                  "max_unit": "v",
+                  "description": "3.3 Vdc (voltage) ±10%"
+                },
+                {
+                  "id": 2,
+                  "name": "3",
+                  "type": "range,tolerance",
+                  "median": 5,
+                  "min": 4.5,
+                  "max": 5.5,
+                  "min_unit": "v",
+                  "max_unit": "v",
+                  "description": "5 Vdc (voltage) ±10%"
+                }
+              ]
+            }
+          ]
+
+        },
+        {
+          "name": "FSG",
+          "code": "FSG",
+          "id": 1,
+          "description": "FSG",
+          "partNumbers": [
+            {
+              "partNumber": "FSG005WNPB",
+              "description": "FSG Series Force Sensor, 0 N to 5 N force sensing range, blister pack packaging"
+            },
+            {
+              "partNumber": "FSG010WNPB",
+              "description": "FSG Series Force Sensor, 0 N to 10 N force sensing range, blister pack packaging"
+            },
+            {
+              "partNumber": "FSG015WNPB",
+              "description": "FSG Series Force Sensor, 0 N to 15 N force sensing range, blister pack packaging"
+            },
+            {
+              "partNumber": "FSG020WNPB",
+              "description": "FSG Series Force Sensor, 0 N to 20 N force sensing range, blister pack packaging"
+            },
+            {
+              "partNumber": "PC15132",
+              "description": "Plastic mounting bracket"
+            }
+          ]
+        },
+        {
+          "name": "FSS",
+          "code": "FSS",
+          "id": 2,
+          "description": "FSS",
+          "partNumbers": [
+            {
+              "partNumber": "FSS005WNSB",
+              "description": "FSS Series Low Profile Force Sensor, 0 N to 5 N force range, short tube packaging"
+            },
+            {
+              "partNumber": "FSS005WNSR",
+              "description": "FSS Series Low Profile Force Sensor, 0 N to 5 N force range, tape and reel packaging"
+            },
+            {
+              "partNumber": "FSS005WNST",
+              "description": "FSS Series Low Profile Force Sensor, 0 N to 5 N force range, standard tube packaging"
+            },
+            {
+              "partNumber": "FSS010WNSB",
+              "description": "FSS Series Low Profile Force Sensor, 0 N to 10 N force range, short tube packaging"
+            },
+            {
+              "partNumber": "FSS010WNSR",
+              "description": "FSS Series Low Profile Force Sensor, 0 N to 10 N force range, tape and reel packaging"
+            },
+            {
+              "partNumber": "FSS010WNST",
+              "description": "FSS Series Low Profile Force Sensor, 0 N to 10 N force range, standard tube packaging"
+            },
+            {
+              "partNumber": "FSS015WNSB",
+              "description": "FSS Series Low Profile Force Sensor, 0 N to 15 N force range, short tube packaging"
+            },
+            {
+              "partNumber": "FSS015WNSR",
+              "description": "FSS Series Low Profile Force Sensor, 0 N to 15 N force range, tape and reel packaging"
+            },
+            {
+              "partNumber": "FSS015WNST",
+              "description": "FSS Series Low Profile Force Sensor, 0 N to 15 N force range, standard tube packaging"
+            },
+            {
+              "partNumber": "FSS020WNSB",
+              "description": "FSS Series Low Profile Force Sensor, 0 N to 20 N force range, short tube packaging"
+            },
+            {
+              "PartNumber": "FSS020WNSR",
+              "description": "FSS Series Low Profile Force Sensor, 0 N to 20 N force range, tape and reel packaging"
+            },
+            {
+              "PartNumber": "FSS020WNST",
+              "description": "FSS Series Low Profile Force Sensor, 0 N to 20 N force range, standard tube packaging"
+            }
+          ]
+
+        },
+        {
+          "name": "TBF",
+          "code": "TBF",
+          "id": 3,
+          "description": "TBF",
+          "parts": [
+            {
+              "name": "Package",
+              "description": "Package",
+              "partPosition": 0,
+              "options": [
+                {
+                  "id": 1,
+                  "name": "L",
+                  "description": "Leadless SMT (Surface Mount Technology)"
+                }
+              ]
+            },
+            {
+              "name": "PressurePort",
+              "description": "Pressure Port",
+              "partPosition": 1,
+              "options": [
+                {
+                  "id": 1,
+                  "name": "PN",
+                  "description": "Low-profile port"
+                }
+              ]
+            },
+            {
+              "name": "GelCoatingOption",
+              "description": "Gel Coating Option",
+              "partPosition": 3,
+              "options": [
+                {
+                  "id": 1,
+                  "name": "S",
+                  "description": "Silicone gel interface"
+                }
+              ]
+            },
+            {
+              "name": "PressureRange",
+              "description": "PressureRange",
+              "partPosition": 4,
+              "options": [
+                {
+                  "id": 1,
+                  "name": "001BG",
+                  "min": "0",
+                  "max": "1",
+                  "type": "range",
+                  "description": "0 bar to 1 bar"
+                },
+                {
+                  "id": 2,
+                  "name": "1.6BG",
+                  "min": "0",
+                  "max": "1.6",
+                  "type": "range",
+                  "description": "0 bar to 1.6 bar"
+                },
+                {
+                  "id": 3,
+                  "name": "2.5BG",
+                  "min": "0",
+                  "max": "2.5",
+                  "type": "range",
+                  "description": "0 bar to 2.5 bar"
+                },
+                {
+                  "id": 4,
+                  "name": "004BG",
+                  "min": "0",
+                  "max": "4",
+                  "type": "range",
+                  "description": "0 bar to 4 bar"
+                },
+                {
+                  "id": 5,
+                  "name": "006BG",
+                  "min": "0",
+                  "max": "6",
+                  "type": "range",
+                  "description": "0 bar to 6 bar"
+                },
+                {
+                  "id": 6,
+                  "name": "010BG",
+                  "min": "0",
+                  "max": "10",
+                  "type": "range",
+                  "description": "0 bar to 10 bar"
+                },
+                {
+                  "id": 7,
+                  "name": "100KG",
+                  "min": "0",
+                  "max": "100",
+                  "type": "range",
+                  "description": "0 kPa to 100 kPa"
+                },
+                {
+                  "id": 8,
+                  "name": "160KG",
+                  "min": "0",
+                  "max": "160",
+                  "type": "range",
+                  "description": "0 kPa to 160 kPa"
+                },
+                {
+                  "id": 9,
+                  "name": "250KG",
+                  "min": "0",
+                  "max": "150",
+                  "type": "range",
+                  "description": "0 kPa to 250 kPa"
+                },
+                {
+                  "id": 10,
+                  "name": "400KG",
+                  "min": "0",
+                  "max": "400",
+                  "type": "range",
+                  "description": "0 kPa to 400 kPa"
+                },
+                {
+                  "id": 11,
+                  "name": "600KG",
+                  "min": "0",
+                  "max": "600",
+                  "type": "range",
+                  "description": "0 kPa to 600 kPa"
+                },
+                {
+                  "id": 12,
+                  "name": "001GG",
+                  "min": "0",
+                  "max": "1",
+                  "type": "range",
+                  "description": "0 MPa to 1 MPa"
+                },
+                {
+                  "id": 13,
+                  "name": "015PG",
+                  "min": "0",
+                  "max": "15",
+                  "type": "range",
+                  "description": "0 psi to 15 psi"
+                },
+                {
+                  "id": 14,
+                  "name": "030PG",
+                  "min": "0",
+                  "max": "30",
+                  "type": "range",
+                  "description": "0 psi to 30 psi"
+                },
+                {
+                  "id": 15,
+                  "name": "060PG",
+                  "min": "0",
+                  "max": "60",
+                  "type": "range",
+                  "description": "0 psi to 60 psi"
+                },
+                {
+                  "id": 16,
+                  "name": "100PG",
+                  "min": "0",
+                  "max": "100",
+                  "type": "range",
+                  "description": "0 psi to 100 psi"
+                },
+                {
+                  "id": 17,
+                  "name": "150PG",
+                  "min": "0",
+                  "max": "150",
+                  "type": "range",
+                  "description": "0 psi to 150 psi"
+                }
+              ]
+            },
+            {
+              "name": "Output",
+              "description": "Output",
+              "partPosition": 10,
+              "options": [
+                {
+                  "id": 1,
+                  "name": "U",
+                  "description": "Unamplified"
+                }
+              ]
+            },
+            {
+              "name": "Compensation",
+              "description": "Compensation",
+              "partPosition": 11,
+              "options": [
+                {
+                  "id": 1,
+                  "name": "C",
+                  "description": "Compensated"
+                }
+              ]
+            },
+            {
+              "name": "Supply Voltage",
+              "description": "Supply Voltage",
+              "partPosition": 12,
+              "options": [
+                {
+                  "id": 1,
+                  "name": "V",
+                  "description": "Constant"
+                }
+              ]
+            }
+
+          ]
+        },
+        {
+          "name": "FSSSMT",
+          "code": "FSS-SMT",
+          "id": 4,
+          "description": "FSS-SMT Series",
+          "partNumbers": [
+            {
+              "partNumber": "FSS005WNGB",
+              "description": "FSS-SMT Series Low Profile Force Sensor, 0 N to 5 N force sensing range, short tube packaging"
+            },
+            {
+              "partNumber": "FSS005WNGR",
+              "description": "FSS-SMT Series Low Profile Force Sensor, 0 N to 5 N force sensing range, tape and reel packaging"
+            },
+            {
+              "partNumber": "FSS005WNGT",
+              "description": "FSS-SMT Series Low Profile Force Sensor, 0 N to 5 N force sensing range, standard tube packaging"
+            },
+            {
+              "partNumber": "FSS010WNGB",
+              "description": "FSS-SMT Series Low Profile Force Sensor, 0 N to 10 N force sensing range, short tube packaging"
+            },
+            {
+              "partNumber": "FSS010WNGR",
+              "description": "FSS-SMT Series Low Profile Force Sensor, 0 N to 10 N force sensing range, tape and reel packaging"
+            },
+            {
+              "partNumber": "FSS010WNGT",
+              "description": "FSS-SMT Series Low Profile Force Sensor, 0 N to 10 N force sensing range, standard tube packaging"
+            },
+            {
+              "partNumber": "FSS015WNGB",
+              "description": "FSS-SMT Series Low Profile Force Sensor, 0 N to 15 N force sensing range, short tube packaging"
+            },
+            {
+              "partNumber": "FSS015WNGR",
+              "description": "FSS-SMT Series Low Profile Force Sensor, 0 N to 15 N force sensing range, tape and reel packaging"
+            },
+            {
+              "partNumber": "FSS015WNGT",
+              "description": "FSS-SMT Series Low Profile Force Sensor, 0 N to 15 N force sensing range, standard tube packaging"
+            },
+
+            {
+              "partNumber": "FSS020WNGB",
+              "description": "FSS-SMT Series Low Profile Force Sensor, 0 N to 20 N force sensing range, short tube packaging"
+            },
+            {
+              "partNumber": "FSS020WNGR",
+              "description": "FSS-SMT Series Low Profile Force Sensor, 0 N to 20 N force sensing range, tape and reel packaging"
+            },
+            {
+              "partNumber": "FSS020WNGT",
+              "description": "FSS-SMT Series Low Profile Force Sensor, 0 N to 20 N force sensing range, standard tube packaging"
+            }
+          ]
+        },
+        {
+          "name": "1865",
+          "code": "1865",
+          "id": 5,
+          "description": "1865 Series",
+          "parts": [
+            {
+              "name": "PressureRange",
+              "description": "Pressure Range",
+              "partPosition": 0,
+              "options": [
+                {
+                  "id": 1,
+                  "name": "01",
+                  "min": "0",
+                  "max": "1",
+                  "type": "range",
+                  "description": " 0 psi to 5 psi "
+                },
+                {
+                  "id": 1,
+                  "name": "02",
+                  "min": "0",
+                  "max": "10",
+                  "type": "range",
+                  "description": " 0 psi to 10 psi "
+                },
+                {
+                  "id": 2,
+                  "name": "03",
+                  "min": "0",
+                  "max": "15",
+                  "type": "range",
+                  "description": " 0 psi to 15 psi "
+                },
+                {
+                  "id": 3,
+                  "name": "05",
+                  "min": "0",
+                  "max": "25",
+                  "type": "range",
+                  "description": " 0 psi to 25 psi"
+                },
+                {
+                  "id": 4,
+                  "name": "07",
+                  "min": "0",
+                  "max": "30",
+                  "type": "range",
+                  "description": " 0 psi to 30 psi"
+                }
+              ]
+            },
+            {
+              "name": "SENSORTYPE",
+              "description": "Senso Type",
+              "partPosition": 2,
+              "options": [
+                {
+                  "id": 1,
+                  "name": "G",
+                  "description": " Gauge Pressure"
+                }
+              ]
+            },
+            {
+              "name": "EXCITATION",
+              "description": "Excitation",
+              "partPosition": 3,
+              "options": [
+                {
+                  "id": 1,
+                  "name": "L",
+                  "description": "1.5 mA"
+                },
+                {
+                  "id": 2,
+                  "name": "K",
+                  "description": "10 Vdc"
+                }
+              ]
+            },
+            {
+              "name": "DIAPHRAGM TYPE",
+              "description": "Diaphragm Type",
+              "partPosition": 4,
+              "options": [
+                {
+                  "id": 1,
+                  "name": "D",
+                  "description": "Dimethyl Silicone"
+                }
+              ]
+            },
+            {
+              "name": "COMPENSATION",
+              "description": "Compensation",
+              "partPosition": 5,
+              "options": [
+                {
+                  "id": 1,
+                  "name": "N",
+                  "description": "Laser trimmed, normalized output"
+                }
+              ]
+            }
+          ]
+
+        }
+      ]
+    },
+    {
+      "name": "Magnetics",
+      "description": "Magnetics",
+      "id": 1,
+      "series": [
         {
           "name": "MagneticsSeries",
           "code": "",
           "id": 0,
           "description": "Magnetics Series",
-          "parts": [
+          "params": [
             {
-              "name": "MagneticsSeries",
-              "description": "Magnetics Series",
-              "partPosition": 0,
+              "name": "ExternalPullUp",
+              "description": "External Pull up",
+              "mandatoryOnParts": "MagneticType||Electrical/Magneticoptions",
+              "mandatoryOnOptions": "Bipolar,Unipolar,Omnipolar,Latch,SpeedAndDirection||ExternalPullup",
               "options": [
                 {
-                  "id": 1,
-                  "name": "SS",
-                  "description": "Commercial Solid State"
+                  "id": "0",
+                  "name": "150",
+                  "description": "150",
+                  "command": "00"
                 },
                 {
-                  "id": 2,
-                  "name": "VF",
-                  "description": "Vehicle Solid State"
+                  "id": "1",
+                  "name": "270",
+                  "description": "270",
+                  "command": "01"
                 },
                 {
-                  "id": 3,
-                  "name": "SL",
-                  "description": "Solid State Low Gauss"
-                },
-                {
-                  "id": 4,
-                  "name": "SM",
-                  "description": "Solid State Magnetoresistive"
-                },
-                {
-                  "id": 5,
-                  "name": "VM",
-                  "description": "Vehicle Magnetoresistive"
-                },
-                {
-                  "id": 6,
-                  "name": "SG",
-                  "description": "Solid State Gear Tooth"
-                },
-                {
-                  "id": 7,
-                  "name": "VG",
-                  "description": "Vehicle Solid State Gear Tooth"
-                },
-                {
-                  "id": 8,
-                  "name": "SR",
-                  "description": "Customised or Overmoulded first level products"
-                }
- 
-              ]
-            },
-            {
-              "name": "PackageStyle",
-              "description": "Package Style",
-              "partPosition": 2,
-              "options": [
-                {
-                  "id": "SOT23",
-                  "name": "1",
-                  "description": "SOT-23"
- 
-                },
-                {
-                  "id": "SOT89B",
-                  "name": "2",
-                  "description": "SOT-89B"
- 
-                },
-                {
-                  "id": "SIP2pin",
-                  "name": "3",
-                  "description": "SIP 2 pin"
- 
-                },
-                {
-                  "id": "TO92SIP3pin",
-                  "name": "4",
-                  "description": "TO-92 SIP 3 pin"
- 
-                },
-                {
-                  "id": "TO92SIP4pin",
-                  "name": "5",
-                  "description": "TO-92 SIP 4 pin"
- 
+                  "id": "2",
+                  "name": "499",
+                  "description": "499",
+                  "command": "02"
                 }
               ]
             },
             {
-              "name": "MagneticType",
-              "description": "Magnetic Sensor Type",
-              "partPosition": 3,
+              "name": "Power",
+              "description": "Power",
               "options": [
                 {
-                  "id": "Bipolar",
-                  "name": "0",
-                  "description": "Bipolar",
-                  "command": "03"
+                  "id": "0",
+                  "name": "3dot3V",
+                  "description": "3.3V",
+                  "command": "00"
                 },
                 {
-                  "id": "Unipolar",
-                  "name": "1",
-                  "description": "Unipolar",
-                  "command": "03"
+                  "id": "1",
+                  "name": "5V",
+                  "description": "5V",
+                  "command": "01"
                 },
                 {
-                  "id": "Omnipolar",
-                  "name": "2",
-                  "description": "Omnipolar",
-                  "command": "03"
-                },
+                  "id": "2",
+                  "name": "External",
+                  "description": "External",
+                  "command": "02"
+                }
+              ]
+            }
+          ],
+          "partNumbers": [
+            {
+              "partNumber": "SS30AT",
+              "description": "Typical Operating Point:45",
+              "comProtocolCmd": "04",
+              "sensorTypeCmd": "03",
+              "padNumberCmd": "03",
+              "sensorCategory": "MagneticSwitch",
+              "attributes": [
                 {
-                  "id": "Latch",
-                  "name": "3",
-                  "description": "Latch",
-                  "command": "03"
-                },
-                {
-                  "id": "Linear",
-                  "name": "4",
-                  "description": "Linear (Analog)",
-                  "command": "05"
-                },
-                {
-                  "id": "Current",
-                  "name": "5",
-                  "description": "2-Pin (Current)",
-                  "command": "05"
-                },
-                {
-                  "id": "SpeedAndDirection",
-                  "name": "6",
-                  "description": "Speed and Direction",
-                  "command": "04"
+                  "key": "MagneticOptions",
+                  "value": "ExternalPullUp"
                 }
               ]
             },
             {
-              "name": "RelativeOperateGauss",
-              "description": "Relative operate Gauss",
-              "partPosition": 4,
-              "options": [
+              "partNumber": "SS311PT",
+              "description": "Typical Operating Point:60",
+              "comProtocolCmd": "04",
+              "sensorTypeCmd": "03",
+              "padNumberCmd": "04",
+              "sensorCategory": "MagneticSwitch",
+              "attributes": [
                 {
-                  "id": 1,
-                  "name": "0",
-                  "description": "Low"
-                },
-                {
-                  "id": 2,
-                  "name": "1",
-                  "description": "Medium"
-                },
-                {
-                  "id": 3,
-                  "name": "2",
-                  "description": "High"
+                  "key": "MagneticOptions",
+                  "value": "InternalPullUp"
                 }
               ]
             },
             {
-              "name": "Electrical/Magneticoptions",
-              "description": "Electrical/Magnetic options",
-              "partPosition": 5,
-              "options": [
+              "partNumber": "SS40A",
+              "description": "Typical Operating Point:45",
+              "comProtocolCmd": "04",
+              "sensorTypeCmd": "03",
+              "padNumberCmd": "06",
+              "attributes": [
                 {
-                  "id": "ExternalPullup",
-                  "name": "A",
-                  "description": "Open Collector (External Pullup)",
-                  "subOptions":[
-                    {
-                      "id":   0,
-                      "name": "Power Supply",
-                      "description": "Power Supply",
-                      "options":[
-                        {
-                          "id": 0,
-                          "name": "Power Supply 1",
-                          "description": "Power Supply 1"
-                        },
-                        {
-                          "id": 1,
-                          "name": "Power Supply 2",
-                          "description": "Power Supply 2"
-                        },
-                        {
-                          "id": 2,
-                          "name": "Power Supply 3",
-                          "description": "Power Supply 3"
-                        }
-
-                      ]
-                    },
-                    {
-                      "id": 1,
-                      "name": "Pull Up",
-                      "description": "Pull Up",
-                      "options":[
-                        {
-                          "id": 0,
-                          "name": "Pull Up 1",
-                          "description": "Pull Up 1"
-                        },
-                        {
-                          "id": 1,
-                          "name": "Pull Up 2",
-                          "description": "Pull Up 2"
-                        },
-                        {
-                          "id": 2,
-                          "name": "Pull Up 3",
-                          "description": "Pull Up 3"
-                        }
-
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "id": "InternalPullUp",
-                  "name": "P",
-                  "description": "Built in Pull up resistor"
+                  "key": "MagneticOptions",
+                  "value": "ExternalPullUp"
                 }
- 
+              ]
+            },
+            {
+              "partNumber": "SS411P",
+              "description": "Typical Operating Point:60",
+              "comProtocolCmd": "04",
+              "sensorTypeCmd": "03",
+              "padNumberCmd": "07",
+              "sensorCategory": "MagneticSwitch",
+              "attributes": [
+                {
+                  "key": "MagneticOptions",
+                  "value": "InternalPullUp"
+                }
+              ]
+            },
+            {
+              "partNumber": "SS41",
+              "description": "Typical Operating Point:40",
+              "comProtocolCmd": "04",
+              "sensorTypeCmd": "03",
+              "padNumberCmd": "06",
+              "sensorCategory": "MagneticSwitch",
+              "attributes": [
+                {
+                  "key": "MagneticOptions",
+                  "value": "ExternalPullUp"
+                }
+              ]
+            },
+            {
+              "partNumber": "SS411A",
+              "description": "Typical Operating Point:20",
+              "comProtocolCmd": "04",
+              "sensorTypeCmd": "03",
+              "padNumberCmd": "06",
+              "sensorCategory": "MagneticSwitch",
+              "attributes": [
+                {
+                  "key": "MagneticOptions",
+                  "value": "ExternalPullUp"
+                }
+              ]
+            },
+            {
+              "partNumber": "SS413A",
+              "description": "Typical Operating Point:50",
+              "comProtocolCmd": "04",
+              "sensorTypeCmd": "03",
+              "padNumberCmd": "06",
+              "sensorCategory": "MagneticSwitch",
+              "attributes": [
+                {
+                  "key": "MagneticOptions",
+                  "value": "ExternalPullUp"
+                }
+              ]
+            },
+            {
+              "partNumber": "SS50AT",
+              "description": "Typical Operating Point:45",
+              "comProtocolCmd": "04",
+              "sensorTypeCmd": "03",
+              "padNumberCmd": "00",
+              "sensorCategory": "MagneticSwitch",
+              "attributes": [
+                {
+                  "key": "MagneticOptions",
+                  "value": "ExternalPullUp"
+                }
+              ]
+            },
+            {
+              "partNumber": "SS511AT",
+              "description": "Typical Operating Point:20",
+              "comProtocolCmd": "04",
+              "sensorTypeCmd": "03",
+              "padNumberCmd": "00",
+              "sensorCategory": "MagneticSwitch",
+              "attributes": [
+                {
+                  "key": "MagneticOptions",
+                  "value": "ExternalPullUp"
+                }
+              ]
+            },
+            {
+              "partNumber": "SS513AT",
+              "description": "Typical Operating Point:50",
+              "comProtocolCmd": "04",
+              "sensorTypeCmd": "03",
+              "padNumberCmd": "00",
+              "sensorCategory": "MagneticSwitch",
+              "attributes": [
+                {
+                  "key": "MagneticOptions",
+                  "value": "ExternalPullUp"
+                }
+              ]
+            },
+            {
+              "partNumber": "VF360NT",
+              "description": "Typical Operating Point:30",
+              "comProtocolCmd": "04",
+              "sensorTypeCmd": "03",
+              "padNumberCmd": "03",
+              "sensorCategory": "MagneticSwitch",
+              "attributes": [
+                {
+                  "key": "MagneticOptions",
+                  "value": "ExternalPullUp"
+                }
+              ]
+            },
+            {
+              "partNumber": "VF360ST",
+              "description": "Typical Operating Point:30",
+              "comProtocolCmd": "04",
+              "sensorTypeCmd": "03",
+              "padNumberCmd": "03",
+              "sensorCategory": "MagneticSwitch",
+              "attributes": [
+                {
+                  "key": "MagneticOptions",
+                  "value": "ExternalPullUp"
+                }
+              ]
+            },
+            {
+              "partNumber": "SS360NT",
+              "description": "Typical Operating Point:30",
+              "comProtocolCmd": "04",
+              "sensorTypeCmd": "03",
+              "padNumberCmd": "03",
+              "sensorCategory": "MagneticSwitch",
+              "attributes": [
+                {
+                  "key": "MagneticOptions",
+                  "value": "ExternalPullUp"
+                }
+              ]
+            },
+            {
+              "partNumber": "SS360ST",
+              "description": "Typical Operating Point:30",
+              "comProtocolCmd": "04",
+              "sensorTypeCmd": "03",
+              "padNumberCmd": "03",
+              "sensorCategory": "MagneticSwitch",
+              "attributes": [
+                {
+                  "key": "MagneticOptions",
+                  "value": "ExternalPullUp"
+                }
+              ]
+            },
+            {
+              "partNumber": "SS360PT",
+              "description": "Typical Operating Point:30",
+              "comProtocolCmd": "04",
+              "sensorTypeCmd": "03",
+              "padNumberCmd": "04",
+              "sensorCategory": "MagneticSwitch",
+              "attributes": [
+                {
+                  "key": "MagneticOptions",
+                  "value": "InternalPullUp"
+                }
+              ]
+            },
+            {
+              "partNumber": "SS361RT",
+              "description": "Typical Operating Point:50",
+              "comProtocolCmd": "04",
+              "sensorTypeCmd": "03",
+              "padNumberCmd": "03",
+              "sensorCategory": "MagneticSwitch",
+              "attributes": [
+                {
+                  "key": "MagneticOptions",
+                  "value": "ExternalPullUp"
+                }
+              ]
+            },
+            {
+              "partNumber": "SS361CT",
+              "description": "Typical Operating Point:50",
+              "comProtocolCmd": "04",
+              "sensorTypeCmd": "03",
+              "padNumberCmd": "03",
+              "sensorCategory": "MagneticSwitch",
+              "attributes": [
+                {
+                  "key": "MagneticOptions",
+                  "value": "ExternalPullUp"
+                }
+              ]
+            },
+            {
+              "partNumber": "VF460S",
+              "description": "Typical Operating Point:30",
+              "comProtocolCmd": "04",
+              "sensorTypeCmd": "03",
+              "padNumberCmd": "06",
+              "sensorCategory": "MagneticSwitch",
+              "attributes": [
+                {
+                  "key": "MagneticOptions",
+                  "value": "ExternalPullUp"
+                }
+              ]
+            },
+            {
+              "partNumber": "SS460S",
+              "description": "Typical Operating Point:30",
+              "comProtocolCmd": "04",
+              "sensorTypeCmd": "03",
+              "padNumberCmd": "06",
+              "sensorCategory": "MagneticSwitch",
+              "attributes": [
+                {
+                  "key": "MagneticOptions",
+                  "value": "ExternalPullUp"
+                }
+              ]
+            },
+            {
+              "partNumber": "SS460P",
+              "description": "Typical Operating Point:30",
+              "comProtocolCmd": "04",
+              "sensorTypeCmd": "03",
+              "padNumberCmd": "07",
+              "sensorCategory": "MagneticSwitch",
+              "attributes": [
+                {
+                  "key": "MagneticOptions",
+                  "value": "InternalPullUp"
+                }
+              ]
+            },
+            {
+              "partNumber": "SS461R",
+              "description": "Typical Operating Point:50",
+              "comProtocolCmd": "04",
+              "sensorTypeCmd": "03",
+              "padNumberCmd": "06",
+              "sensorCategory": "MagneticSwitch",
+              "attributes": [
+                {
+                  "key": "MagneticOptions",
+                  "value": "ExternalPullUp"
+                }
+              ]
+            },
+            {
+              "partNumber": "SS461C",
+              "description": "Typical Operating Point:50",
+              "comProtocolCmd": "04",
+              "sensorTypeCmd": "03",
+              "padNumberCmd": "06",
+              "sensorCategory": "MagneticSwitch",
+              "attributes": [
+                {
+                  "key": "MagneticOptions",
+                  "value": "ExternalPullUp"
+                }
+              ]
+            },
+            {
+              "partNumber": "SS461A",
+              "description": "Typical Operating Point:50",
+              "comProtocolCmd": "04",
+              "sensorTypeCmd": "03",
+              "padNumberCmd": "06",
+              "sensorCategory": "MagneticSwitch",
+              "attributes": [
+                {
+                  "key": "MagneticOptions",
+                  "value": "ExternalPullUp"
+                }
+              ]
+            },
+            {
+              "partNumber": "SS466A",
+              "description": "Typical Operating Point:140",
+              "comProtocolCmd": "04",
+              "sensorTypeCmd": "03",
+              "padNumberCmd": "06",
+              "sensorCategory": "MagneticSwitch",
+              "attributes": [
+                {
+                  "key": "MagneticOptions",
+                  "value": "ExternalPullUp"
+                }
+              ]
+            },
+            {
+              "partNumber": "SS561AT",
+              "description": "Typical Operating Point:50",
+              "comProtocolCmd": "04",
+              "sensorTypeCmd": "03",
+              "padNumberCmd": "01",
+              "sensorCategory": "MagneticSwitch",
+              "attributes": [
+                {
+                  "key": "MagneticOptions",
+                  "value": "ExternalPullUp"
+                }
+              ]
+            },
+            {
+              "partNumber": "SS566AT",
+              "description": "Typical Operating Point:140",
+              "comProtocolCmd": "04",
+              "sensorTypeCmd": "03",
+              "padNumberCmd": "01",
+              "sensorCategory": "MagneticSwitch",
+              "attributes": [
+                {
+                  "key": "MagneticOptions",
+                  "value": "ExternalPullUp"
+                }
+              ]
+            },
+            {
+              "partNumber": "SS341RT",
+              "description": "Typical Operating Point:75",
+              "comProtocolCmd": "04",
+              "sensorTypeCmd": "03",
+              "padNumberCmd": "03",
+              "sensorCategory": "MagneticSwitch",
+              "attributes": [
+                {
+                  "key": "MagneticOptions",
+                  "value": "ExternalPullUp"
+                }
+              ]
+            },
+            {
+              "partNumber": "SS343RT",
+              "description": "Typical Operating Point:135",
+              "comProtocolCmd": "04",
+              "sensorTypeCmd": "03",
+              "padNumberCmd": "03",
+              "sensorCategory": "MagneticSwitch",
+              "attributes": [
+                {
+                  "key": "MagneticOptions",
+                  "value": "ExternalPullUp"
+                }
+              ]
+            },
+            {
+              "partNumber": "SS349RT",
+              "description": "Typical Operating Point:305",
+              "comProtocolCmd": "04",
+              "sensorTypeCmd": "03",
+              "padNumberCmd": "03",
+              "sensorCategory": "MagneticSwitch",
+              "attributes": [
+                {
+                  "key": "MagneticOptions",
+                  "value": "ExternalPullUp"
+                }
+              ]
+            },
+            {
+              "partNumber": "SS345PT",
+              "description": "Typical Operating Point:180",
+              "comProtocolCmd": "04",
+              "sensorTypeCmd": "03",
+              "padNumberCmd": "04",
+              "sensorCategory": "MagneticSwitch",
+              "attributes": [
+                {
+                  "key": "MagneticOptions",
+                  "value": "InternalPullUp"
+                }
+              ]
+            },
+            {
+              "partNumber": "SS443R",
+              "description": "Typical Operating Point:135",
+              "comProtocolCmd": "04",
+              "sensorTypeCmd": "03",
+              "padNumberCmd": "06",
+              "sensorCategory": "MagneticSwitch",
+              "attributes": [
+                {
+                  "key": "MagneticOptions",
+                  "value": "ExternalPullUp"
+                }
+              ]
+            },
+            {
+              "partNumber": "SS449R",
+              "description": "Typical Operating Point:305",
+              "comProtocolCmd": "04",
+              "sensorTypeCmd": "03",
+              "padNumberCmd": "06",
+              "sensorCategory": "MagneticSwitch",
+              "attributes": [
+                {
+                  "key": "MagneticOptions",
+                  "value": "ExternalPullUp"
+                }
+              ]
+            },
+            {
+              "partNumber": "SS445P",
+              "description": "Typical Operating Point:180",
+              "comProtocolCmd": "04",
+              "sensorTypeCmd": "03",
+              "padNumberCmd": "06",
+              "sensorCategory": "MagneticSwitch",
+              "attributes": [
+                {
+                  "key": "MagneticOptions",
+                  "value": "ExternalPullUp"
+                }
+              ]
+            },
+            {
+              "partNumber": "SS441A",
+              "description": "Typical Operating Point:85",
+              "comProtocolCmd": "04",
+              "sensorTypeCmd": "03",
+              "padNumberCmd": "06",
+              "sensorCategory": "MagneticSwitch",
+              "attributes": [
+                {
+                  "key": "MagneticOptions",
+                  "value": "ExternalPullUp"
+                }
+              ]
+            },
+            {
+              "partNumber": "SS443A",
+              "description": "Typical Operating Point:145",
+              "comProtocolCmd": "04",
+              "sensorTypeCmd": "03",
+              "padNumberCmd": "06",
+              "sensorCategory": "MagneticSwitch",
+              "attributes": [
+                {
+                  "key": "MagneticOptions",
+                  "value": "ExternalPullUp"
+                }
+              ]
+            },
+            {
+              "partNumber": "SS449A",
+              "description": "Typical Operating Point:350",
+              "comProtocolCmd": "04",
+              "sensorTypeCmd": "03",
+              "padNumberCmd": "06",
+              "sensorCategory": "MagneticSwitch",
+              "attributes": [
+                {
+                  "key": "MagneticOptions",
+                  "value": "ExternalPullUp"
+                }
+              ]
+            },
+            {
+              "partNumber": "SS541AT",
+              "description": "Typical Operating Point:85",
+              "comProtocolCmd": "04",
+              "sensorTypeCmd": "03",
+              "padNumberCmd": "00",
+              "sensorCategory": "MagneticSwitch",
+              "attributes": [
+                {
+                  "key": "MagneticOptions",
+                  "value": "ExternalPullUp"
+                }
+              ]
+            },
+            {
+              "partNumber": "SS543AT",
+              "description": "Typical Operating Point:145",
+              "comProtocolCmd": "04",
+              "sensorTypeCmd": "03",
+              "padNumberCmd": "00",
+              "sensorCategory": "MagneticSwitch",
+              "attributes": [
+                {
+                  "key": "MagneticOptions",
+                  "value": "ExternalPullUp"
+                }
+              ]
+            },
+            {
+              "partNumber": "SS549AT",
+              "description": "Typical Operating Point:350",
+              "comProtocolCmd": "04",
+              "sensorTypeCmd": "03",
+              "padNumberCmd": "00",
+              "sensorCategory": "MagneticSwitch",
+              "attributes": [
+                {
+                  "key": "MagneticOptions",
+                  "value": "ExternalPullUp"
+                }
+              ]
+            },
+            {
+              "partNumber": "SS351AT",
+              "description": "Typical Operating Point:85",
+              "comProtocolCmd": "04",
+              "sensorTypeCmd": "03",
+              "padNumberCmd": "03",
+              "sensorCategory": "MagneticSwitch",
+              "attributes": [
+                {
+                  "key": "MagneticOptions",
+                  "value": "ExternalPullUp"
+                }
+              ]
+            },
+            {
+              "partNumber": "SS451A",
+              "description": "Typical Operating Point:85",
+              "comProtocolCmd": "04",
+              "sensorTypeCmd": "03",
+              "padNumberCmd": "06",
+              "sensorCategory": "MagneticSwitch",
+              "attributes": [
+                {
+                  "key": "MagneticOptions",
+                  "value": "ExternalPullUp"
+                }
+              ]
+            },
+            {
+              "partNumber": "SL353HT",
+              "description": "Typical Operating Point:60",
+              "comProtocolCmd": "04",
+              "sensorTypeCmd": "03",
+              "padNumberCmd": "03",
+              "sensorCategory": "MagneticSwitch",
+              "attributes": [
+                {
+                  "key": "MagneticOptions",
+                  "value": "ExternalPullUp"
+                }
+              ]
+            },
+            {
+              "partNumber": "SL353LT",
+              "description": "Typical Operating Point:60",
+              "comProtocolCmd": "04",
+              "sensorTypeCmd": "03",
+              "padNumberCmd": "03",
+              "sensorCategory": "MagneticSwitch",
+              "attributes": [
+                {
+                  "key": "MagneticOptions",
+                  "value": "ExternalPullUp"
+                }
+              ]
+            },
+            {
+              "partNumber": "SM351LT",
+              "description": "Typical Operating Point:7",
+              "comProtocolCmd": "04",
+              "sensorTypeCmd": "03",
+              "padNumberCmd": "03",
+              "sensorCategory": "MagneticSwitch",
+              "attributes": [
+                {
+                  "key": "MagneticOptions",
+                  "value": "ExternalPullUp"
+                }
+              ]
+            },
+            {
+              "partNumber": "SM353LT",
+              "description": "Typical Operating Point:14",
+              "comProtocolCmd": "04",
+              "sensorTypeCmd": "03",
+              "padNumberCmd": "03",
+              "sensorCategory": "MagneticSwitch",
+              "attributes": [
+                {
+                  "key": "MagneticOptions",
+                  "value": "ExternalPullUp"
+                }
+              ]
+            },
+            {
+              "partNumber": "2SS52M (3)",
+              "description": "Typical Operating Point:14",
+              "comProtocolCmd": "04",
+              "sensorTypeCmd": "03",
+              "padNumberCmd": "03",
+              "sensorCategory": "MagneticSwitch",
+              "attributes": [
+                {
+                  "key": "MagneticOptions",
+                  "value": "ExternalPullUp"
+                }
               ]
             }
           ]
         }
       ]
-    },
- 
+    }
+    ,
     {
-      "name": "SEB Particle",
-      "id": 1,
+      "name": "Particle Sensor",
+      "description": "Particle Sensor",
+      "id": 2,
       "series": [
- 
+
         {
-          "name": "HPM Series",
+          "name": "HPMSeries",
           "code": "",
           "id": 0,
           "description": "HPM Series",
           "parts": [
             {
-              "name": "HPMVerticle",
-              "description": "HPM Verticle",
-              "partPosition": 0,
+              "name": "HPMSeries",
+              "description": "HPM Verticle", 
+              "partPosition": 0, 
               "options": [
                 {
                   "id": 1,
@@ -270,32 +1574,32 @@
                   "name": "D",
                   "description": "Heavy Industry I"
                 }
- 
+
               ]
             },
             {
               "name": "OutputType",
               "description": "Output Type",
-              "partPosition": 1,
+              "partPosition": 2,
               "options": [
                 {
                   "id": "UART",
                   "name": "1",
                   "description": "UART"
- 
+
                 },
                 {
                   "id": "I2C",
                   "name": "2",
                   "description": "I2C"
- 
+
                 }
               ]
             },
             {
               "name": "Accuracy",
               "description": "Accuracy",
-              "partPosition": 2,
+              "partPosition": 3,
               "options": [
                 {
                   "id": "±15%",
@@ -311,8 +1615,8 @@
             },
             {
               "name": "Power",
-              "description": "Power Option",
-              "partPosition": 3,
+              "description": "Power Option", 
+              "partPosition": 4,
               "options": [
                 {
                   "id": 1,
@@ -334,7 +1638,7 @@
             {
               "name": "Housing",
               "description": "Housing Option",
-              "partPosition": 4,
+              "partPosition": 5,
               "options": [
                 {
                   "id": "Standard",
@@ -346,7 +1650,7 @@
                   "name": "C",
                   "description": "Compact"
                 }
- 
+
               ]
             },
             {
@@ -369,14 +1673,14 @@
                   "name": "E",
                   "description": "Economic"
                 }
- 
- 
+
+
               ]
             },
             {
               "name": "CustomNumber",
               "description": "Custom Number",
-              "partPosition": 6,
+              "partPosition": 5,
               "options": [
                 {
                   "id": "XXX",
@@ -399,19 +1703,19 @@
     {
       "id": "1",
       "name": "1",
-      "description": "1",
+      "description": "1", 
       "command": "00"
     },
     {
       "id": "2",
       "name": "2",
-      "description": "10",
+      "description": "10", 
       "command": "01"
     },
     {
       "id": "3",
       "name": "3",
-      "description": "20",
+      "description": "20", 
       "command": "02"
     },
     {
@@ -419,36 +1723,7 @@
       "name": "4",
       "description": "40",
       "command": "03"
-    },
-    {
-      "id": "5",
-      "name": "5",
-      "description": "80",
-      "command": "04"
-    },
-    {
-      "id": "6",
-      "name": "6",
-      "description": "200",
-      "command": "05"
-    },
-    {
-      "id": "7",
-      "name": "7",
-      "description": "400",
-      "command": "06"
-    },
-    {
-      "id": "8",
-      "name": "8",
-      "description": "600",
-      "command": "07"
-    },
-    {
-      "id": "9",
-      "name": "9",
-      "description": "1000",
-      "command": "08"
     }
+    
   ]
 }
