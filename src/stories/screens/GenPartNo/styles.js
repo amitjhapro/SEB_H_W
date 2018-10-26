@@ -29,7 +29,7 @@ const styles: any = StyleSheet.create({
     partInnerView:{ height: 50, backgroundColor: '#C84E55', justifyContent: 'center', paddingLeft: 10 },
     partText:{ fontSize: 16, color: '#fff', fontWeight: '600' },
     mostOuterFilterView:{ backgroundColor: '#EBEBEB', paddingHorizontal: 10, height: 60 },
-    outerFilterView:{ flexDirection: 'row', alignItems: 'center', justifyContent: 'center' },
+    outerFilterView:{ flexDirection: 'row', alignItems: 'center', justifyContent: 'center', marginLeft:-10 },
     innerFilterView:{ flex: 1, flexGrow:9,position:'relative' },
     hintIcon:{ flex: 1, alignItems: 'center', justifyContent: 'flex-end' },
     previousContainer:{ marginVertical: 15 },
@@ -54,6 +54,7 @@ const styles: any = StyleSheet.create({
         backgroundColor: '#fff',
         marginVertical: 10,
         marginLeft: 10,
+        paddingLeft:5,
         height: 40
         
     },
@@ -66,16 +67,28 @@ const styles: any = StyleSheet.create({
 		textAlign:'center',
 		fontWeight:"bold"
     },
-    listViewbox: {
+    searchResultStyle: {
         marginTop: 5,
         backgroundColor:'#555',
         zIndex:1,
         left:0,
         right:0,
+        height: '100%',
         elevation:6,
-        position:'absolute',
-        top:60,
-		alignSelf: 'center',
+        // position:'absolute',
+        // top:60,
+		// alignSelf: 'stretch',
+    },
+    searchResultCellStyle:{
+        height: 45,
+        justifyContent: "center",
+        alignItems:'flex-start'
+    },
+    searchResultCellTextStyle: {
+        marginHorizontal: 10,
+        fontFamily:'Honeywell Sans TT', 
+        fontSize:20,
+        color:'black',
     },
     next:
     {
@@ -109,7 +122,7 @@ const styles: any = StyleSheet.create({
         // width: 30,
         // height: 30,
     // marginTop: 22,
-        left: 7,
+        left: 6,
     // marginRight:50
 
     }

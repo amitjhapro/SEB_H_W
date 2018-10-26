@@ -19,8 +19,9 @@ class Sebdevice extends React.Component {
 			nextButtonEnabled:false,
 			listData: sensorData,
 			listDataImageMapping:{
-				"SEB Magnetics": require('../../../assets/magnetic.png'),
-				"SEB Particle": require('../../../assets/particle.png'),
+				"Force": require('../../../assets/second.png'),
+				"Magnetics": require('../../../assets/first.png'),
+				"Particle Sensor": require('../../../assets/third.png'),
 			}
 		}
 		//this.listClickEvent=this.listClickEvent.bind(this);
@@ -89,18 +90,17 @@ class Sebdevice extends React.Component {
 							onPress={() =>
 								this.props.navigation.navigate("HostBoard"/* , {name: { item }} */)}>Home</Text>
 					</View>
-
-
 				</View>
 				<View>
-
-					<Text style={styles.ble}>SEB Board Selection</Text>
+					<Text style={styles.ble}>
+						SEB Board Selection
+					</Text>
 				</View>
 
 				<View flexDirection='column' style={styles.division}>
-
-					<Text style={styles.header}>Select SEB Board</Text>
-
+					<Text style={styles.header}>
+						Select SEB Board
+					</Text>
 				</View>
 				
 				<View style={styles.listViewCss}>

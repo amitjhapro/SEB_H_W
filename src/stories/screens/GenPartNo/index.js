@@ -12,7 +12,7 @@ import {
   TextInput,
   ListView,
   View,Icon,
-  TouchableOpacity, StatusBar, ScrollView, Picker, Alert
+  TouchableOpacity, StatusBar, ScrollView, Picker, Alert, FlatList
 } from 'react-native';
 import globalStyles from "../../../globalStyles";
 
@@ -23,15 +23,27 @@ class GenPartNo extends React.Component {
     
     // creating a mapping for dropdown lists for checking if any of the dropdown values is set
     const {selectedSensorBoardID, selectedSensorSeriesID} = this.props.navigation.state.params
-    const mappedOptions = sensorData.SensorTypes[selectedSensorBoardID].series[selectedSensorSeriesID].parts.map((data, index) => {
+    
+    // creating 'mappedOptions' are for sensor that have "parts" data 
+    const mappedOptions = sensorData.SensorTypes[selectedSensorBoardID].series[selectedSensorSeriesID].hasOwnProperty("parts") ?
+    sensorData.SensorTypes[selectedSensorBoardID].series[selectedSensorSeriesID].parts.map((data, index) => {
         return [data.name,null] // initially no values are selected so by default all are set to 'null' 
-    });
+    }) : []
+
+    // creating 'mappedSearchablePartNumbers' are for sensor that have "partNumbers" data 
+    const mappedSearchablePartNumbers = sensorData.SensorTypes[selectedSensorBoardID].series[selectedSensorSeriesID].hasOwnProperty("partNumbers") ?
+    sensorData.SensorTypes[selectedSensorBoardID].series[selectedSensorSeriesID].partNumbers.map((data, index) => {
+        return {...data}
+    }) : []
     
     this.state = {
         dataSource: ds.cloneWithRows(partnumbers),
         sensor: '',
         text:'',
         optionMapping: mappedOptions,
+        searchablePartNumbers: mappedSearchablePartNumbers,
+        // filteredPartNumbers: [], //initially the filtered list is empty
+        filteredPartNumbers: mappedSearchablePartNumbers, //initially the filtered list is empty
         prevSelectionArr:[]
     }
 }
@@ -47,21 +59,40 @@ static navigationOptions = () => ({
 });
 
 /** This function used to filter the partnumber data on searching using textbox */
+// SearchFilterFunction(text){
+//     const newData = partnumbers.filter(function(item){
+//     const itemData = item.name.toUpperCase()
+//     const textData = text
+//     if(item.partnumber.indexOf(textData) > -1){
+//         return itemData;
+//     }
+//     })
+//     this.setState({
+//     dataSource: this.state.dataSource.cloneWithRows(newData), // Filtered datas are setting to the state
+//             isModalVisible: (newData!='' && text!='') ? 1 : 0, // this state to toggle the search result container
+//             text:text // value of text entered stored in this state
+//     })
+// }
+
 SearchFilterFunction(text){
-const newData = partnumbers.filter(function(item){
-  const itemData = item.name.toUpperCase()
-  const textData = text
-  if(item.partnumber.indexOf(textData) > -1){
-    return itemData;
-  }
-})
-
-this.setState({
-  dataSource: this.state.dataSource.cloneWithRows(newData), // Filtered datas are setting to the state
-        isModalVisible: (newData!='' && text!='') ? 1 : 0, // this state to toggle the search result container
-        text:text // value of text entered stored in this state
-})
-
+    if(text.length == 0){
+        this.setState({filteredPartNumbers:this.state.searchablePartNumbers})
+    }
+    if(text.length > 1){
+        const filteredNumbers = this.state.searchablePartNumbers.filter(item => {
+            return item["partNumber"].toLowerCase().startsWith(text.toLowerCase())
+        });
+        if(filteredNumbers.length > 0){            
+            // alert(filteredNumbers.length)
+            this.setState({filteredPartNumbers: []},()=>{ // first clearing the filter
+               this.setState({filteredPartNumbers: filteredNumbers}) 
+            })
+        }else{
+            this.setState({filteredPartNumbers: []}) 
+        }
+    }
+    this.setState({text})
+    
 }
 
 /** This function is used to reset all the data */
@@ -100,10 +131,13 @@ clear() {
 
 clearPartNumberTextInput = () => {
     const {selectedSensorBoardID, selectedSensorSeriesID} = this.props.navigation.state.params
-    const mappedOptions = sensorData.SensorTypes[selectedSensorBoardID].series[selectedSensorSeriesID].parts.map((data, index) => {
-        return [data.name,null]
-    });
-    this.setState({text:'',optionMapping:mappedOptions})
+    const mappedOptions = 
+    sensorData.SensorTypes[selectedSensorBoardID].series[selectedSensorSeriesID].hasOwnProperty("parts") ?
+    sensorData.SensorTypes[selectedSensorBoardID].series[selectedSensorSeriesID].parts.map((data, index) => {
+        return [data.name,null] // initially no values are selected so by default all are set to 'null' 
+    }) : []
+
+    this.setState({text:'',optionMapping:mappedOptions,filteredPartNumbers:this.state.searchablePartNumbers})
 };
 
 generatePartNumber = (value, index, data) => {
@@ -117,7 +151,7 @@ generatePartNumber = (value, index, data) => {
         //     this.setState({text:this.state.text+"-"+value})
         // }
         let temp = ""
-        this.state.optionMapping.forEach(element => {
+        this.state.optionMapping.forEach(element => { // check if the dropdown has been set to a valid value
             if(element[1] != null){
                 temp+= element[1];
             }
@@ -155,6 +189,52 @@ goToGraph = () => {
         }
         return element[1] === null
     });
+}
+
+onSearchResultPress = (item) => {
+    this.setState({text: item["partNumber"]})
+}
+
+renderPartNumberSearchResults = () => {
+    if(this.state.filteredPartNumbers.length > 0){
+        return (
+            <FlatList
+                // style={styles.searchResultStyle}
+                data={this.state.filteredPartNumbers}
+                keyExtractor={(item) => item["partNumber"]}
+                renderItem={
+                    ({item}) => 
+                    <TouchableOpacity
+                        onPress={()=>this.onSearchResultPress(item)}
+                    >
+                        <View style={styles.searchResultCellStyle}>
+                            <Text style={styles.searchResultCellTextStyle}>{item["partNumber"]}</Text>
+                        </View>
+                    </TouchableOpacity>
+                }
+            />
+        );
+    }
+    return null
+}
+
+renderSensorDropdownOptions = () => {
+    // for selectedSensorBoardID & selectedSensorSeriesID  obj.hasOwnProperty("name")
+    const {selectedSensorBoardID,selectedSensorSeriesID} = {...this.props.navigation.state.params}
+    if(sensorData.SensorTypes[selectedSensorBoardID].series[selectedSensorSeriesID].hasOwnProperty("parts")){
+        return(
+            <Sensordropdowns 
+                    sensor={this.state.sensor} 
+                    updateSensor={this.updateSensor} 
+                    selectedSensorData={this.props.navigation.state.params} 
+                    generatePartNumberCallback={this.generatePartNumber} 
+                    resetSelection={this.shouldResetDropdownSelections()}
+                />
+        );
+        
+    }else{
+        return null;
+    }
 }
 
 renderSensorConfigurationSection = () => {
@@ -224,40 +304,16 @@ render() {
                         underlineColorAndroid='rgba(0,0,0,0)' 
                         value={this.state.text} 
                         />
-                        {
-                            this.state.isModalVisible ? 
-                            <ListView
-                            dataSource={this.state.dataSource}
-                            renderSeparator= {this.ListViewItemSeparator}
-                            renderRow={
-                                (rowData) => 
-                                <Text 
-                                style={styles.rowViewContainer} 
-                                onPress = {this.GetListViewItem.bind(this,rowData.name)}
-                                >
-                                    {rowData.name}
-                                </Text>
-                            }
-                            style={styles.listViewbox}
-                            />
-                            :
-                            null
-                        } 
                     </View>
                     <View>
                         <Image source={require('../../../assets/info.png')} style={styles.info} />
                     </View>
                 </View>
             </View>
+            {this.renderPartNumberSearchResults()}
 
             {/* PARTS DROPDOWN LISTING */}
-            <Sensordropdowns 
-                sensor={this.state.sensor} 
-                updateSensor={this.updateSensor} 
-                selectedSensorData={this.props.navigation.state.params} 
-                generatePartNumberCallback={this.generatePartNumber} 
-                resetSelection={this.shouldResetDropdownSelections()}
-            />
+            {this.renderSensorDropdownOptions()}
             
         </View>
         {this.renderSensorConfigurationSection()}

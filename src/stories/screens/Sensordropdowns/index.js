@@ -27,7 +27,12 @@ export default class Sensordropdowns extends Component {
         if(!this.props.resetSelection){
             return
         }
-        return "Select "+data.description.split(" ").splice(-1)
+        // if(data.options.length==1){
+        //     return data.options[0].name
+        // }else{
+            return "Select "+data.description.split(" ").splice(-1)
+        // }
+        
     }
 
     /** This function returns the set of dropdowns extracted from data.json file */
@@ -55,7 +60,7 @@ export default class Sensordropdowns extends Component {
                             // value={"Select "+data.description.split(" ").splice(-1)}
                             value={this.shouldResetSelection(data)}
                             onChangeText={this.onChangeText}
-                            label={data.name}
+                            label={data.description}
                             baseColor={'black'}
                             textColor={'gray'}
                             labelFontSize={22}                            

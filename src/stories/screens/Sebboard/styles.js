@@ -283,7 +283,7 @@ home:
 
 listViewCss: {
     backgroundColor: 'white',
-    marginBottom: 5,
+    // marginBottom: 70,
     marginLeft: 10,
     marginRight: 10,
     backgroundColor: "#FFFFFF",
@@ -332,28 +332,30 @@ division1:
 
 },
 nextBtnViewCss:{
-    marginLeft: 10,
-    marginRight:'20%',
-    width: '100%', 
+    margin: 10,
+    // marginLeft: 10,
+    // marginRight:'20%',
+    // width: '100%', 
     height: 50, 
     backgroundColor: '#00bfff', 
     justifyContent: 'center', 
     alignItems: 'center',
-    position: 'absolute',
-    bottom: 10
+    // position: 'absolute',
+    // bottom: 10
     
 },
 nextBtnViewCss1:{
-    marginLeft: 10,
-    marginRight:'20%',
-    width: '100%', 
+    margin: 10,
+    // marginLeft: '5%',
+    // marginRight: '5%',
+    // width: '100%', 
+    alignSelf: 'stretch',
     height: 50, 
     backgroundColor: '#E0E0E0', 
     justifyContent: 'center', 
     alignItems: 'center',
-    position: 'absolute',
-    bottom: 10
-    
+    // position: 'absolute',
+    // bottom: 10
 },
 
 
