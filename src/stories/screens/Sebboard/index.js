@@ -17,8 +17,14 @@ class Sebboard extends React.Component {
 			nextButtonEnabled:false,
 			sensorData: sensorData,
 			sensorDataImageMapping:{
+				"FSA": require('../../../assets/fsa.png'),
+				"FSG": require('../../../assets/fsg.png'),
+				"FSS": require('../../../assets/fss.png'),
+				"TBF": require('../../../assets/tbf.png'),
+				"FSSSMT": require('../../../assets/fsssmt.png'),
+				"1865": require('../../../assets/1865.png'),
 				"MagneticsSeries": require('../../../assets/fss.png'),
-				"HPM Series": require('../../../assets/fss.png'),
+				"HPMSeries": require('../../../assets/fss.png'),
 			}
         }
 	}
@@ -105,8 +111,8 @@ class Sebboard extends React.Component {
 
 				</View>
 
-				<View style={styles.listViewCss}>
-				<ScrollView>
+				<ScrollView style={styles.listViewCss}>
+				{/* <ScrollView > */}
 					{this.renderSensorSeriesList()}
 					{/* <TouchableOpacity id="a" onPress={() => this.listClickEvent('1')}>
 						<View flexDirection='row' style={styles.division1} >
@@ -173,8 +179,8 @@ class Sebboard extends React.Component {
 							</View>
 						</View>
 					</TouchableOpacity> */}
-					</ScrollView>
-				</View>
+					{/* </ScrollView> */}
+				</ScrollView>
 				{this.renderNextButton()}		
 			</View>
     )

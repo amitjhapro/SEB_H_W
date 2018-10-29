@@ -11,6 +11,7 @@ const styles: any = StyleSheet.create({
     valueText: {
         fontSize: 18,
         marginBottom: 50,
+        fontFamily:"Honeywell Sans TT"
     },
     background: {
         backgroundColor: "#303030",
@@ -29,10 +30,13 @@ const styles: any = StyleSheet.create({
     },
     next:
     {
-        fontSize: 20,
+        fontSize: 16,
         color: 'white',
+        fontFamily:"Honeywell Sans TT",
         justifyContent: 'center',
-        textAlign: 'center'
+        textAlign: 'center',
+        fontWeight:"500",
+        lineHeight:20
     },
 
     icon1:
@@ -114,14 +118,14 @@ const styles: any = StyleSheet.create({
     label:
     {
         //borderBottomWidth: 1,
-        fontSize: 20,
+        fontSize: 16,
         // marginLeft:20,
         color: "#4A4A4A",
-        //fontFamily: "Honeywell Sans",
+        fontFamily: "Honeywell Sans TT",
 
         fontWeight: "300",
         letterSpacing: -0.39,
-        //lineHeight: 22
+        lineHeight: 22
     },
     icon6:
     {
@@ -202,15 +206,21 @@ const styles: any = StyleSheet.create({
     },
     header:
     {
-        color: 'white',
-        fontSize: 20,
-
+        height: 22,
+        width: 154.05,
+        color: "#FFFFFF",
+        fontFamily: "Honeywell Sans TT Bold",
+        fontSize: 14,
+        fontWeight: "bold",
+        letterSpacing: -0.34,
+        lineHeight: 22
     },
 
     headerText:
     {
         color: 'white',
         fontSize: 30,
+        fontFamily:"Honeywell Sans TT",
         textAlign: 'center',
         flex: 1,
         backgroundColor: 'red',
@@ -221,22 +231,29 @@ const styles: any = StyleSheet.create({
     {
         fontSize: 17,
         left: 250,
+        fontFamily:"Honeywell Sans TT",
         color: 'white',
         letterSpacing: -0.41
     },
     ble: {
-        fontSize: 22,
+        fontSize: 18,
+        fontFamily:"Honeywell Sans TT",
         color: 'black',
         letterSpacing: -0.41,
         top: 30,
-        left: 20
+        left: 20,
+        fontWeight:"500",
+        letterSpacing: -0.43,
+        lineHeight: 21
     },
     home1: {
         fontSize: 17,
         right: 2,
+        fontFamily:"Honeywell Sans TT",
         color: 'white',
         marginLeft: 10,
-        //letterSpacing:-0.41
+        letterSpacing:-0.41,
+        fontWeight:"500"
     },    
     subheaderCss:{
         marginTop:20,
@@ -247,17 +264,19 @@ const styles: any = StyleSheet.create({
     {
        // marginTop: 7,
         fontSize: 15,
-        color: '#4A4A4A'
+        color: '#4A4A4A',
+        fontFamily:"Honeywell Sans TT"
     },
     label:
     {
-        fontSize: 20,
+        fontSize: 16,
+        fontFamily:"Honeywell Sans TT",
         //marginLeft: 20,
         color: "#4A4A4A",
        // fontFamily: "Honeywell Sans",
         fontWeight: "300",
         letterSpacing: -0.39,
-        //lineHeight: 22
+        lineHeight: 22
     },
 
     division:
@@ -336,7 +355,8 @@ const styles: any = StyleSheet.create({
     header:
     {
         color: 'white',
-        fontSize: 20,
+        fontSize: 14,
+        fontFamily:"Honeywell Sans TT"
     },
     headerText:
     {
@@ -345,6 +365,7 @@ const styles: any = StyleSheet.create({
         textAlign: 'center',
         flex: 1,
         backgroundColor: 'red',
+        fontFamily:"Honeywell Sans TT"
         // padding:20
         // alignSelf:'center'
     },
@@ -354,6 +375,7 @@ const styles: any = StyleSheet.create({
         fontSize: 17,
         left: 15,
         color: 'white',
+        fontFamily:"Honeywell Sans TT",
         letterSpacing: -0.41
     },
     btnCss:{
@@ -380,8 +402,9 @@ const styles: any = StyleSheet.create({
     }, */
     next:
     {
-        fontSize: 20,
+        fontSize: 16,
         color: 'white',
+        fontFamily:"Honeywell Sans TT",
         justifyContent: 'center',
         textAlign: 'center'
     },

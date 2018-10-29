@@ -91,14 +91,14 @@ sixth:
 },
 label:
 {
-    fontSize: 20,
+    fontSize: 16,
     marginLeft: 20,
     color: "#4A4A4A",
-    //fontFamily: "Honeywell Sans",
+    fontFamily: "Honeywell Sans TT",
 
     fontWeight: "300",
     letterSpacing: -0.39,
-    //lineHeight: 22
+    lineHeight: 22
 },
 icon6:
 {
@@ -153,8 +153,14 @@ division3:
 },
 header:
 {
-    color: 'white',
-    fontSize: 20,
+    height: 22,
+    width: 154.05,
+    color: "#FFFFFF",
+    fontFamily: "Honeywell Sans TT Bold",
+    fontSize: 14,
+    fontWeight: "bold",
+    letterSpacing: -0.34,
+    lineHeight: 22
 },
 headerText:
 {
@@ -169,9 +175,13 @@ headerText:
 home:
 {
     fontSize: 17,
-    left: 15,
-    color: 'white',
-    letterSpacing: -0.41
+        left: 15,
+        fontWeight:"500",
+        height:21,
+        fontFamily:"Honeywell Sans TT",
+        color: 'white',
+        letterSpacing: -0.41,
+        lineHeight:21
 },
 submit:
 {
@@ -181,13 +191,7 @@ submit:
     padding: 15,
     //marginTop: 5
 },
-next:
-{
-    fontSize: 20,
-    color: 'white',
-    justifyContent: 'center',
-    textAlign: 'center'
-},
+
 RadioGroup:
 {
     marginLeft: 55
@@ -237,9 +241,11 @@ sensor1:
 },
 sensor:
 {
-    fontSize: 22,
+    fontSize: 18,
     color: 'black',
+    fontFamily:"Honeywell Sans TT",
     letterSpacing: -0.41,
+    fontWeight:"500",
     top: 30,
     left: 20
 },
@@ -264,12 +270,15 @@ division:
 header:
 {
     color: 'white',
-    fontSize: 20,
+    fontSize: 14,
+    fontFamily:"Honeywell Sans TT",
+    fontWeight:"500"
 },
 headerText:
 {
     color: '#FFFFFF',
     textAlign: 'center',
+    fontFamily:"Honeywell Sans TT",
     flex: 1,
     backgroundColor: 'red',
 },
@@ -278,12 +287,13 @@ home:
     fontSize: 17,
     left: 15,
     color: 'white',
+    fontFamily:"Honeywell Sans TT",
     letterSpacing: -0.41
 },
 
 listViewCss: {
     backgroundColor: 'white',
-    marginBottom: 5,
+    // marginBottom: 70,
     marginLeft: 10,
     marginRight: 10,
     backgroundColor: "#FFFFFF",
@@ -319,9 +329,10 @@ col2Css: {
 }, */
 label:
 {
-    fontSize: 20,
+    fontSize: 16,
     color: "#4A4A4A",
     fontWeight: "300",
+    fontFamily:"Honeywell Sans TT",
     letterSpacing: -0.39,
 },
 division1:
@@ -332,28 +343,30 @@ division1:
 
 },
 nextBtnViewCss:{
-    marginLeft: 10,
-    marginRight:'20%',
-    width: '100%', 
+    margin: 10,
+    // marginLeft: 10,
+    // marginRight:'20%',
+    // width: '100%', 
     height: 50, 
     backgroundColor: '#00bfff', 
     justifyContent: 'center', 
     alignItems: 'center',
-    position: 'absolute',
-    bottom: 10
+    // position: 'absolute',
+    // bottom: 10
     
 },
 nextBtnViewCss1:{
-    marginLeft: 10,
-    marginRight:'20%',
-    width: '100%', 
+    margin: 10,
+    // marginLeft: '5%',
+    // marginRight: '5%',
+    // width: '100%', 
+    alignSelf: 'stretch',
     height: 50, 
     backgroundColor: '#E0E0E0', 
     justifyContent: 'center', 
     alignItems: 'center',
-    position: 'absolute',
-    bottom: 10
-    
+    // position: 'absolute',
+    // bottom: 10
 },
 
 
@@ -367,17 +380,26 @@ submit1:
 },
 next:
 {
-    fontSize: 20,
+   
     color: 'white',
     justifyContent: 'center',
-    textAlign: 'center'
+    textAlign: 'center',
+    fontFamily:"Honeywell Sans TT",
+    height: 20,
+    width: 182.3,
+    
+    fontFamily: "Honeywell Sans TT",
+    fontSize: 16,
+    fontWeight: "500",
+    lineHeight: 20,
 },
 next1:
 {
-    fontSize: 20,
+    fontSize: 16,
     color: '#B0B0B0',
     justifyContent: 'center',
-    textAlign: 'center'
+    textAlign: 'center',
+    fontFamily:"Honeywell Sans TT"
 },
 
 
