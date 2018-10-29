@@ -24,8 +24,8 @@ const styles: any = StyleSheet.create({
     partNumberView:{ flex: 1, flexGrow: 2, marginLeft: 10 },
     partNumberText:{ height:21,fontSize: 18, color: '#000', fontWeight: "500",	letterSpacing: -0.43,	lineHeight: 21},
     clearView:{ flex: 1 },
-    clearText:{ textAlign: 'right', height:15,color: '#1792E5' ,fontFamily:"Honeywell Sans TT Bold",fontSize:12,lineHeight:15},
-    partView:{ flex: 1, elevation: 7, marginBottom: 20, backgroundColor: '#ddd',marginLeft:10, marginRight:10, borderWidth: 1, borderColor: '#ddd' },
+    clearText:{ textAlign: 'right', color: '#1792E5' },
+    partView:{elevation: 7, marginBottom: 0, backgroundColor: '#ddd',marginLeft:10, marginRight:10, borderWidth: 1, borderColor: '#ddd' },
     partInnerView:{ height: 50, backgroundColor: '#C84E55', justifyContent: 'center', paddingLeft: 10 },
     partText:{ fontSize: 14,height:22,fontWeight:"bold", color: '#fff', fontFamily:"Honeywell Sans TT Bold",lineHeight:22},
     mostOuterFilterView:{ backgroundColor: '#EBEBEB', paddingHorizontal: 10, height: 60 },
@@ -71,13 +71,15 @@ const styles: any = StyleSheet.create({
 		fontWeight:"bold"
     },
     searchResultStyle: {
-        marginTop: 5,
-        backgroundColor:'#555',
-        zIndex:1,
-        left:0,
-        right:0,
-        height: '100%',
-        elevation:6,
+        // flex:1,
+        // height:'100%'
+        // marginTop: 5,
+        backgroundColor:'#ddd',
+        // zIndex:1,
+        // left:0,
+        // right:0,
+        // height: '100%',
+        // elevation:6,
         // position:'absolute',
         // top:60,
 		// alignSelf: 'stretch',
@@ -93,6 +95,18 @@ const styles: any = StyleSheet.create({
         fontSize:16,
         color:'black',
     },
+    scrollViewStyle:{
+        flex:1,
+        // marginTop: 90,
+        borderWidth:1,
+        borderColor: '#cfcfcf',
+        backgroundColor:'#ddd',
+        shadowOffset: { width: 2, height: 1 },
+        shadowColor: 'black',
+        shadowOpacity: 0.3,
+        elevation: 7,
+        marginHorizontal: 10,
+    },
     next:
     {
         fontSize: 16,
@@ -107,7 +121,9 @@ const styles: any = StyleSheet.create({
     {
         margin: 10,
         // marginLeft: 10,
-        // marginRight:10, 
+        // marginRight:10,
+        borderWidth:1,
+        borderColor: '#cfcfcf', 
         height: 50, 
         backgroundColor: '#00bfff', 
         justifyContent: 'center', 
@@ -136,5 +152,6 @@ const styles: any = StyleSheet.create({
     // marginRight:50
 
     }
+    
 });
 export default styles;
